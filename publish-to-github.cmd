@@ -40,6 +40,14 @@ if errorlevel 1 (
   echo No staged changes to commit.
 )
 
+git pull --rebase origin main
+if errorlevel 1 (
+  echo.
+  echo Pull failed. Please resolve any conflict shown above, then run this file again.
+  pause
+  exit /b 1
+)
+
 git push -u origin main
 
 echo.
