@@ -2,5 +2,8 @@ node_modules
 .next
 .npm-cache
 .vercel
+.tmp-*
 
 *.log
+public/downloads/~$*.doc
+public/downloads/*-fixed.doc
