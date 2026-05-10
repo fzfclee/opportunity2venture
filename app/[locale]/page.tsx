@@ -36,10 +36,9 @@ export default async function LocaleHomePage({ params }: PageProps) {
         }}
       />
       <ContentLayout
-        eyebrow={statementLabels[locale]}
-        eyebrowAfterTitle
+        eyebrow="O2V Framework"
         title={content.title}
-        subtitle={content.subtitle}
+        subtitle={statementLabels[locale]}
         deck={[...content.tagline, ...content.deck]}
       >
         {content.body.map((paragraph) => (
