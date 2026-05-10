@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://opportunity2venture.com"),
+  metadataBase: new URL("https://www.opportunity2venture.com"),
   title: {
     default: "O2V Framework",
     template: "%s"

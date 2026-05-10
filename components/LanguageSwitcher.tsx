@@ -8,16 +8,19 @@ type LanguageSwitcherProps = {
   currentLocale: Locale;
 };
 
+const supportedPageSuffixes = new Set(["", "framework", "principles", "copyright", "download"]);
+
 export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   const pathname = usePathname();
   const parts = pathname.split("/").filter(Boolean);
   const hasLocale = locales.includes(parts[0] as Locale);
   const suffix = hasLocale ? parts.slice(1).join("/") : "";
+  const safeSuffix = supportedPageSuffixes.has(suffix) ? suffix : "";
 
   return (
     <nav aria-label="Language switcher" className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
       {locales.map((locale, index) => {
-        const href = suffix ? `/${locale}/${suffix}` : `/${locale}`;
+        const href = safeSuffix ? `/${locale}/${safeSuffix}` : `/${locale}`;
         const active = locale === currentLocale;
 
         return (

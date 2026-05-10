@@ -28,6 +28,14 @@ type DownloadCard = {
   href: string;
 };
 
+type DownloadContent = {
+  metadata: Metadata;
+  title: string;
+  note: string;
+  button: string;
+  permissionReminder: string;
+};
+
 export const navLabels: Record<Locale, Record<NavKey, string>> = {
   en: {
     home: "Home",
@@ -342,7 +350,7 @@ export const downloadCards: DownloadCard[] = [
   }
 ];
 
-export const downloadContent: Record<Locale, { metadata: Metadata; title: string; note: string; button: string }> = {
+export const downloadContent: Record<Locale, DownloadContent> = {
   en: {
     metadata: {
       title: "Download O2V Framework 20260510",
@@ -352,7 +360,9 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
     },
     title: "Download O2V Framework 20260510",
     note: "Official PDF versions are available below.",
-    button: "Download"
+    button: "Download",
+    permissionReminder:
+      "For citation, training, consulting delivery, commercial use, adaptation, translation, or substantial reuse, prior permission from Li Zhi is required."
   },
   zh: {
     metadata: {
@@ -363,7 +373,9 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
     },
     title: "下载 O2V Framework 20260510",
     note: "官方 PDF 版本可在下方下载。",
-    button: "下载"
+    button: "下载",
+    permissionReminder:
+      "如需引用、培训、咨询交付、商业使用、改编、翻译或实质性复用，应事先征得李智明确同意。"
   },
   de: {
     metadata: {
@@ -374,7 +386,9 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
     },
     title: "O2V Framework 20260510 herunterladen",
     note: "Die offiziellen PDF-Versionen stehen unten zum Download bereit.",
-    button: "Herunterladen"
+    button: "Herunterladen",
+    permissionReminder:
+      "Für Zitierung, Training, Beratungsleistungen, kommerzielle Nutzung, Anpassung, Übersetzung oder substanzielle Wiederverwendung ist die vorherige ausdrückliche Zustimmung von Li Zhi erforderlich."
   }
 };
 
@@ -397,16 +411,38 @@ export const businessCaseModules = [
   "O2V Score + Recommendation"
 ];
 
-export const deliverables = [
-  "Opportunity Signal List",
-  "Opportunity Card",
-  "O2V Score",
-  "Compliance Risk Level",
-  "Business Case",
-  "Validation Plan",
-  "Assetization Path",
-  "Financing Story"
-];
+export const deliverables: Record<Locale, string[]> = {
+  en: [
+    "Opportunity Signal List",
+    "Opportunity Card",
+    "O2V Score",
+    "Compliance Risk Level",
+    "Business Case",
+    "Validation Plan",
+    "Assetization Path",
+    "Financing Story"
+  ],
+  zh: [
+    "机会信号清单",
+    "机会卡片",
+    "O2V 评分",
+    "合规风险等级",
+    "Business Case / 商业案例",
+    "验证计划",
+    "资产化路径",
+    "融资叙事框架"
+  ],
+  de: [
+    "Opportunity Signal List",
+    "Opportunity Card",
+    "O2V Score",
+    "Compliance Risk Level",
+    "Business Case",
+    "Validation Plan",
+    "Assetization Path",
+    "Financing Story"
+  ]
+};
 
 const frameworkMetadata: Record<Locale, Metadata> = {
   en: {
@@ -510,7 +546,10 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "Business Case Template",
-        body: ["Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan"],
+        body: [
+          "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
+          "Leading indicators exist to judge whether the MVP is validating the value hypothesis."
+        ],
         ordered: businessCaseModules
       },
       {
@@ -519,7 +558,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "Framework Deliverables",
-        ordered: deliverables
+        ordered: deliverables.en
       },
       {
         heading: "Copyright, Citation, and Legal Notice",
@@ -586,7 +625,10 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "O2V 九步判断链路",
-        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story"]
+        body: [
+          "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story",
+          "机会信号 → 场景重构 → 目标用户画像 → 真实痛点与付费动机 → 最小产品定义 → 验证设计 → 完整商业案例 → 资产化路径设计 → 融资叙事预判"
+        ]
       },
       {
         heading: "九步法说明",
@@ -618,7 +660,11 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "Business Case 模板",
-        body: ["Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan"],
+        body: [
+          "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
+          "价值收益假设 → 最小验证产品 → 领先验证指标 → 财务验证指标 → 验证计划",
+          "领先指标用于判断 MVP 是否正在验证价值假设。"
+        ],
         ordered: businessCaseModules
       },
       {
@@ -627,7 +673,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "框架交付物",
-        ordered: deliverables
+        ordered: deliverables.zh
       },
       {
         heading: "版权、引用与法律声明",
@@ -730,7 +776,10 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "Business Case Template",
-        body: ["Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan"],
+        body: [
+          "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
+          "Leading Indicators exist to judge whether the MVP is validating the Value Hypothesis."
+        ],
         ordered: businessCaseModules
       },
       {
@@ -739,7 +788,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
       },
       {
         heading: "Framework Deliverables",
-        ordered: deliverables
+        ordered: deliverables.de
       },
       {
         heading: "Urheberrecht, Zitierung und rechtlicher Hinweis",
@@ -908,7 +957,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
 };
 
 export function creativeWorkJsonLd(locale: Locale) {
-  const url = `https://opportunity2venture.com/${locale}`;
+  const url = `https://www.opportunity2venture.com/${locale}`;
 
   return {
     "@context": "https://schema.org",

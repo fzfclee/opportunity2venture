@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opportunity2venture.com/sitemap.xml
+Sitemap: https://www.opportunity2venture.com/sitemap.xml

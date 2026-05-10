@@ -1,26 +1,34 @@
 # O2V Framework Website
 
-Official static publication site for **O2V Framework 20260510**, the Opportunity-to-Venture Framework.
+Official static publication site for **O2V Framework 20260510**, the **Opportunity-to-Venture Framework**.
+
+## Publication Identity
+
+- Project name: O2V Framework website
+- Official public release: 20260510
+- Internal version: v1.4
+- Brand: O2V Framework / Opportunity-to-Venture Framework
+- Main domain: https://www.opportunity2venture.com
 
 ## Stack
 
 - Next.js
 - TypeScript
 - Tailwind CSS
-- App Router
-- Static pages for Vercel deployment
+- Vercel
+- App Router static pages
 
 ## Local Development
 
 ```bash
 npm install
-npm run dev -- --port 3001
+npm run dev
 ```
 
 Open:
 
 ```text
-http://localhost:3001
+http://localhost:3000
 ```
 
 ## Build
@@ -28,6 +36,15 @@ http://localhost:3001
 ```bash
 npm run build
 ```
+
+## Important Content Rules
+
+- Do not use O2V Methodology as the main brand.
+- Do not use Agile Manifesto-style "A over B" language.
+- Do not add Daily / Weekly / Monthly outputs to the framework.
+- Framework Deliverables must remain generic.
+- Public version uses 20260510.
+- Internal version uses v1.4.
 
 ## Publish to GitHub
 
@@ -61,7 +78,7 @@ https://github.com/fzfclee/opportunity2venture.git
 - `public/downloads/o2v-framework-20260510-en.pdf`
 - `public/downloads/o2v-framework-20260510-de.pdf`
 
-The PDF files are placeholders and can be replaced with final files using the same filenames.
+The PDF files should keep the same filenames so published download links remain stable.
 
 ## License
 

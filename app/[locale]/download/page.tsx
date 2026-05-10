@@ -43,6 +43,7 @@ export default async function DownloadPage({ params }: PageProps) {
               <dt className="font-semibold text-neutral-950">Copyright</dt>
               <dd>Copyright © Li Zhi. All rights reserved.</dd>
             </dl>
+            <p className="mt-4 text-sm leading-6 text-neutral-700">{content.permissionReminder}</p>
             <a
               href={card.href}
               className="mt-5 inline-flex border border-neutral-300 px-4 py-2 text-sm font-semibold text-neutral-950 no-underline hover:border-neutral-950"
