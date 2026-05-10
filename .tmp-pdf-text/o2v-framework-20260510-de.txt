@@ -1,0 +1,582 @@
+OFFICIAL PUBLIC RELEASE 20260510 | INTERNAL VERSION V1.4
+O2V Framework 20260510
+Opportunity-to-Venture Framework Ein Front-End-Framework zur
+Chancenbewertung im KI-Zeitalter
+From Signal to Venture. From Idea to Asset.
+Official Public Release 20260510
+Interne Version: v1.4
+Copyright © Li Zhi. All rights reserved.
+O2V Framework 20260510 | 1
+
+-- 1 of 14 --
+
+Contents
+One-Sentence Definition
+Founding Statement
+Positioning Statement
+Why the AI Era Needs O2V
+Applicable Scenarios
+The 9-Step Judgment Chain
+Step Details
+O2V Scoring Model
+Compliance Risk Gate
+Business Case Template
+Core Principles
+Framework Deliverables
+Copyright, Citation, and Legal Notice
+Version Note
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+O2V Framework 20260510 | 2
+
+-- 2 of 14 --
+
+O2V Framework 20260510
+Opportunity-to-Venture Framework
+Ein Front-End-Framework zur Chancenbewertung im KI-
+Zeitalter
+Version: Official Public Release 20260510
+Interne Version: v1.4
+Positionierung: Öffentliche Veröffentlichung / Allgemeines Framework / IP-freundliche Version
+Urheberrechtsinhaber: Li Zhi
+1. Definition in einem Satz
+Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter. Es
+dient dazu, externe Chancensignale systematisch in überprüfbare, umsetzbare, steuerbare,
+investierbare und assetfähige Venture Opportunities zu überführen.
+Kurz gesagt:
+From Signal to Venture.
+From Idea to Asset.
+2. Gründungserklärung
+Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter.
+Es wurde entwickelt, um eine einfache, aber entscheidende Frage zu beantworten:
+Wenn Chancen überall sichtbar sind, woran erkennen wir, welche davon wirklich den Aufbau
+wert sind?
+Im KI-Zeitalter sind Ideen nicht mehr knapp.
+Signale sind überall.
+Produktprototypen können schneller erstellt werden als je zuvor.
+Inhalte können sofort generiert werden.
+Fast jeder Trend kann in eine Startup-Geschichte verwandelt werden.
+O2V Framework 20260510 | 3
+
+-- 3 of 14 --
+
+Doch Geschwindigkeit beseitigt keine Unsicherheit.
+Mehr Ideen bedeuten nicht automatisch bessere Chancen.
+Ein funktionierender Demo-Prototyp beweist noch keine echte Nachfrage.
+Nutzerinteresse führt nicht immer zu Zahlungsbereitschaft.
+Wachstum ohne Compliance-Grenzen kann zu einer versteckten Verbindlichkeit werden.
+Und ein Geschäft, das kurzfristige Einnahmen erzielt, wird nicht automatisch zu einem langfristigen
+Asset.
+Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Venture-
+Entstehung zu bringen.
+Es hilft Unternehmern, Innovationsteams, Beratern und Early-Stage-Investoren, aus verstreuten
+Marktsignalen eine strukturierte Chancenbewertung abzuleiten.
+Es fragt, ob eine Chance Folgendes besitzt:
+ein reales Szenario;
+eine klare Persona;
+einen starken Pain Point;
+ein validierbares MVP;
+messbare Leading Indicators;
+einen glaubwürdigen Business Case;
+eine kontrollierbare Compliance-Grenze;
+einen Pfad zur Assetisierung;
+und eine Finanzierungsgeschichte, die durch Evidenz gestützt werden kann.
+O2V versucht nicht, bewährte Methoden zu ersetzen.
+Es integriert und rekombiniert reife Praktiken aus Entrepreneurship, Product Discovery,
+Innovationsmanagement, Business-Case-Design, Investment Screening und Risk Governance.
+Sein Ziel ist nicht, mehr Ideen zu generieren.
+Sein Ziel ist es, zu erkennen, welche Ideen Zeit, Kapital und Umsetzung verdienen.
+3. Positionierung
+Das O2V Framework ist kein Versuch, eine völlig neue Theorie aus dem Nichts zu erfinden. Es ist
+auch keine Kopie, kein Ersatz und keine Upgrade-Version einer einzelnen bestehenden Methodik.
+Genauer gesagt ist das O2V Framework eine strukturierte Integration und Rekombination reifer
+Methoden und Praktiken, darunter:
+Entrepreneurship Validation;
+Product Discovery;
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 4
+
+-- 4 of 14 --
+
+Nutzerforschung;
+Business-Case-Design;
+Investment Screening;
+Risk Governance;
+MVP-Validierung;
+Design von Leading Indicators;
+Assetisierungsdenken;
+Bewertung von Finanzierungserzählungen.
+Der eigenständige Wert von O2V liegt nicht darin, allgemeine Konzepte für sich zu beanspruchen. Er
+liegt darin, reife Praktiken in einer kontinuierlichen Bewertungskette zu organisieren:
+Signal -> Business Case -> Venture Asset
+Das bedeutet:
+Chancensignal -> überprüfbarer Business Case -> steuerbare, investierbare und assetfähige
+Venture Opportunity
+4. Warum das KI-Zeitalter O2V braucht
+KI senkt die Kosten für Ideengenerierung, Prototyping, Content-Erstellung und die Entwicklung
+erster Produktversionen. Aber KI verbessert nicht automatisch die Qualität der Chancenbewertung.
+Im Gegenteil: KI kann frühe Fehlentscheidungen verstärken:
+mehr minderwertige Ideen schneller erzeugen;
+Demos schneller bauen, die niemand braucht;
+Trends schneller in Startup-Geschichten verwandeln;
+schneller in Grauzonen von Plattformregeln eintreten;
+schneller Daten-, Urheberrechts-, Datenschutz- und Compliance-Risiken berühren;
+Zeit, Aufmerksamkeit und Kapital schneller in die falsche Richtung verbrauchen.
+O2V wurde entwickelt, um das Problem der frühen Chancenbewertung zu adressieren:
+Nicht allein aus Intuition heraus starten.
+Chancen nicht nur nach Größe beurteilen.
+Einen Demo-Prototyp nicht mit Nachfragevalidierung verwechseln.
+Kurzfristige Einnahmen nicht mit langfristigen Assets verwechseln.
+Nicht ohne Compliance-Grenzen blind wachsen.
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 5
+
+-- 5 of 14 --
+
+5. Anwendungsbereiche
+Das O2V Framework kann eingesetzt werden für:
+Bewertung früher Startup-Ideen;
+Bewertung von Side Businesses und Second-Curve Opportunities;
+Screening von Corporate-Innovation-Möglichkeiten;
+Product Opportunity Discovery;
+Ausarbeitung universitärer Entrepreneurship-Projekte;
+Pre-Screening von Early-Stage-Investments;
+Analyse von Lokalisierungschancen ausländischer Produkte;
+Bewertung von KI-Anwendungsszenarien;
+beratungsgetriebene Identifikation von Innovationschancen.
+6. Die 9-stufige Bewertungskette
+Das O2V Framework folgt einer 9-stufigen Bewertungskette:
+Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset ->
+Financing Story
+Signal: Erfassung von Chancensignalen
+Scenario: Szenario-Rekomposition
+Persona: Zielnutzer-Persona
+Pain: Echter Pain Point und Zahlungsbereitschaft
+Product: Definition des minimalen Produkts
+Validation: Validierungsdesign
+Business Case: Überprüfbarer Business Case
+Asset: Pfad zur Assetisierung
+Financing Story: Bewertung der Finanzierungserzählung
+7. Erläuterung der Schritte
+Schritt 1: Signal - Erfassung von Chancensignalen
+Der erste Schritt ist nicht die Bewertung, sondern die Erfassung von Signalen.
+•
+•
+•
+•
+•
+•
+•
+•
+•
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+O2V Framework 20260510 | 6
+
+-- 6 of 14 --
+
+Chancensignale können aus ausländischen KI-Anwendungen, Branchennachrichten, Startup-
+Communities, Social-Media-Diskussionen, Nutzerbeschwerden, Produkt-Rankings,
+Finanzierungsnachrichten, Frontline-Feedback aus Unternehmen, Kundeninterviews, Sales-Daten
+und Support-Tickets stammen.
+Outputs:
+Liste roher Chancensignale;
+Trend-Tags;
+Quellenlinks;
+vorläufige Kategorien;
+Zusammenfassungen von Nutzerdiskussionen.
+Schritt 2: Scenario - Szenario-Rekomposition
+Viele Chancen lassen sich nicht direkt kopieren. Ein Produkt, das im Ausland funktioniert, hat in
+einem anderen Markt nicht automatisch dasselbe Szenario. Ein scheinbar kleiner lokaler Pain Point
+kann eine größere Chance verbergen.
+Zentrale Fragen:
+In welchem realen Szenario tritt diese Chance auf?
+Gibt es im Zielmarkt ein entsprechendes Szenario?
+Wann erlebt der Zielnutzer dieses Problem?
+Ist das Szenario hochfrequent oder hochwertig?
+Gibt es einen klaren Zahler?
+Passen Kanäle, Nutzergewohnheiten, Plattformregeln und politische Rahmenbedingungen?
+Outputs:
+Szenariobeschreibung;
+Marktfiteinschätzung;
+Kanalhypothese;
+Zahlerhypothese;
+Vorschläge zur Lokalisierung oder Szenarioanpassung.
+Schritt 3: Persona - Zielnutzer-Persona
+Ohne klare Persona gibt es keine echte Chance.
+Zentrale Fragen:
+Wer spürt den Schmerz am stärksten?
+Wer nutzt die Lösung?
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 7
+
+-- 7 of 14 --
+
+Wer bezahlt?
+Wer entscheidet?
+Wer empfiehlt?
+Wer hat wiederkehrenden Bedarf?
+Wer wird am ehesten Early User?
+Outputs: Kern-Persona, typisches Nutzungsszenario, Unterscheidung zwischen Nutzer, Zahler und
+Entscheider, Verhaltensmerkmale und Kauftrigger.
+Schritt 4: Pain - Echter Pain Point und Zahlungsbereitschaft
+Ein Pain Point ist nicht automatisch eine Geschäftschance.
+Eine Beschwerde bedeutet nicht automatisch Zahlungsbereitschaft.
+Zentrale Fragen:
+Ist der Pain Point hochfrequent, intensiv oder wertvoll?
+Wie lösen Nutzer das Problem heute?
+Warum reichen bestehende Lösungen nicht aus?
+Zahlen Nutzer bereits für Alternativen?
+Falls nicht: Ist der Schmerz zu schwach, oder fehlt eine gute Lösung?
+Was löst Zahlungsbereitschaft aus?
+Outputs: Beschreibung des Pain Points, Lücke bestehender Lösungen, Logik der
+Zahlungsbereitschaft, Kauftrigger und Einschätzung der Nachfrageintensität.
+Schritt 5: Product - Definition des minimalen Produkts
+MVP bedeutet minimale Validierung, nicht minimaler Funktionsumfang.
+Das erste Produkt kann eine Landing Page, ein Bericht, ein manuelles Servicepaket, eine
+Community, ein Template, ein Workflow, ein Demo, ein Training oder ein kleiner bezahlter Test sein.
+Zentrale Fragen:
+Was ist das minimale lieferbare Ergebnis?
+Welches Ergebnis muss der Nutzer erhalten, um Wert zu spüren?
+Kann die erste Version manuell geliefert werden?
+Welche Funktionen sind essenziell?
+Welche Funktionen können später kommen?
+Welche zentrale Annahme validiert das MVP?
+Outputs: MVP-Scope, Kernliefergegenstand, Kernfunktionen, Nutzerwert und zukünftige
+Produktform.
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 8
+
+-- 8 of 14 --
+
+Schritt 6: Validation - Validierungsdesign
+Validierung sollte Verhalten testen, nicht nur verbales Interesse.
+Beispiele: Kontaktdaten hinterlassen, an einem Interview teilnehmen, ein Demo buchen, teilen oder
+weiterempfehlen, einen kleinen Betrag bezahlen, vorbestellen, wiederholt nutzen und echtes
+Feedback geben.
+Outputs: Validierungszyklus, Validierungszielgruppe, Validierungskanal, Stichprobengröße, zentrale
+Validierungsindikatoren, Erfolgskriterien, Abbruchkriterien und nächste Handlung.
+Schritt 7: Business Case - Überprüfbarer Business Case
+Ein Business Case ist keine schöne Geschichte. Er ist ein strukturiertes Entscheidungsartefakt, das
+eine Chance diskutierbar, vergleichbar, überprüfbar und steuerbar macht.
+Er muss beantworten:
+Ist die Chance real?
+Ist die Lösung machbar?
+Ist der Wert überprüfbar?
+Verdient das Projekt weitere Ressourcen?
+Was sind die zentralen Risiken?
+Welches Compliance-Level liegt vor?
+Outputs: standardisierter Business Case, Opportunity Score, Compliance-Risikostufe und
+empfohlene nächste Handlung.
+Schritt 8: Asset - Pfad zur Assetisierung
+O2V fragt nicht nur, wie ein Projekt Geld verdient, sondern auch, welche langfristigen Assets es
+aufbauen kann.
+Mögliche Assets sind Nutzer-Assets, Daten-Assets, Content-Assets, Methoden-Assets, Produkt-
+Assets, Kanal-Assets, Marken-Assets, Projekt-Assets, Ökosystem-Assets und langfristige Rechte.
+Outputs: Pfad zur Assetisierung, Asset-Typen, Einschätzung langfristigen Werts und
+Plattformpotenzial.
+Schritt 9: Financing Story - Bewertung der Finanzierungserzählung
+Nicht jedes Projekt eignet sich für Finanzierung.
+Eine Financing Story ist kein Finanzierungsversprechen, sondern eine Bewertung der Kapital-
+Lesbarkeit.
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 9
+
+-- 9 of 14 --
+
+Zentrale Fragen:
+Ist das Projekt cashflow-orientiert oder venture-scale-orientiert?
+Kann es skalieren?
+Hat es Plattform-, Daten-, Netzwerk- oder Ökosystempotenzial?
+Welche Daten wären für Investoren relevant?
+Was muss vor dem nächsten Finanzierungsschritt bewiesen werden?
+Beeinflussen Compliance-, Daten-, Plattform- oder Regulierungsrisiken die Erzählung?
+Outputs: Rahmen für die Finanzierungserzählung, benötigte Kerndaten, Investorenfragen und
+Risikogrenzen.
+8. O2V Scoring Model
+Das O2V Framework verwendet:
+Base Opportunity Score + Compliance Risk Adjustment
+Base Opportunity Score: maximal 100 Punkte.
+Compliance Risk Adjustment: bis zu -50 Punkte.
+Red-Line-Risiken: sofortige Eliminierung.
+Formel:
+O2V Score = Base Opportunity Score - Compliance Risk Deduction
+Dimension 	Punkte Kernfrage
+Demand Strength 	15 Ist die Nachfrage häufig, schmerzhaft oder wertvoll?
+Scenario Fit 	15 Passt sie zum Zielscenario und Markt?
+Willingness to Pay 	15 Gibt es eine klare Zahlungsbereitschaft?
+AI Leverage 	12 Verbessert KI Effizienz, Qualität oder Erlebnis deutlich?
+MVP Feasibility 	10 Kann es kostengünstig validiert werden?
+Acquisition Feasibility 	10 Gibt es einen klaren Akquisitionspfad?
+Differentiation Space 	8 Kann reine Austauschbarkeit vermieden werden?
+Assetization Potential 	10 Können langfristige Assets aufgebaut werden?
+Founder Fit 	5 Passt es zu Fähigkeiten, Ressourcen und Richtung des Gründers?
+•
+•
+•
+•
+•
+•
+O2V Framework 20260510 | 10
+
+-- 10 of 14 --
+
+9. Compliance Risk Gate
+O2V behandelt Compliance-Risiken nicht als kleine Bewertungsposition, sondern als Gate, das
+bestimmt, ob eine Chance in Validierung, Finanzierungserzählung und Skalierung eintreten kann.
+Level 	Abzug Bedeutung
+Level 0: Low Risk 	0 bis -5 Normales Tool oder Service ohne sensible Daten oder starke Regulierung
+Level 1:
+Controllable Risk
+-5 bis -15 Leichte Daten-, Content-, Copyright- oder Plattformregelrisiken
+Level 2: Medium-
+High Risk
+-15 bis -30 Sensible Daten, Scraping, Finanz-/Medizin-/Rechtsassistenz, Minderjährige
+Level 3: Major Risk -30 bis -50 Geschäftsmodell abhängig von Hochrisikodaten, Regulierungsgrenzen oder
+Plattform-Grauzonen
+Level 4: Red-Line
+Risk
+Eliminierung Klar illegal, Grau-/Schwarzmarkt, illegale Finanzaktivitäten, medizinische
+Diagnose, Handel mit Privatsphäre, illegales Scraping
+Kernprinzip:
+Compliance risk is not a minor deduction. It is a gate.
+10. Business Case Template
+Der O2V Business Case besteht aus 16 Modulen:
+Project Name
+One-Sentence Opportunity Judgment
+Target User & Persona
+Core Pain and Willingness to Pay
+Benefits Hypothesis
+MVP
+Leading Indicators
+Financial Metrics
+Verification Plan
+Solution Roadmap
+Market & Channel Fit
+Business Model
+Assetization Path
+Financing Story
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+O2V Framework 20260510 | 11
+
+-- 11 of 14 --
+
+Key Risks & Compliance Level
+O2V Score + Recommendation
+Die zentrale Validierungskette lautet:
+Benefits Hypothesis -> MVP -> Leading Indicators -> Financial Metrics -> Verification Plan
+11. Core Principles
+O2V is not invented from scratch. It is a structured recomposition of proven practices for the AI
+era.
+An opportunity starts with a signal, but it must be proven through scenario, persona, pain, and
+evidence.
+Without a clear persona and strong pain, there is no real opportunity.
+MVP is not the smallest product. It is the smallest way to validate the most critical assumption.
+Leading indicators must be defined after the MVP, because they exist to judge whether the MVP
+is validating the value hypothesis.
+A Business Case is not a presentation. It is a structured argument for why an opportunity
+deserves resources.
+Short-term revenue proves demand, but long-term assets define the ceiling.
+Financing stories must be supported by validation data, not ambition alone.
+Compliance risk is not a minor deduction. It is a gate that determines whether an opportunity
+can move forward.
+O2V exists to reduce early-stage misjudgment before time, capital, and execution are
+committed.
+12. Framework Deliverables
+Die Anwendung des O2V Frameworks kann typischerweise folgende Deliverables erzeugen:
+1. Opportunity Signal List
+Eine strukturierte Erfassung externer Marktsignale, Nutzerfeedbacks, Branchentrends,
+Produktbeispiele und technologischer Veränderungen.
+2. Opportunity Card
+Eine leichte Beschreibung einer einzelnen Chance, einschließlich Szenario, Nutzer, Pain Point, erster
+Produktrichtung und Risikohinweisen.
+15.
+16.
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+O2V Framework 20260510 | 12
+
+-- 12 of 14 --
+
+3. O2V Score
+Eine vorläufige Bewertung auf Basis von Demand Strength, Scenario Fit, Willingness to Pay, AI
+Leverage, MVP Feasibility, Acquisition Feasibility, Differentiation Space, Assetization Potential und
+Founder Fit.
+4. Compliance Risk Level
+Eine Risikoklassifizierung in Bezug auf Daten, Plattformen, Regulierung, Datenschutz, Urheberrecht,
+Finanzen, Medizin und andere Compliance-relevante Risiken.
+5. Business Case
+Ein vollständiger Business Case für hochpotenzielle Chancen, einschließlich Value Hypothesis,
+MVP, Leading Indicators, Financial Metrics, Validation Plan, Assetization Path und Financing Story.
+6. Validation Plan
+Ein klarer Plan mit Validierungszyklus, Zielnutzern, Validierungsmethoden, Stichprobengröße,
+Erfolgskriterien, Abbruchkriterien und nächsten Handlungen.
+7. Assetization Path
+Eine Einschätzung, ob die Chance Nutzer-, Daten-, Content-, Methoden-, Produkt-, Kanal-,
+Marken-, Ökosystem- oder langfristige Rechte-Assets aufbauen kann.
+8. Financing Story
+Ein Rahmen für die Finanzierungserzählung, der bewertet, ob die Chance kapitalmarktfähig lesbar
+ist und welche Evidenz vor der nächsten Phase erbracht werden muss.
+13. Urheberrecht, Zitierung und rechtlicher Hinweis
+Urheberrechtsinhaber: Li Zhi
+Copyright © Li Zhi. All rights reserved.
+Das O2V Framework, einschließlich, aber nicht beschränkt auf seinen Namen, seine Definition, die
+9-stufige Bewertungskette, das Business Case Template, das Scoring Model, den Mechanismus zur
+Klassifizierung von Compliance-Risiken, die Validierungskette, den Assetisierungspfad, den Rahmen
+der Finanzierungserzählung, Fallformulierungen, Kursmaterialien, Diagramme, Templates,
+Dokumente, Artikel und weitere abgeleitete Ausdrucksformen, ist ein Framework-Asset, das von Li
+Zhi durch Rekombination, Strukturierung und eigenständige Ausdrucksform bewährter Methoden
+und Praktiken aus Entrepreneurship, Product Discovery, Innovation, Investment und Consulting
+geschaffen wurde.
+O2V Framework 20260510 | 13
+
+-- 13 of 14 --
+
+Jede Zitierung, Reproduktion, Anpassung, Übersetzung, Nutzung in Trainings, Beratungsleistungen,
+kommerzielle Nutzung, Produktisierung, Nutzung für Modelltraining oder substanzielle
+Wiederverwendung des O2V Frameworks bedarf der vorherigen ausdrücklichen Zustimmung von Li
+Zhi und muss die Quelle deutlich angeben.
+Zitierformat:
+Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release
+20260510.
+Das O2V Framework erhebt keinen exklusiven Anspruch auf allgemeine Konzepte wie MVP,
+Persona, Business Model, Leading Indicators, Risk Assessment oder Business Case. Diese Konzepte
+gehören zum allgemeinen Sprach- und Praxisbestand von Entrepreneurship, Product, Innovation,
+Investment und Consulting.
+Geschützt werden soll insbesondere die strukturierte Ausdrucksform des O2V Frameworks,
+einschließlich seiner 9-stufigen Bewertungskette, des Business Case Templates, des Scoring
+Models, des Compliance Risk Gates, der Validierungskette, des Assetisierungspfads, der
+Finanzierungserzählungsstruktur, der Fallformulierungen, Kursmaterialien, Diagramme, Templates,
+Artikel und abgeleiteten Ausdrucksformen.
+Das O2V Framework ist ein Framework zur Chancenbewertung und zum Business-Case-Design. Es
+stellt keine rechtliche, finanzielle, medizinische, Investment-, Finanzierungs-, Steuer- oder
+Regulierungsberatung dar.
+14. Versionshinweis
+Öffentliche Version: O2V Framework 20260510
+Interne Version: v1.4
+Veröffentlichungstyp: Official Public Release
+Wesentliche Änderungen in v1.4:
+Die Hauptmarke wurde auf O2V Framework / Opportunity-to-Venture Framework vereinheitlicht.
+Die öffentliche Version verwendet das datumsbasierte Versionsformat 20260510.
+Die Startseite verwendet eine Founding Statement und vermeidet Formulierungen im Stil des
+Agile Manifesto.
+Tägliche / wöchentliche / monatliche Outputs wurden entfernt.
+Ein allgemeiner Abschnitt Framework Deliverables wurde eingeführt.
+Die 9-stufige Bewertungskette, das Scoring Model, das Compliance Risk Gate, das Business
+Case Template und der Copyright-Hinweis bleiben erhalten.
+1.
+2.
+3.
+4.
+5.
+6.
+O2V Framework 20260510 | 14
+
+-- 14 of 14 --
+
