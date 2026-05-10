@@ -63,6 +63,7 @@ type DownloadContent = {
 
 export type FooterLine = {
   text: string;
+  label?: string;
   href?: string;
 };
 
@@ -120,24 +121,24 @@ export const footerContent: Record<Locale, FooterLine[]> = {
     { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
     { text: "From Signal to Venture. From Idea to Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
-    { text: "Official site: www.o2vframework.com", href: "https://www.o2vframework.com" },
-    { text: "Email: contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
+    { label: "Official site:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
+    { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
     { text: "Citation: Li Zhi, O2V Framework, Official Public Release 20260510." }
   ],
   zh: [
     { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
     { text: "从机会信号到创业资产。" },
     { text: "版权所有人：李智 / Li Zhi" },
-    { text: "官方网站：www.o2vframework.com", href: "https://www.o2vframework.com" },
-    { text: "Email: contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
+    { label: "官方网站：", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
+    { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
     { text: "引用格式：李智，O2V Framework，官方公开发布版 20260510。" }
   ],
   de: [
     { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
     { text: "Vom Signal zum Venture. Von der Idee zum Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
-    { text: "Offizielle Website: www.o2vframework.com", href: "https://www.o2vframework.com" },
-    { text: "Email: contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
+    { label: "Offizielle Website:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
+    { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
     { text: "Zitierformat: Li Zhi, O2V Framework, Official Public Release 20260510." }
   ]
 };
@@ -1107,46 +1108,28 @@ export const aboutContent: Record<Locale, AboutContent> = {
         { text: "Li Zhi", strong: true },
         { text: " is the creator of " },
         { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: ", a " },
-        { text: "front-end opportunity judgment framework", strong: true },
-        { text: " for the " },
-        { text: "AI era", strong: true },
-        { text: "." }
+        { text: ", a front-end opportunity judgment framework for the AI era." }
       ],
       [
         { text: "Zhi holds a " },
         { text: "Diplom-Informatiker degree from the Technical University of Berlin", strong: true },
-        { text: " and has " },
-        { text: "over 15 years of experience", strong: true },
-        { text: " in " },
-        { text: "digital transformation, management consulting, enterprise architecture", strong: true },
-        { text: ", product innovation, portfolio governance, and " },
+        { text: " and has over 15 years of experience in digital transformation, management consulting, enterprise architecture, product innovation, portfolio governance, and " },
         { text: "digital value realization", strong: true },
         { text: "." }
       ],
       [
         { text: "Before creating O2V Framework, Zhi built his career as a " },
-        { text: "management consultant and digital transformation expert", strong: true },
-        { text: " at a " },
         { text: "world-renowned consulting firm", strong: true },
-        { text: ", supporting " },
-        { text: "large-scale enterprise transformation programs", strong: true },
-        { text: " for multinational and leading domestic organizations." }
+        { text: ", supporting large-scale enterprise transformation programs for multinational and leading domestic organizations." }
       ],
       [
         { text: "He has served " },
         { text: "Fortune 500 companies", strong: true },
-        { text: " and large enterprise groups across high-tech, financial services, life sciences, consumer goods, energy, and other industries. His work spans " },
-        { text: "digital strategy, enterprise agility, product governance, business case design, portfolio management", strong: true },
-        { text: ", stakeholder alignment, and " },
-        { text: "AI-enabled innovation", strong: true },
-        { text: "." }
+        { text: " and large enterprise groups across high-tech, financial services, life sciences, consumer goods, energy, and other industries. His work spans digital strategy, enterprise agility, product governance, business case design, portfolio management, stakeholder alignment, and AI-enabled innovation." }
       ],
       [
         { text: "O2V Framework", strong: true },
-        { text: " reflects Zhi’s long-term professional focus: helping organizations and innovators move from " },
-        { text: "scattered signals and ideas", strong: true },
-        { text: " to " },
+        { text: " reflects Zhi’s long-term professional focus: helping organizations and innovators move from scattered signals and ideas to " },
         { text: "structured, validated, investable, and assetable opportunities", strong: true },
         { text: "." }
       ]
@@ -1154,13 +1137,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
     beliefIntro: "His work is grounded in a simple belief:",
     belief: [
       { text: "Technology creates real value", strong: true },
-      { text: " only when it is " },
-      { text: "connected to strategy", strong: true },
-      { text: ", " },
-      { text: "validated through evidence", strong: true },
-      { text: ", " },
-      { text: "governed through discipline", strong: true },
-      { text: ", and converted into " },
+      { text: " only when it is connected to strategy, validated through evidence, governed through discipline, and converted into " },
       { text: "long-term assets", strong: true },
       { text: "." }
     ],
@@ -1185,46 +1162,30 @@ export const aboutContent: Record<Locale, AboutContent> = {
         { text: "李智", strong: true },
         { text: "是 " },
         { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: " 的创建者。O2V Framework 是一套面向 " },
-        { text: "AI 时代", strong: true },
-        { text: "的" },
-        { text: "前端机会判断框架", strong: true },
-        { text: "，用于将外部机会信号转化为可验证、可执行、可经营、可融资、可资产化的创业机会。" }
+        { text: " 的创建者。O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将外部机会信号转化为可验证、可执行、可经营、可融资、可资产化的创业机会。" }
       ],
       [
         { text: "李智毕业于" },
-        { text: "柏林工业大学", strong: true },
+        { text: "柏林工业大学" },
         { text: "，获" },
         { text: "信息学硕士", strong: true },
-        { text: "学位，拥有" },
-        { text: "超过 15 年", strong: true },
-        { text: "数字化转型、管理咨询、企业架构、数字化产品创新、投资组合治理、产品治理和" },
+        { text: "学位，拥有超过 15 年数字化转型、管理咨询、企业架构、数字化产品创新、投资组合治理、产品治理和" },
         { text: "数字化价值实现", strong: true },
         { text: "经验。" }
       ],
       [
         { text: "在创建 O2V Framework 之前，李智曾任职于" },
         { text: "世界知名咨询公司", strong: true },
-        { text: "，作为" },
-        { text: "管理咨询专家、数字化转型及数字化价值实现专家", strong: true },
-        { text: "，参与并推动多个" },
-        { text: "大型企业转型项目", strong: true },
-        { text: "，服务跨国企业及国内外大型集团化企业。" }
+        { text: "，作为管理咨询专家、数字化转型及数字化价值实现专家，参与并推动多个大型企业转型项目，服务跨国企业及国内外大型集团化企业。" }
       ],
       [
         { text: "过去多年中，李智服务过" },
         { text: "全球财富 500 强企业", strong: true },
-        { text: "及大型企业集团，覆盖高科技、金融、生命科学、快消、能源等多个行业。他的工作领域包括" },
-        { text: "数字化战略、企业敏捷、产品治理、Business Case 设计、投资组合管理", strong: true },
-        { text: "、利益相关方协同，以及 " },
-        { text: "AI 赋能的业务创新", strong: true },
-        { text: "。" }
+        { text: "及大型企业集团，覆盖高科技、金融、生命科学、快消、能源等多个行业。他的工作领域包括数字化战略、企业敏捷、产品治理、Business Case 设计、投资组合管理、利益相关方协同，以及 AI 赋能的业务创新。" }
       ],
       [
         { text: "O2V Framework", strong: true },
-        { text: " 是李智长期专业积累的一次系统化表达：帮助组织和创新者，从" },
-        { text: "分散的市场信号、业务想法和技术机会", strong: true },
-        { text: "出发，形成" },
+        { text: " 是李智长期专业积累的一次系统化表达：帮助组织和创新者，从分散的市场信号、业务想法和技术机会出发，形成" },
         { text: "结构化、可验证、可投资、可资产化", strong: true },
         { text: "的机会判断。" }
       ]
@@ -1232,13 +1193,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
     beliefIntro: "他的核心信念是：",
     belief: [
       { text: "技术", strong: true },
-      { text: "只有被" },
-      { text: "连接到战略", strong: true },
-      { text: "，被" },
-      { text: "证据验证", strong: true },
-      { text: "，被" },
-      { text: "治理机制承接", strong: true },
-      { text: "，并最终沉淀为" },
+      { text: "只有被连接到战略，被证据验证，被治理机制承接，并最终沉淀为" },
       { text: "长期资产", strong: true },
       { text: "，才真正创造价值。" }
     ],
@@ -1263,45 +1218,29 @@ export const aboutContent: Record<Locale, AboutContent> = {
         { text: "Li Zhi", strong: true },
         { text: " ist der Entwickler des " },
         { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: ", eines " },
-        { text: "Front-End-Frameworks zur Chancenbewertung", strong: true },
-        { text: " im " },
-        { text: "KI-Zeitalter", strong: true },
-        { text: "." }
+        { text: ", eines Front-End-Frameworks zur Chancenbewertung im KI-Zeitalter." }
       ],
       [
         { text: "Zhi besitzt einen " },
         { text: "Diplom-Informatiker-Abschluss der Technischen Universität Berlin", strong: true },
-        { text: " und verfügt über " },
-        { text: "mehr als 15 Jahre Erfahrung", strong: true },
-        { text: " in " },
-        { text: "digitaler Transformation, Management Consulting, Enterprise Architecture", strong: true },
-        { text: ", digitaler Produktinnovation, Portfolio Governance und " },
+        { text: " und verfügt über mehr als 15 Jahre Erfahrung in digitaler Transformation, Management Consulting, Enterprise Architecture, digitaler Produktinnovation, Portfolio Governance und " },
         { text: "Digital Value Realization", strong: true },
         { text: "." }
       ],
       [
         { text: "Vor der Entwicklung des O2V Frameworks baute Zhi seine berufliche Laufbahn als " },
-        { text: "Management Consultant und Experte für digitale Transformation", strong: true },
-        { text: " bei einem " },
         { text: "weltweit renommierten Beratungsunternehmen", strong: true },
-        { text: " auf. Dort unterstützte er " },
-        { text: "groß angelegte Transformationsprogramme", strong: true },
-        { text: " für multinationale Unternehmen und führende Unternehmensgruppen." }
+        { text: " auf. Dort unterstützte er groß angelegte Transformationsprogramme für multinationale Unternehmen und führende Unternehmensgruppen." }
       ],
       [
         { text: "Im Laufe seiner Karriere hat Zhi " },
         { text: "Fortune-500-Unternehmen", strong: true },
-        { text: " sowie große internationale und chinesische Unternehmensgruppen beraten. Seine Projekterfahrung umfasst " },
-        { text: "Hightech, Finanzdienstleistungen, Life Sciences, Konsumgüter, Energie", strong: true },
-        { text: " und weitere Industrien." }
+        { text: " sowie große internationale und chinesische Unternehmensgruppen beraten. Seine Projekterfahrung umfasst Hightech, Finanzdienstleistungen, Life Sciences, Konsumgüter, Energie und weitere Industrien." }
       ],
       [
         { text: "Das " },
         { text: "O2V Framework", strong: true },
-        { text: " spiegelt Zhis langfristigen professionellen Fokus wider: Organisationen und Innovatoren dabei zu helfen, aus " },
-        { text: "verstreuten Signalen und Ideen", strong: true },
-        { text: " strukturierte, validierte, investierbare und " },
+        { text: " spiegelt den langfristigen professionellen Fokus von Zhi wider: Organisationen und Innovatoren dabei zu helfen, aus verstreuten Signalen und Ideen strukturierte, validierte, investierbare und " },
         { text: "assetfähige Chancen", strong: true },
         { text: " zu entwickeln." }
       ]
@@ -1309,13 +1248,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
     beliefIntro: "Seine Arbeit basiert auf einer einfachen Überzeugung:",
     belief: [
       { text: "Technologie schafft erst dann echten Wert", strong: true },
-      { text: ", wenn sie mit " },
-      { text: "Strategie verbunden", strong: true },
-      { text: ", durch " },
-      { text: "Evidenz validiert", strong: true },
-      { text: ", durch " },
-      { text: "Governance gesteuert", strong: true },
-      { text: " und in " },
+      { text: ", wenn sie mit Strategie verbunden, durch Evidenz validiert, durch Governance gesteuert und in " },
       { text: "langfristige Assets", strong: true },
       { text: " überführt wird." }
     ],

@@ -11,6 +11,7 @@ export default function Footer({ locale }: FooterProps) {
       <div className="mx-auto w-full max-w-4xl px-5 py-8 text-sm leading-7 text-neutral-700 sm:px-8">
         {footerContent[locale].map((line) => (
           <p key={line.text}>
+            {line.label ? <span>{line.label} </span> : null}
             {line.href ? (
               <a className="underline hover:text-neutral-950" href={line.href}>
                 {line.text}
