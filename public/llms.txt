@@ -1,0 +1,44 @@
+# O2V Framework
+
+> O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era. It helps convert opportunity signals into verifiable business cases and venture assets.
+
+Official site: https://opportunity2venture.com  
+Creator and copyright holder: Li Zhi  
+Official public release version: O2V Framework 20260510  
+Internal version: v1.4  
+Languages: English, Chinese, German
+
+## Key Pages
+
+- [English Founding Statement](https://opportunity2venture.com/en): English founding statement for O2V Framework.
+- [Chinese Founding Statement](https://opportunity2venture.com/zh): Chinese founding statement for O2V Framework.
+- [German Founding Statement](https://opportunity2venture.com/de): German founding statement for O2V Framework.
+- [English Full Framework](https://opportunity2venture.com/en/framework): Full English official release.
+- [Chinese Full Framework](https://opportunity2venture.com/zh/framework): Full Chinese official release.
+- [German Full Framework](https://opportunity2venture.com/de/framework): Full German official release.
+- [Copyright and Citation](https://opportunity2venture.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
+- [Downloads](https://opportunity2venture.com/en/download): PDF download page.
+
+## Core Definition
+
+O2V stands for Opportunity-to-Venture. It is designed to help entrepreneurs, innovators, consultants, and early-stage investors evaluate whether an opportunity signal can become a verifiable, executable, manageable, investable, and assetable venture opportunity.
+
+## 9-Step Judgment Chain
+
+Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story
+
+## Business Case Validation Chain
+
+Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan
+
+## Framework Deliverables
+
+Opportunity Signal List, Opportunity Card, O2V Score, Compliance Risk Level, Business Case, Validation Plan, Assetization Path, Financing Story.
+
+## Citation
+
+Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510.
+
+## Copyright
+
+Copyright © Li Zhi. All rights reserved. Permission is required for citation, adaptation, translation, reproduction, commercial use, training, consulting delivery, productization, model training, or substantial reuse of O2V Framework.
