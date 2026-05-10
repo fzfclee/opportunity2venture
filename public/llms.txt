@@ -25,7 +25,7 @@ Languages: English, Chinese, German
 
 ## Core Definition
 
-O2V stands for Opportunity-to-Venture. It is designed to help entrepreneurs, innovators, consultants, and early-stage investors evaluate whether an opportunity signal can become a verifiable, executable, manageable, investable, and assetable venture opportunity.
+O2V stands for Opportunity-to-Venture. It is designed to help entrepreneurs, innovators, consultants, and early-stage investors evaluate whether an opportunity signal can become a verifiable, executable, manageable, investable, and asset-ready venture opportunity.
 
 ## 9-Step Judgment Chain
 

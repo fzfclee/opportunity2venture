@@ -1119,6 +1119,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       ],
       [
         { text: "Before creating O2V Framework, Zhi built his career as a " },
+        { text: "management consultant and digital transformation expert", strong: true },
+        { text: " at a " },
         { text: "world-renowned consulting firm", strong: true },
         { text: ", supporting large-scale enterprise transformation programs for multinational and leading domestic organizations." }
       ],
@@ -1130,7 +1132,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "O2V Framework", strong: true },
         { text: " reflects Zhi’s long-term professional focus: helping organizations and innovators move from scattered signals and ideas to " },
-        { text: "structured, validated, investable, and assetable opportunities", strong: true },
+        { text: "structured, validated, investable, and asset-ready opportunities", strong: true },
         { text: "." }
       ]
     ],
@@ -1229,6 +1231,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       ],
       [
         { text: "Vor der Entwicklung des O2V Frameworks baute Zhi seine berufliche Laufbahn als " },
+        { text: "Management Consultant und Experte für digitale Transformation", strong: true },
+        { text: " bei einem " },
         { text: "weltweit renommierten Beratungsunternehmen", strong: true },
         { text: " auf. Dort unterstützte er groß angelegte Transformationsprogramme für multinationale Unternehmen und führende Unternehmensgruppen." }
       ],
