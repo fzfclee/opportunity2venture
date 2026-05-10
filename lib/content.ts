@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { localizedAlternates, siteUrl, type Locale } from "@/lib/i18n";
 
-export type NavKey = "home" | "framework" | "principles" | "copyright" | "download";
+export type NavKey = "home" | "framework" | "principles" | "copyright" | "download" | "about";
 
 type Section = {
   heading: string;
@@ -61,27 +61,45 @@ type DownloadContent = {
   copyrightValue: string;
 };
 
+type AboutContent = {
+  metadata: Metadata;
+  title: string;
+  subtitle: string;
+  body: string[];
+  beliefIntro: string;
+  belief: string;
+  contactHeading: string;
+  contacts: {
+    linkedin: string;
+    email: string;
+    wechat: string;
+  };
+};
+
 export const navLabels: Record<Locale, Record<NavKey, string>> = {
   en: {
     home: "Home",
     framework: "Framework",
     principles: "Principles",
     copyright: "Copyright",
-    download: "Download"
+    download: "Download",
+    about: "About"
   },
   zh: {
     home: "首页",
     framework: "框架",
     principles: "原则",
     copyright: "版权",
-    download: "下载"
+    download: "下载",
+    about: "关于"
   },
   de: {
     home: "Startseite",
     framework: "Framework",
     principles: "Prinzipien",
     copyright: "Urheberrecht",
-    download: "Download"
+    download: "Download",
+    about: "Über"
   }
 };
 
@@ -1056,6 +1074,86 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
         ]
       }
     ]
+  }
+};
+
+export const aboutContent: Record<Locale, AboutContent> = {
+  en: {
+    metadata: {
+      title: "About Li Zhi | O2V Framework",
+      description:
+        "About Li Zhi, creator of O2V Framework, digital value realization expert, methodologist, enterprise architect, and former management consultant at a world-renowned consulting firm with over 15 years of experience in digital transformation, product governance, enterprise architecture, and AI-enabled innovation.",
+      alternates: localizedAlternates("en", "about")
+    },
+    title: "About Li Zhi",
+    subtitle: "Digital Value Realization Expert | Methodologist | Enterprise Architect",
+    body: [
+      "Li Zhi is the creator of O2V Framework — Opportunity-to-Venture Framework, a front-end opportunity judgment framework for the AI era.",
+      "Zhi holds a Diplom-Informatiker degree from the Technical University of Berlin and has over 15 years of experience in digital transformation, management consulting, enterprise architecture, product innovation, portfolio governance, and digital value realization.",
+      "Before creating O2V Framework, Zhi built his career as a management consultant and digital transformation expert at a world-renowned consulting firm, supporting large-scale enterprise transformation programs for multinational and leading domestic organizations.",
+      "He has served Fortune 500 companies and large enterprise groups across high-tech, financial services, life sciences, consumer goods, energy, and other industries. His work spans digital strategy, enterprise agility, product governance, business case design, portfolio management, stakeholder alignment, and AI-enabled innovation.",
+      "O2V Framework reflects Zhi’s long-term professional focus: helping organizations and innovators move from scattered signals and ideas to structured, validated, investable, and assetable opportunities."
+    ],
+    beliefIntro: "His work is grounded in a simple belief:",
+    belief:
+      "Technology creates real value only when it is connected to strategy, validated through evidence, governed through discipline, and converted into long-term assets.",
+    contactHeading: "Contact",
+    contacts: {
+      linkedin: "LinkedIn",
+      email: "Email",
+      wechat: "WeChat"
+    }
+  },
+  zh: {
+    metadata: {
+      title: "关于李智｜O2V Framework",
+      description:
+        "李智是 O2V Framework 的创建者，数字化价值实现专家、方法论构建者、企业架构师，曾任职于世界知名咨询公司，拥有超过 15 年数字化转型、产品治理、企业架构和 AI 赋能创新经验。",
+      alternates: localizedAlternates("zh", "about")
+    },
+    title: "关于李智",
+    subtitle: "数字化价值实现专家｜方法论构建者｜企业架构师",
+    body: [
+      "李智是 O2V Framework — Opportunity-to-Venture Framework 的创建者。O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将外部机会信号转化为可验证、可执行、可经营、可融资、可资产化的创业机会。",
+      "李智毕业于柏林工业大学，获信息学硕士学位，拥有超过 15 年数字化转型、管理咨询、企业架构、数字化产品创新、投资组合治理、产品治理和数字化价值实现经验。",
+      "在创建 O2V Framework 之前，李智曾任职于世界知名咨询公司，作为管理咨询专家、数字化转型及数字化价值实现专家，参与并推动多个大型企业转型项目，服务跨国企业及国内外大型集团化企业。",
+      "过去多年中，李智服务过全球财富 500 强企业及大型企业集团，覆盖高科技、金融、生命科学、快消、能源等多个行业。他的工作领域包括数字化战略、企业敏捷、产品治理、Business Case 设计、投资组合管理、利益相关方协同，以及 AI 赋能的业务创新。",
+      "O2V Framework 是李智长期专业积累的一次系统化表达：帮助组织和创新者，从分散的市场信号、业务想法和技术机会出发，形成结构化、可验证、可投资、可资产化的机会判断。"
+    ],
+    beliefIntro: "他的核心信念是：",
+    belief: "技术只有被连接到战略，被证据验证，被治理机制承接，并最终沉淀为长期资产，才真正创造价值。",
+    contactHeading: "联系方式",
+    contacts: {
+      linkedin: "LinkedIn",
+      email: "Email",
+      wechat: "WeChat"
+    }
+  },
+  de: {
+    metadata: {
+      title: "Über Li Zhi | O2V Framework",
+      description:
+        "Über Li Zhi, Entwickler des O2V Frameworks, Digital Value Realization Expert, Methodologist, Enterprise Architect und ehemaliger Management Consultant bei einem weltweit renommierten Beratungsunternehmen mit über 15 Jahren Erfahrung in digitaler Transformation, Produktgovernance, Enterprise Architecture und KI-gestützter Innovation.",
+      alternates: localizedAlternates("de", "about")
+    },
+    title: "Über Li Zhi",
+    subtitle: "Digital Value Realization Expert | Methodologist | Enterprise Architect",
+    body: [
+      "Li Zhi ist der Entwickler des O2V Framework — Opportunity-to-Venture Framework, eines Front-End-Frameworks zur Chancenbewertung im KI-Zeitalter.",
+      "Zhi besitzt einen Diplom-Informatiker-Abschluss der Technischen Universität Berlin und verfügt über mehr als 15 Jahre Erfahrung in digitaler Transformation, Management Consulting, Enterprise Architecture, digitaler Produktinnovation, Portfolio Governance und Digital Value Realization.",
+      "Vor der Entwicklung des O2V Frameworks baute Zhi seine berufliche Laufbahn als Management Consultant und Experte für digitale Transformation bei einem weltweit renommierten Beratungsunternehmen auf. Dort unterstützte er groß angelegte Transformationsprogramme für multinationale Unternehmen und führende Unternehmensgruppen.",
+      "Im Laufe seiner Karriere hat Zhi Fortune-500-Unternehmen sowie große internationale und chinesische Unternehmensgruppen beraten. Seine Projekterfahrung umfasst Hightech, Finanzdienstleistungen, Life Sciences, Konsumgüter, Energie und weitere Industrien.",
+      "Das O2V Framework spiegelt Zhis langfristigen professionellen Fokus wider: Organisationen und Innovatoren dabei zu helfen, aus verstreuten Signalen und Ideen strukturierte, validierte, investierbare und assetfähige Chancen zu entwickeln."
+    ],
+    beliefIntro: "Seine Arbeit basiert auf einer einfachen Überzeugung:",
+    belief:
+      "Technologie schafft erst dann echten Wert, wenn sie mit Strategie verbunden, durch Evidenz validiert, durch Governance gesteuert und in langfristige Assets überführt wird.",
+    contactHeading: "Kontakt",
+    contacts: {
+      linkedin: "LinkedIn",
+      email: "Email",
+      wechat: "WeChat"
+    }
   }
 };
 

@@ -12,7 +12,8 @@ const navItems = [
   { key: "framework", path: "framework" },
   { key: "principles", path: "principles" },
   { key: "copyright", path: "copyright" },
-  { key: "download", path: "download" }
+  { key: "download", path: "download" },
+  { key: "about", path: "about" }
 ] as const;
 
 export default function Header({ locale }: HeaderProps) {
