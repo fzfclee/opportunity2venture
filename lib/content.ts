@@ -351,7 +351,7 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
       alternates: localizedAlternates("en", "download")
     },
     title: "Download O2V Framework 20260510",
-    note: "Official PDF will be uploaded here.",
+    note: "Official PDF versions are available below.",
     button: "Download"
   },
   zh: {
@@ -362,7 +362,7 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
       alternates: localizedAlternates("zh", "download")
     },
     title: "下载 O2V Framework 20260510",
-    note: "Official PDF will be uploaded here.",
+    note: "官方 PDF 版本可在下方下载。",
     button: "下载"
   },
   de: {
@@ -373,7 +373,7 @@ export const downloadContent: Record<Locale, { metadata: Metadata; title: string
       alternates: localizedAlternates("de", "download")
     },
     title: "O2V Framework 20260510 herunterladen",
-    note: "Official PDF will be uploaded here.",
+    note: "Die offiziellen PDF-Versionen stehen unten zum Download bereit.",
     button: "Herunterladen"
   }
 };
