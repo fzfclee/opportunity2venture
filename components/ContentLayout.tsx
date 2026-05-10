@@ -1,6 +1,7 @@
 type ContentLayoutProps = {
   children: React.ReactNode;
   eyebrow?: string;
+  eyebrowAfterTitle?: boolean;
   title: string;
   subtitle?: string;
   deck?: string[];
@@ -9,6 +10,7 @@ type ContentLayoutProps = {
 export default function ContentLayout({
   children,
   eyebrow,
+  eyebrowAfterTitle = false,
   title,
   subtitle,
   deck
@@ -16,7 +18,7 @@ export default function ContentLayout({
   return (
     <article className="mx-auto w-full max-w-4xl px-5 py-10 sm:px-8 sm:py-14">
       <header className="border-b border-neutral-200 pb-8">
-        {eyebrow ? (
+        {eyebrow && !eyebrowAfterTitle ? (
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
             {eyebrow}
           </p>
@@ -24,6 +26,11 @@ export default function ContentLayout({
         <h1 className="text-3xl font-semibold tracking-normal text-neutral-950 sm:text-5xl">
           {title}
         </h1>
+        {eyebrow && eyebrowAfterTitle ? (
+          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-neutral-500">
+            {eyebrow}
+          </p>
+        ) : null}
         {subtitle ? (
           <p className="mt-4 text-lg leading-8 text-neutral-700 sm:text-xl">{subtitle}</p>
         ) : null}

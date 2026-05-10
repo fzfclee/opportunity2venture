@@ -37,6 +37,7 @@ export default async function LocaleHomePage({ params }: PageProps) {
       />
       <ContentLayout
         eyebrow={statementLabels[locale]}
+        eyebrowAfterTitle
         title={content.title}
         subtitle={content.subtitle}
         deck={[...content.tagline, ...content.deck]}

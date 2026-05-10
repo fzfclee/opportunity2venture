@@ -117,7 +117,7 @@ export const homeContent: Record<Locale, HomeContent> = {
         "O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era. It helps convert opportunity signals into verifiable business cases and venture assets. Official public release by Li Zhi.",
       alternates: localizedAlternates("en")
     },
-    title: "O2V Framework",
+    title: "Opportunity-to-Venture Framework",
     subtitle: "Opportunity-to-Venture Framework",
     tagline: ["From Signal to Venture.", "From Idea to Asset."],
     deck: [
@@ -171,7 +171,7 @@ export const homeContent: Record<Locale, HomeContent> = {
         "O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将机会信号转化为可验证的 Business Case 和可经营、可融资、可资产化的创业机会。版权所有人：李智。",
       alternates: localizedAlternates("zh")
     },
-    title: "O2V Framework",
+    title: "Opportunity-to-Venture Framework",
     subtitle: "Opportunity-to-Venture Framework",
     tagline: ["从机会信号到创业资产。"],
     deck: ["官方公开发布版 20260510", "内部版本：v1.4", "版权所有人：李智 / Li Zhi"],
@@ -221,7 +221,7 @@ export const homeContent: Record<Locale, HomeContent> = {
         "Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter. Es hilft, Chancensignale in überprüfbare Business Cases und Venture Assets zu überführen. Offizielle Veröffentlichung von Li Zhi.",
       alternates: localizedAlternates("de")
     },
-    title: "O2V Framework",
+    title: "Opportunity-to-Venture Framework",
     subtitle: "Opportunity-to-Venture Framework",
     tagline: ["Vom Signal zum Venture.", "Von der Idee zum Asset."],
     deck: [

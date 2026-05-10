@@ -29,7 +29,7 @@ export default async function FrameworkPage({ params }: PageProps) {
 
   return (
     <ContentLayout
-      eyebrow="O2V Framework 20260510"
+      eyebrow="O2V Framework"
       title={content.title}
       subtitle={content.subtitle}
       deck={frameworkDeck[locale]}
