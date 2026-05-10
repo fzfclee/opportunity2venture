@@ -10,6 +10,18 @@ type Section = {
   ordered?: string[];
 };
 
+type FrameworkContent = {
+  metadata: Metadata;
+  title: string;
+  subtitle: string;
+  overview: string[];
+  cta: {
+    label: string;
+    href: string;
+  };
+  sections: Section[];
+};
+
 type HomeContent = {
   metadata: Metadata;
   title: string;
@@ -31,6 +43,7 @@ type DownloadCard = {
 type DownloadContent = {
   metadata: Metadata;
   title: string;
+  fullReleaseNote: string;
   note: string;
   button: string;
   permissionReminder: string;
@@ -131,7 +144,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "and a financing story that can be supported by evidence."
     ],
     buttons: [
-      { label: "Read the Framework", href: "/en/framework" },
+      { label: "Framework Overview", href: "/en/framework" },
       { label: "Core Principles", href: "/en/principles" },
       { label: "Copyright & Citation", href: "/en/copyright" },
       { label: "Download PDF", href: "/en/download" }
@@ -181,7 +194,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "以及能够被证据支撑的融资叙事。"
     ],
     buttons: [
-      { label: "阅读完整框架", href: "/zh/framework" },
+      { label: "阅读框架概览", href: "/zh/framework" },
       { label: "核心原则", href: "/zh/principles" },
       { label: "版权与引用", href: "/zh/copyright" },
       { label: "下载 PDF", href: "/zh/download" }
@@ -235,7 +248,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "und eine Finanzierungsgeschichte, die durch Evidenz gestützt werden kann."
     ],
     buttons: [
-      { label: "Framework lesen", href: "/de/framework" },
+      { label: "Framework-Überblick", href: "/de/framework" },
       { label: "Prinzipien", href: "/de/principles" },
       { label: "Urheberrecht & Zitierung", href: "/de/copyright" },
       { label: "PDF herunterladen", href: "/de/download" }
@@ -359,6 +372,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("en", "download")
     },
     title: "Download O2V Framework 20260510",
+    fullReleaseNote:
+      "The complete official public release of O2V Framework 20260510 is available as PDF in English, Chinese, and German.",
     note: "Official PDF versions are available below.",
     button: "Download",
     permissionReminder:
@@ -372,6 +387,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("zh", "download")
     },
     title: "下载 O2V Framework 20260510",
+    fullReleaseNote:
+      "O2V Framework 20260510 的完整官方公开发布版以 PDF 形式提供，包含英文、中文和德文版本。",
     note: "官方 PDF 版本可在下方下载。",
     button: "下载",
     permissionReminder:
@@ -385,6 +402,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("de", "download")
     },
     title: "O2V Framework 20260510 herunterladen",
+    fullReleaseNote:
+      "Die vollständige offizielle Veröffentlichung des O2V Framework 20260510 steht als PDF auf Englisch, Chinesisch und Deutsch zur Verfügung.",
     note: "Die offiziellen PDF-Versionen stehen unten zum Download bereit.",
     button: "Herunterladen",
     permissionReminder:
@@ -446,30 +465,38 @@ export const deliverables: Record<Locale, string[]> = {
 
 const frameworkMetadata: Record<Locale, Metadata> = {
   en: {
-    title: "O2V Framework 20260510 | Full Official Public Release",
+    title: "O2V Framework 20260510 | Official Web Overview",
     description:
-      "Full official public release of O2V Framework 20260510, an AI-era opportunity judgment framework for startup opportunity validation, venture opportunity assessment, business case validation, compliance gate review, assetization path, and financing story.",
+      "A web overview of O2V Framework 20260510, presenting the core structure, 9-step judgment chain, scoring logic, and key principles. Download the full official public release as PDF.",
     alternates: localizedAlternates("en", "framework")
   },
   zh: {
-    title: "O2V Framework 20260510｜官方公开发布版",
+    title: "O2V Framework 20260510｜官方网页概览版",
     description:
-      "O2V Framework 20260510 官方公开发布版：从机会信号到创业资产的前端机会判断框架，覆盖 Business Case、合规风险闸门、资产化路径和融资叙事。",
+      "O2V Framework 20260510 的官方网页概览版，呈现核心结构、九步判断链路、评分逻辑和关键原则。完整官方公开发布版请下载 PDF。",
     alternates: localizedAlternates("zh", "framework")
   },
   de: {
-    title: "O2V Framework 20260510 | Vollständige offizielle Veröffentlichung",
+    title: "O2V Framework 20260510 | Offizieller Web-Überblick",
     description:
-      "Vollständige offizielle Veröffentlichung des O2V Framework 20260510, ein Framework zur Chancenbewertung im KI-Zeitalter mit Business Case, Compliance Gate, Assetisierung und Financing Story.",
+      "Ein Web-Überblick über das O2V Framework 20260510 mit Kernstruktur, 9-stufiger Bewertungskette, Scoring-Logik und wichtigsten Prinzipien. Die vollständige offizielle Veröffentlichung ist als PDF verfügbar.",
     alternates: localizedAlternates("de", "framework")
   }
 };
 
-export const frameworkContent: Record<Locale, { metadata: Metadata; title: string; subtitle: string; sections: Section[] }> = {
+export const frameworkContent: Record<Locale, FrameworkContent> = {
   en: {
     metadata: frameworkMetadata.en,
     title: "O2V Framework 20260510",
-    subtitle: "Full Official Public Release",
+    subtitle: "Official Web Overview",
+    overview: [
+      "This page provides a web overview of O2V Framework 20260510. It presents the core structure, judgment chain, scoring logic, and key principles for quick reading and online reference.",
+      "For the complete official public release, including the full framework explanation, detailed step descriptions, scoring model, Business Case template, compliance risk gate, deliverables, copyright notice, and citation guidance, please download the PDF version from the Download page."
+    ],
+    cta: {
+      label: "Download Full PDF Release",
+      href: "/en/download"
+    },
     sections: [
       {
         heading: "One-Sentence Definition",
@@ -584,7 +611,15 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
   zh: {
     metadata: frameworkMetadata.zh,
     title: "O2V Framework 20260510",
-    subtitle: "官方公开发布版",
+    subtitle: "官方网页概览版",
+    overview: [
+      "本页面为 O2V Framework 20260510 的官方网页概览版，用于快速阅读和在线引用，重点呈现框架的核心结构、九步判断链路、评分逻辑和关键原则。",
+      "如需查看完整官方公开发布版，包括完整框架说明、九步法详细解释、评分模型、Business Case 模板、合规风险闸门、框架交付物、版权声明和引用说明，请前往 Download 页面下载 PDF 版本。"
+    ],
+    cta: {
+      label: "下载完整 PDF 发布版",
+      href: "/zh/download"
+    },
     sections: [
       {
         heading: "一句话定义",
@@ -699,7 +734,15 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
   de: {
     metadata: frameworkMetadata.de,
     title: "O2V Framework 20260510",
-    subtitle: "Vollständige offizielle Veröffentlichung",
+    subtitle: "Offizieller Web-Überblick",
+    overview: [
+      "Diese Seite bietet einen Web-Überblick über das O2V Framework 20260510. Sie stellt die Kernstruktur, die Bewertungskette, die Scoring-Logik und die wichtigsten Prinzipien für eine schnelle Lektüre und Online-Referenz dar.",
+      "Für die vollständige offizielle Veröffentlichung, einschließlich ausführlicher Framework-Erklärung, detaillierter Schrittbeschreibungen, Scoring-Modell, Business-Case-Template, Compliance Risk Gate, Deliverables, Urheberrechtshinweis und Zitierhinweisen, laden Sie bitte die PDF-Version auf der Download-Seite herunter."
+    ],
+    cta: {
+      label: "Vollständige PDF-Version herunterladen",
+      href: "/de/download"
+    },
     sections: [
       {
         heading: "Definition in einem Satz",

@@ -14,14 +14,14 @@ Languages: English, Chinese, German
 - [English Founding Statement](https://www.o2vframework.com/en): English founding statement for O2V Framework.
 - [Chinese Founding Statement](https://www.o2vframework.com/zh): Chinese founding statement for O2V Framework.
 - [German Founding Statement](https://www.o2vframework.com/de): German founding statement for O2V Framework.
-- [English Full Framework](https://www.o2vframework.com/en/framework): Full English official release.
-- [Chinese Full Framework](https://www.o2vframework.com/zh/framework): Full Chinese official release.
-- [German Full Framework](https://www.o2vframework.com/de/framework): German full official release.
+- [English Framework Web Overview](https://www.o2vframework.com/en/framework): Web overview of the O2V Framework 20260510 for quick reading and online reference.
+- [Chinese Framework Web Overview](https://www.o2vframework.com/zh/framework): Chinese web overview of the O2V Framework 20260510 for quick reading and online reference.
+- [German Framework Web Overview](https://www.o2vframework.com/de/framework): German web overview of the O2V Framework 20260510 for quick reading and online reference.
 - [English Core Principles](https://www.o2vframework.com/en/principles): Core principles behind O2V Framework.
 - [Chinese Core Principles](https://www.o2vframework.com/zh/principles): Chinese core principles behind O2V Framework.
 - [German Core Principles](https://www.o2vframework.com/de/principles): German core principles behind O2V Framework.
 - [Copyright and Citation](https://www.o2vframework.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
-- [Downloads](https://www.o2vframework.com/en/download): PDF download page.
+- [Downloads](https://www.o2vframework.com/en/download): Download the complete official public release PDFs in English, Chinese, and German.
 
 ## Core Definition
 

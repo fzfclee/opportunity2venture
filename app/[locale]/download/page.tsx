@@ -26,6 +26,7 @@ export default async function DownloadPage({ params }: PageProps) {
       title={content.title}
       deck={["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"]}
     >
+      <p>{content.fullReleaseNote}</p>
       <p>{content.note}</p>
       <div className="not-prose mt-8 grid gap-4">
         {downloadCards.map((card) => (
