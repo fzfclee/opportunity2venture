@@ -109,6 +109,7 @@ export const footerContent: Record<Locale, string[]> = {
     "From Signal to Venture. From Idea to Asset.",
     "Copyright © Li Zhi. All rights reserved.",
     "Official site: www.o2vframework.com",
+    "Email: contact@o2vframework.com",
     "Citation: Li Zhi, O2V Framework, Official Public Release 20260510."
   ],
   zh: [
@@ -116,6 +117,7 @@ export const footerContent: Record<Locale, string[]> = {
     "从机会信号到创业资产。",
     "版权所有人：李智 / Li Zhi",
     "官方网站：www.o2vframework.com",
+    "Email: contact@o2vframework.com",
     "引用格式：李智，O2V Framework，官方公开发布版 20260510。"
   ],
   de: [
@@ -123,6 +125,7 @@ export const footerContent: Record<Locale, string[]> = {
     "Vom Signal zum Venture. Von der Idee zum Asset.",
     "Copyright © Li Zhi. All rights reserved.",
     "Offizielle Website: www.o2vframework.com",
+    "Email: contact@o2vframework.com",
     "Zitierformat: Li Zhi, O2V Framework, Official Public Release 20260510."
   ]
 };
