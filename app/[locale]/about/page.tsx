@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ContentLayout from "@/components/ContentLayout";
-import { aboutContent } from "@/lib/content";
+import { aboutContent, type RichParagraph } from "@/lib/content";
 import { locales, type Locale } from "@/lib/i18n";
 
 type PageProps = {
@@ -15,6 +15,20 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
   return aboutContent[locale].metadata;
+}
+
+function RichText({ parts }: { parts: RichParagraph }) {
+  return (
+    <>
+      {parts.map((part, index) =>
+        part.strong ? (
+          <strong key={`${part.text}-${index}`}>{part.text}</strong>
+        ) : (
+          <span key={`${part.text}-${index}`}>{part.text}</span>
+        )
+      )}
+    </>
+  );
 }
 
 export default async function AboutPage({ params }: PageProps) {
@@ -39,12 +53,16 @@ export default async function AboutPage({ params }: PageProps) {
         </div>
       </div>
 
-      {content.body.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+      {content.body.map((paragraph, index) => (
+        <p key={index}>
+          <RichText parts={paragraph} />
+        </p>
       ))}
 
       <p>{content.beliefIntro}</p>
-      <blockquote className="border-l border-neutral-300 pl-5 text-neutral-800">{content.belief}</blockquote>
+      <blockquote className="border-l border-neutral-300 pl-5 text-neutral-800">
+        <RichText parts={content.belief} />
+      </blockquote>
 
       <section>
         <h2>{content.contactHeading}</h2>
