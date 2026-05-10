@@ -8,6 +8,12 @@ type PageProps = {
   params: Promise<{ locale: Locale }>;
 };
 
+const frameworkDeck: Record<Locale, string[]> = {
+  en: ["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"],
+  zh: ["Opportunity-to-Venture Framework", "官方公开发布版 20260510", "内部版本：v1.4"],
+  de: ["Opportunity-to-Venture Framework", "Offizielle öffentliche Veröffentlichung 20260510", "Interne Version: v1.4"]
+};
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -26,7 +32,7 @@ export default async function FrameworkPage({ params }: PageProps) {
       eyebrow="O2V Framework 20260510"
       title={content.title}
       subtitle={content.subtitle}
-      deck={["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"]}
+      deck={frameworkDeck[locale]}
     >
       <section className="border-b border-neutral-200 pb-8">
         {content.overview.map((paragraph) => (

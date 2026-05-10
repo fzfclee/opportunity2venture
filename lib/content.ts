@@ -35,7 +35,8 @@ type HomeContent = {
 };
 
 type DownloadCard = {
-  language: string;
+  key: "zh" | "en" | "de";
+  labels: Record<Locale, string>;
   fileName: string;
   href: string;
 };
@@ -43,10 +44,21 @@ type DownloadCard = {
 type DownloadContent = {
   metadata: Metadata;
   title: string;
+  deck: string[];
   fullReleaseNote: string;
   note: string;
   button: string;
   permissionReminder: string;
+  fields: {
+    language: string;
+    fileName: string;
+    version: string;
+    internalVersion: string;
+    copyright: string;
+  };
+  versionValue: string;
+  internalVersionValue: string;
+  copyrightValue: string;
 };
 
 export const navLabels: Record<Locale, Record<NavKey, string>> = {
@@ -213,7 +225,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     subtitle: "Opportunity-to-Venture Framework",
     tagline: ["Vom Signal zum Venture.", "Von der Idee zum Asset."],
     deck: [
-      "Official Public Release 20260510",
+      "Offizielle öffentliche Veröffentlichung 20260510",
       "Interne Version: v1.4",
       "Copyright © Li Zhi. All rights reserved."
     ],
@@ -282,12 +294,12 @@ export const sharedHomeClosing: Record<Locale, string[]> = {
 export const principleContent: Record<Locale, { metadata: Metadata; title: string; principles: string[] }> = {
   en: {
     metadata: {
-      title: "O2V Core Principles",
+      title: "Core Principles | O2V Framework",
       description:
         "Core principles of O2V Framework, the Opportunity-to-Venture Framework for AI-era opportunity judgment, business case validation, compliance gate review, and venture asset development.",
       alternates: localizedAlternates("en", "principles")
     },
-    title: "O2V Core Principles",
+    title: "Core Principles",
     principles: [
       "O2V is not invented from scratch. It is a structured recomposition of proven practices for the AI era.",
       "An opportunity starts with a signal, but it must be proven through scenario, persona, pain, and evidence.",
@@ -303,12 +315,12 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
   },
   zh: {
     metadata: {
-      title: "O2V 核心原则",
+      title: "核心原则｜O2V Framework",
       description:
         "O2V 框架核心原则：面向 AI 时代的前端机会判断框架，用于创业机会验证、Business Case、合规风险闸门、资产化路径和融资叙事。",
       alternates: localizedAlternates("zh", "principles")
     },
-    title: "O2V 核心原则",
+    title: "核心原则",
     principles: [
       "O2V 不是凭空发明的理论，而是面向 AI 时代对成熟实践的结构化重组。",
       "机会可以始于信号，但必须通过场景、用户、痛点和证据被证明。",
@@ -324,12 +336,12 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
   },
   de: {
     metadata: {
-      title: "O2V Core Principles",
+      title: "Core Principles | O2V Framework",
       description:
         "Core Principles des O2V Framework zur Chancenbewertung im KI-Zeitalter, Business Case Validierung, Compliance Gate, Assetisierung und Financing Story.",
       alternates: localizedAlternates("de", "principles")
     },
-    title: "O2V Core Principles",
+    title: "Core Principles",
     principles: [
       "O2V ist nicht aus dem Nichts erfunden. Es ist eine strukturierte Rekombination bewährter Praktiken für das KI-Zeitalter.",
       "Eine Chance kann mit einem Signal beginnen, muss aber durch Szenario, Persona, Pain Point und Evidenz bewiesen werden.",
@@ -347,17 +359,32 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
 
 export const downloadCards: DownloadCard[] = [
   {
-    language: "Chinese PDF",
+    key: "zh",
+    labels: {
+      en: "Chinese PDF",
+      zh: "中文 PDF",
+      de: "Chinesische PDF"
+    },
     fileName: "o2v-framework-20260510-zh.pdf",
     href: "/downloads/o2v-framework-20260510-zh.pdf"
   },
   {
-    language: "English PDF",
+    key: "en",
+    labels: {
+      en: "English PDF",
+      zh: "英文 PDF",
+      de: "Englische PDF"
+    },
     fileName: "o2v-framework-20260510-en.pdf",
     href: "/downloads/o2v-framework-20260510-en.pdf"
   },
   {
-    language: "German PDF",
+    key: "de",
+    labels: {
+      en: "German PDF",
+      zh: "德文 PDF",
+      de: "Deutsche PDF"
+    },
     fileName: "o2v-framework-20260510-de.pdf",
     href: "/downloads/o2v-framework-20260510-de.pdf"
   }
@@ -372,12 +399,23 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("en", "download")
     },
     title: "Download O2V Framework 20260510",
+    deck: ["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"],
     fullReleaseNote:
       "The complete official public release of O2V Framework 20260510 is available as PDF in English, Chinese, and German.",
     note: "Official PDF versions are available below.",
     button: "Download",
     permissionReminder:
-      "For citation, training, consulting delivery, commercial use, adaptation, translation, or substantial reuse, prior permission from Li Zhi is required."
+      "For citation, training, consulting delivery, commercial use, adaptation, translation, or substantial reuse, prior permission from Li Zhi is required.",
+    fields: {
+      language: "Language",
+      fileName: "File name",
+      version: "Version",
+      internalVersion: "Internal Version",
+      copyright: "Copyright"
+    },
+    versionValue: "Official Public Release 20260510",
+    internalVersionValue: "v1.4",
+    copyrightValue: "Copyright © Li Zhi. All rights reserved."
   },
   zh: {
     metadata: {
@@ -387,12 +425,23 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("zh", "download")
     },
     title: "下载 O2V Framework 20260510",
+    deck: ["Opportunity-to-Venture Framework", "官方公开发布版 20260510", "内部版本：v1.4"],
     fullReleaseNote:
       "O2V Framework 20260510 的完整官方公开发布版以 PDF 形式提供，包含英文、中文和德文版本。",
     note: "官方 PDF 版本可在下方下载。",
     button: "下载",
     permissionReminder:
-      "如需引用、培训、咨询交付、商业使用、改编、翻译或实质性复用，应事先征得李智明确同意。"
+      "如需引用、培训、咨询交付、商业使用、改编、翻译或实质性复用，应事先征得李智明确同意。",
+    fields: {
+      language: "语言",
+      fileName: "文件名",
+      version: "版本",
+      internalVersion: "内部版本",
+      copyright: "版权"
+    },
+    versionValue: "官方公开发布版 20260510",
+    internalVersionValue: "v1.4",
+    copyrightValue: "版权所有人：李智 / Li Zhi。保留所有权利。"
   },
   de: {
     metadata: {
@@ -402,12 +451,23 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       alternates: localizedAlternates("de", "download")
     },
     title: "O2V Framework 20260510 herunterladen",
+    deck: ["Opportunity-to-Venture Framework", "Offizielle öffentliche Veröffentlichung 20260510", "Interne Version: v1.4"],
     fullReleaseNote:
       "Die vollständige offizielle Veröffentlichung des O2V Framework 20260510 steht als PDF auf Englisch, Chinesisch und Deutsch zur Verfügung.",
     note: "Die offiziellen PDF-Versionen stehen unten zum Download bereit.",
     button: "Herunterladen",
     permissionReminder:
-      "Für Zitierung, Training, Beratungsleistungen, kommerzielle Nutzung, Anpassung, Übersetzung oder substanzielle Wiederverwendung ist die vorherige ausdrückliche Zustimmung von Li Zhi erforderlich."
+      "Für Zitierung, Training, Beratungsleistungen, kommerzielle Nutzung, Anpassung, Übersetzung oder substanzielle Wiederverwendung ist die vorherige ausdrückliche Zustimmung von Li Zhi erforderlich.",
+    fields: {
+      language: "Sprache",
+      fileName: "Dateiname",
+      version: "Version",
+      internalVersion: "Interne Version",
+      copyright: "Urheberrecht"
+    },
+    versionValue: "Offizielle öffentliche Veröffentlichung 20260510",
+    internalVersionValue: "v1.4",
+    copyrightValue: "Copyright © Li Zhi. All rights reserved."
   }
 };
 
@@ -467,7 +527,7 @@ const frameworkMetadata: Record<Locale, Metadata> = {
   en: {
     title: "O2V Framework 20260510 | Official Web Overview",
     description:
-      "A web overview of O2V Framework 20260510, presenting the core structure, 9-step judgment chain, scoring logic, and key principles. Download the full official public release as PDF.",
+      "A web overview of O2V Framework 20260510, presenting the core structure, 9-step judgment chain, scoring logic, and key principles. Download the complete official public release as PDF.",
     alternates: localizedAlternates("en", "framework")
   },
   zh: {
@@ -859,12 +919,12 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
 export const copyrightContent: Record<Locale, { metadata: Metadata; title: string; sections: Section[] }> = {
   en: {
     metadata: {
-      title: "O2V Framework Copyright, Citation, References and Legal Notice",
+      title: "Copyright, Citation and Legal Notice | O2V Framework",
       description:
         "Copyright, citation format, permission statement, rights boundary, reference methodologies statement, trademark notice, and legal disclaimer for O2V Framework.",
       alternates: localizedAlternates("en", "copyright")
     },
-    title: "Copyright, Citation, References and Legal Notice",
+    title: "Copyright, Citation and Legal Notice",
     sections: [
       { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
       {
@@ -905,12 +965,12 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
   },
   zh: {
     metadata: {
-      title: "O2V Framework 版权、引用、参考方法与法律声明",
+      title: "版权、引用与法律声明｜O2V Framework",
       description:
         "O2V Framework 的版权、引用格式、授权说明、权利边界、参考方法声明、商标说明与法律免责声明。",
       alternates: localizedAlternates("zh", "copyright")
     },
-    title: "版权、引用、参考方法、商标与法律声明",
+    title: "版权、引用与法律声明",
     sections: [
       { heading: "版权所有人", body: ["版权所有人：李智 / Li Zhi。保留所有权利。"] },
       {
@@ -953,12 +1013,12 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
   },
   de: {
     metadata: {
-      title: "O2V Framework Urheberrecht, Zitierung und Rechtshinweise",
+      title: "Urheberrecht, Zitierung und rechtlicher Hinweis | O2V Framework",
       description:
         "Urheberrecht, Zitierformat, Genehmigung, Rechteabgrenzung, Referenzmethoden, Markenhinweis und rechtlicher Disclaimer für das O2V Framework.",
       alternates: localizedAlternates("de", "copyright")
     },
-    title: "Urheberrecht-, Zitier- und Rechtshinweise",
+    title: "Urheberrecht, Zitierung und rechtlicher Hinweis",
     sections: [
       { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
       {

@@ -24,25 +24,25 @@ export default async function DownloadPage({ params }: PageProps) {
     <ContentLayout
       eyebrow="O2V Framework"
       title={content.title}
-      deck={["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"]}
+      deck={content.deck}
     >
       <p>{content.fullReleaseNote}</p>
       <p>{content.note}</p>
       <div className="not-prose mt-8 grid gap-4">
         {downloadCards.map((card) => (
           <section key={card.fileName} className="border border-neutral-200 p-5">
-            <h2 className="text-lg font-semibold text-neutral-950">{card.language}</h2>
+            <h2 className="text-lg font-semibold text-neutral-950">{card.labels[locale]}</h2>
             <dl className="mt-4 grid gap-2 text-sm leading-6 text-neutral-700 sm:grid-cols-[160px_1fr]">
-              <dt className="font-semibold text-neutral-950">Language</dt>
-              <dd>{card.language}</dd>
-              <dt className="font-semibold text-neutral-950">File name</dt>
+              <dt className="font-semibold text-neutral-950">{content.fields.language}</dt>
+              <dd>{card.labels[locale]}</dd>
+              <dt className="font-semibold text-neutral-950">{content.fields.fileName}</dt>
               <dd className="break-all">{card.fileName}</dd>
-              <dt className="font-semibold text-neutral-950">Version</dt>
-              <dd>Official Public Release 20260510</dd>
-              <dt className="font-semibold text-neutral-950">Internal Version</dt>
-              <dd>v1.4</dd>
-              <dt className="font-semibold text-neutral-950">Copyright</dt>
-              <dd>Copyright © Li Zhi. All rights reserved.</dd>
+              <dt className="font-semibold text-neutral-950">{content.fields.version}</dt>
+              <dd>{content.versionValue}</dd>
+              <dt className="font-semibold text-neutral-950">{content.fields.internalVersion}</dt>
+              <dd>{content.internalVersionValue}</dd>
+              <dt className="font-semibold text-neutral-950">{content.fields.copyright}</dt>
+              <dd>{content.copyrightValue}</dd>
             </dl>
             <p className="mt-4 text-sm leading-6 text-neutral-700">{content.permissionReminder}</p>
             <a
