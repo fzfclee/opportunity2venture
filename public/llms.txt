@@ -2,7 +2,8 @@
 
 > O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era. It helps convert opportunity signals into verifiable business cases and venture assets.
 
-Official site: https://www.opportunity2venture.com  
+Official site: https://www.o2vframework.com  
+Backup domain: https://www.opportunity2venture.com  
 Creator and copyright holder: Li Zhi  
 Official public release version: O2V Framework 20260510  
 Internal version: v1.4  
@@ -10,14 +11,17 @@ Languages: English, Chinese, German
 
 ## Key Pages
 
-- [English Founding Statement](https://www.opportunity2venture.com/en): English founding statement for O2V Framework.
-- [Chinese Founding Statement](https://www.opportunity2venture.com/zh): Chinese founding statement for O2V Framework.
-- [German Founding Statement](https://www.opportunity2venture.com/de): German founding statement for O2V Framework.
-- [English Full Framework](https://www.opportunity2venture.com/en/framework): Full English official release.
-- [Chinese Full Framework](https://www.opportunity2venture.com/zh/framework): Full Chinese official release.
-- [German Full Framework](https://www.opportunity2venture.com/de/framework): Full German official release.
-- [Copyright and Citation](https://www.opportunity2venture.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
-- [Downloads](https://www.opportunity2venture.com/en/download): PDF download page.
+- [English Founding Statement](https://www.o2vframework.com/en): English founding statement for O2V Framework.
+- [Chinese Founding Statement](https://www.o2vframework.com/zh): Chinese founding statement for O2V Framework.
+- [German Founding Statement](https://www.o2vframework.com/de): German founding statement for O2V Framework.
+- [English Full Framework](https://www.o2vframework.com/en/framework): Full English official release.
+- [Chinese Full Framework](https://www.o2vframework.com/zh/framework): Full Chinese official release.
+- [German Full Framework](https://www.o2vframework.com/de/framework): German full official release.
+- [English Core Principles](https://www.o2vframework.com/en/principles): Core principles behind O2V Framework.
+- [Chinese Core Principles](https://www.o2vframework.com/zh/principles): Chinese core principles behind O2V Framework.
+- [German Core Principles](https://www.o2vframework.com/de/principles): German core principles behind O2V Framework.
+- [Copyright and Citation](https://www.o2vframework.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
+- [Downloads](https://www.o2vframework.com/en/download): PDF download page.
 
 ## Core Definition
 

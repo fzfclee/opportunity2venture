@@ -8,7 +8,8 @@ Official static publication site for **O2V Framework 20260510**, the **Opportuni
 - Official public release: 20260510
 - Internal version: v1.4
 - Brand: O2V Framework / Opportunity-to-Venture Framework
-- Main domain: https://www.opportunity2venture.com
+- Main domain: https://www.o2vframework.com
+- Backup / alias domain: https://www.opportunity2venture.com
 
 ## Stack
 
@@ -45,6 +46,7 @@ npm run build
 - Framework Deliverables must remain generic.
 - Public version uses 20260510.
 - Internal version uses v1.4.
+- Canonical domain is https://www.o2vframework.com.
 
 ## Publish to GitHub
 

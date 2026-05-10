@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { localizedAlternates, type Locale } from "@/lib/i18n";
+import { localizedAlternates, siteUrl, type Locale } from "@/lib/i18n";
 
 export type NavKey = "home" | "framework" | "principles" | "copyright" | "download";
 
@@ -65,21 +65,21 @@ export const footerContent: Record<Locale, string[]> = {
     "O2V Framework 20260510 | Opportunity-to-Venture Framework",
     "From Signal to Venture. From Idea to Asset.",
     "Copyright © Li Zhi. All rights reserved.",
-    "Official site: Opportunity2Venture.com",
+    "Official site: www.o2vframework.com",
     "Citation: Li Zhi, O2V Framework, Official Public Release 20260510."
   ],
   zh: [
     "O2V Framework 20260510 | Opportunity-to-Venture Framework",
     "从机会信号到创业资产。",
     "版权所有人：李智 / Li Zhi",
-    "Official site: Opportunity2Venture.com",
+    "官方网站：www.o2vframework.com",
     "引用格式：李智，O2V Framework，官方公开发布版 20260510。"
   ],
   de: [
     "O2V Framework 20260510 | Opportunity-to-Venture Framework",
     "Vom Signal zum Venture. Von der Idee zum Asset.",
     "Copyright © Li Zhi. All rights reserved.",
-    "Offizielle Website: Opportunity2Venture.com",
+    "Offizielle Website: www.o2vframework.com",
     "Zitierformat: Li Zhi, O2V Framework, Official Public Release 20260510."
   ]
 };
@@ -576,7 +576,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
           "Version name: O2V Framework 20260510.",
           "Release type: Official Public Release 20260510.",
           "Internal Version: v1.4.",
-          "Official site: Opportunity2Venture.com."
+          "Official site: www.o2vframework.com."
         ]
       }
     ]
@@ -691,7 +691,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
           "版本名称：O2V Framework 20260510。",
           "发布类型：官方公开发布版 20260510。",
           "内部版本：v1.4。",
-          "官网：Opportunity2Venture.com。"
+          "官方网站：www.o2vframework.com。"
         ]
       }
     ]
@@ -806,7 +806,7 @@ export const frameworkContent: Record<Locale, { metadata: Metadata; title: strin
           "Versionsname: O2V Framework 20260510.",
           "Veröffentlichungstyp: Official Public Release 20260510.",
           "Interne Version: v1.4.",
-          "Offizielle Website: Opportunity2Venture.com."
+          "Offizielle Website: www.o2vframework.com."
         ]
       }
     ]
@@ -957,7 +957,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
 };
 
 export function creativeWorkJsonLd(locale: Locale) {
-  const url = `https://www.opportunity2venture.com/${locale}`;
+  const url = `${siteUrl}/${locale}`;
 
   return {
     "@context": "https://schema.org",

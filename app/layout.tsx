@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { siteUrl } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.opportunity2venture.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "O2V Framework",
     template: "%s"
@@ -10,11 +11,12 @@ export const metadata: Metadata = {
   description:
     "O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era.",
   alternates: {
-    canonical: "/",
+    canonical: `${siteUrl}/`,
     languages: {
-      en: "/en",
-      zh: "/zh",
-      de: "/de"
+      en: `${siteUrl}/en`,
+      "zh-CN": `${siteUrl}/zh`,
+      de: `${siteUrl}/de`,
+      "x-default": `${siteUrl}/en`
     }
   }
 };

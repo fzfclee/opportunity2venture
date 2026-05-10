@@ -4,6 +4,8 @@ export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "en";
 
+export const siteUrl = "https://www.o2vframework.com";
+
 export const languageLabels: Record<Locale, string> = {
   en: "English",
   zh: "中文",
@@ -16,13 +18,16 @@ export function isLocale(value: string): value is Locale {
 
 export function localizedAlternates(locale: Locale, path = "") {
   const cleanPath = path ? `/${path.replace(/^\/+/, "")}` : "";
+  const localizedPath = `/${locale}${cleanPath}`;
+  const defaultPath = `/en${cleanPath}`;
 
   return {
-    canonical: `/${locale}${cleanPath}`,
+    canonical: `${siteUrl}${localizedPath}`,
     languages: {
-      en: `/en${cleanPath}`,
-      zh: `/zh${cleanPath}`,
-      de: `/de${cleanPath}`
+      en: `${siteUrl}/en${cleanPath}`,
+      "zh-CN": `${siteUrl}/zh${cleanPath}`,
+      de: `${siteUrl}/de${cleanPath}`,
+      "x-default": `${siteUrl}${defaultPath}`
     }
   };
 }
