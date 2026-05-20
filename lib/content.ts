@@ -170,7 +170,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     body: [
       "O2V Framework is an AI-era opportunity judgment and value realization framework.",
       "It was created to answer a simple but critical question:",
-      "When opportunities are everywhere, how do we know which ones deserve resources, validation, ownership, and execution?",
+      "When opportunities are everywhere, how do we know which ones deserve resources, validation, clear ownership, and execution?",
       "In the AI era, ideas are no longer scarce.",
       "Signals are everywhere.",
       "Products can be prototyped faster than ever.",
@@ -218,7 +218,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     body: [
       "O2V Framework 是一套面向 AI 时代的机会判断与价值实现框架。",
       "它试图回答一个简单但关键的问题：",
-      "当机会看起来无处不在时，我们如何判断哪些机会真正值得投入资源、验证、owner 和执行？",
+      "当机会看起来无处不在时，我们如何判断哪些机会真正值得投入资源、开展验证、明确责任并推进执行？",
       "在 AI 时代，点子不再稀缺。",
       "信号到处都是。",
       "产品原型可以被更快做出来。",
@@ -270,7 +270,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     body: [
       "Das O2V Framework ist ein Framework für Chancenbewertung und Wertrealisierung im KI-Zeitalter.",
       "Es wurde entwickelt, um eine einfache, aber entscheidende Frage zu beantworten:",
-      "Wenn Chancen überall sichtbar sind, woran erkennen wir, welche davon Ressourcen, Validierung, Ownership und Umsetzung verdienen?",
+      "Wenn Chancen überall sichtbar sind, woran erkennen wir, welche davon Ressourcen, Validierung, klare Verantwortung und Umsetzung verdienen?",
       "Im KI-Zeitalter sind Ideen nicht mehr knapp.",
       "Signale sind überall.",
       "Produktprototypen können schneller erstellt werden als je zuvor.",
@@ -312,19 +312,19 @@ export const sharedHomeClosing: Record<Locale, string[]> = {
     "O2V does not try to replace proven methodologies.",
     "It integrates and recomposes mature practices from entrepreneurship, product discovery, innovation management, business case design, value realization, investment screening, and risk governance.",
     "Its purpose is not to generate more ideas.",
-    "Its purpose is to identify which opportunities deserve time, resources, validation, ownership, and execution."
+    "Its purpose is to identify which opportunities deserve time, resources, validation, clear ownership, and execution."
   ],
   zh: [
     "O2V 并不试图替代已有成熟方法论。",
     "它融合并重新编排了创业验证、产品发现、创新管理、商业案例设计、价值实现、投资筛选和风险治理等领域的成熟方法论与实践。",
     "它的目的不是生成更多点子。",
-    "它的目的，是判断哪些机会真正值得投入时间、资源、验证、owner 和执行。"
+    "它的目的，是判断哪些机会真正值得投入时间、资源、验证、责任承接和执行。"
   ],
   de: [
     "O2V versucht nicht, bewährte Methoden zu ersetzen.",
     "Es integriert und rekombiniert reife Praktiken aus Entrepreneurship, Product Discovery, Innovationsmanagement, Business-Case-Design, Wertrealisierung, Investment Screening und Risk Governance.",
     "Sein Ziel ist nicht, mehr Ideen zu generieren.",
-    "Sein Ziel ist es, zu erkennen, welche Chancen Zeit, Ressourcen, Validierung, Ownership und Umsetzung verdienen."
+    "Sein Ziel ist es, zu erkennen, welche Chancen Zeit, Ressourcen, Validierung, klare Verantwortung und Umsetzung verdienen."
   ]
 };
 
@@ -368,7 +368,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "短期收入证明需求，长期资产决定天花板。",
       "价值叙事必须由验证数据支撑，而不能只靠愿景。",
       "合规风险不是普通扣分项，而是决定机会能否继续推进的闸门。",
-      "O2V 的存在，是为了在投入时间、资源、owner 和执行之前，降低早期机会误判。"
+      "O2V 的存在，是为了在投入时间、资源、明确负责人并推进执行之前，降低早期机会误判。",
     ]
   },
   de: {
@@ -389,7 +389,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "Kurzfristiger Umsatz beweist Nachfrage, aber langfristige Assets definieren die Obergrenze.",
       "Value Stories müssen durch Validierungsdaten gestützt werden, nicht nur durch Ambition.",
       "Compliance-Risiko ist kein kleiner Abzug. Es ist ein Gate, das bestimmt, ob eine Chance weiterverfolgt werden kann.",
-      "O2V existiert, um frühe Fehlbewertungen zu reduzieren, bevor Zeit, Ressourcen, Ownership und Umsetzung gebunden werden."
+      "O2V existiert, um frühe Fehlbewertungen zu reduzieren, bevor Zeit, Ressourcen, klare Verantwortung und Umsetzung gebunden werden."
     ]
   }
 };
@@ -744,7 +744,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
           "Validation：把 MVP 转化为可衡量证据。",
           "Business Case：整合价值收益假设、MVP、领先指标、财务指标和验证计划。",
           "Asset：判断机会是否能沉淀用户、数据、内容、方法论、产品、渠道、品牌、生态或长期权利资产。",
-          "Value Story：将已验证证据转化为清晰的价值叙事，说明该机会为什么值得继续获得资源、owner、规模化投入或投资支持。"
+          "Value Story：将已验证证据转化为清晰的价值叙事，说明该机会为什么值得继续获得资源、明确负责人、规模化投入或投资支持。",
         ]
       },
       {
@@ -752,7 +752,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
         body: [
           "Business Case 验证链条：Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
           "Leading Indicators 用于判断 MVP 是否正在验证 Value Hypothesis。",
-          "这条链路不只是为了融资，而是为了判断一个机会是否值得继续获得资源、owner、运营投入、规模化支持或投资支持。"
+          "这条链路不只是为了融资，而是为了判断一个机会是否值得继续获得资源、明确负责人、运营投入、规模化支持或投资支持。",
         ],
         ordered: businessCaseModules.zh
       },
@@ -1039,12 +1039,12 @@ export const aboutContent: Record<Locale, AboutContent> = {
         { text: "management consultant and digital transformation expert", strong: true },
         { text: " at a " },
         { text: "world-renowned consulting firm", strong: true },
-        { text: ", supporting large-scale enterprise transformation programs for multinational and leading domestic organizations." }
+        { text: ", where he supported enterprise transformation programs for multinational companies and leading domestic groups." }
       ],
       [
         { text: "He has served " },
         { text: "Fortune 500 companies", strong: true },
-        { text: " and large enterprise groups across high-tech, financial services, life sciences, consumer goods, energy, and other industries. His work spans digital strategy, enterprise agility, product governance, business case design, portfolio management, stakeholder alignment, and AI-enabled innovation." }
+        { text: " and large enterprise groups across high-tech, financial services, life sciences, consumer goods, energy, and other sectors. His work spans digital strategy, enterprise architecture, product governance, business case design, portfolio management, stakeholder alignment, and AI-enabled innovation." }
       ],
       [
         { text: "O2V Framework", strong: true },
@@ -1095,12 +1095,12 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "在创建 O2V Framework 之前，李智曾任职于" },
         { text: "世界知名咨询公司", strong: true },
-        { text: "，作为管理咨询专家、数字化转型及数字化价值实现专家，参与并推动多个大型企业转型项目，服务跨国企业及国内外大型集团化企业。" }
+        { text: "，作为管理咨询专家和数字化转型专家，参与并推动面向跨国企业及国内领先集团的大型企业转型项目。" }
       ],
       [
         { text: "过去多年中，李智服务过" },
         { text: "全球财富 500 强企业", strong: true },
-        { text: "及大型企业集团，覆盖高科技、金融、生命科学、快消、能源等多个行业。他的工作领域包括数字化战略、企业敏捷、产品治理、Business Case 设计、投资组合管理、利益相关方协同，以及 AI 赋能的业务创新。" }
+        { text: "及大型企业集团，项目覆盖高科技、金融服务、生命科学、消费品、能源等行业。他的工作聚焦于数字化战略、企业架构、产品治理、Business Case 设计、投资组合管理、利益相关方协同，以及 AI 赋能的业务创新。" }
       ],
       [
         { text: "O2V Framework", strong: true },
@@ -1151,12 +1151,12 @@ export const aboutContent: Record<Locale, AboutContent> = {
         { text: "Management Consultant und Experte für digitale Transformation", strong: true },
         { text: " bei einem " },
         { text: "weltweit renommierten Beratungsunternehmen", strong: true },
-        { text: " auf. Dort unterstützte er groß angelegte Transformationsprogramme für multinationale Unternehmen und führende Unternehmensgruppen." }
+        { text: " auf. Dort unterstützte er Transformationsprogramme für multinationale Unternehmen und führende Unternehmensgruppen." }
       ],
       [
         { text: "Im Laufe seiner Karriere hat Zhi " },
         { text: "Fortune-500-Unternehmen", strong: true },
-        { text: " sowie große internationale und chinesische Unternehmensgruppen beraten. Seine Projekterfahrung umfasst Hightech, Finanzdienstleistungen, Life Sciences, Konsumgüter, Energie und weitere Industrien." }
+        { text: " sowie große Unternehmensgruppen beraten. Seine Projekterfahrung umfasst Hightech, Finanzdienstleistungen, Life Sciences, Konsumgüter, Energie und weitere Branchen; fachlich reicht sie von digitaler Strategie und Enterprise Architecture bis zu Product Governance, Business Case Design, Portfolio Management, Stakeholder Alignment und KI-gestützter Innovation." }
       ],
       [
         { text: "Das " },
