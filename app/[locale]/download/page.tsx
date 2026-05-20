@@ -27,7 +27,7 @@ export default async function DownloadPage({ params }: PageProps) {
       deck={content.deck}
     >
       <p>{content.fullReleaseNote}</p>
-      <p>{content.note}</p>
+      {content.note ? <p>{content.note}</p> : null}
       <div className="not-prose mt-8 grid gap-4">
         {downloadCards.map((card) => (
           <section key={card.fileName} className="border border-[#d9ddff] bg-white p-5 shadow-[0_18px_45px_rgba(36,52,170,0.06)]">

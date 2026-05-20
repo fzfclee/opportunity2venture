@@ -53,7 +53,7 @@ npm run build
 - Do not add Daily / Weekly / Monthly outputs to the framework.
 - Framework Deliverables must remain generic.
 - Public website version uses 20260520.
-- Current download links use 20260520 PDF filenames. Temporary dummy PDFs may occupy those filenames until final designed PDFs are ready.
+- Current download links use 20260520 PDF filenames.
 - Internal version uses v1.5.
 - Canonical domain is https://www.o2vframework.com.
 
@@ -101,7 +101,7 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `public/downloads/o2v-framework-20260520-en.pdf`
 - `public/downloads/o2v-framework-20260520-de.pdf`
 
-The 20260520 PDF files may be temporary placeholders until the final designed PDFs are ready. Keep these filenames stable for public download links.
+Keep the 20260520 PDF filenames stable for public download links.
 
 ## License
 

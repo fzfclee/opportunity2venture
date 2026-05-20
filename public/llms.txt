@@ -45,7 +45,7 @@ Opportunity Signal List, Opportunity Card, O2V Score, Compliance Risk Level, Bus
 
 ## Historical Release Note
 
-Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration. Financing Story can appear only as a venture-context form of Value Story. The current public download filenames use O2V Framework 20260520; temporary placeholder PDFs may occupy those filenames until final designed PDFs are ready.
+Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration. Financing Story can appear only as a venture-context form of Value Story. The current public download filenames use O2V Framework 20260520.
 
 ## Citation
 

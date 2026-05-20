@@ -15,9 +15,9 @@
 ## PDF Release Handling
 
 - Download links now point to 20260520 PDF filenames.
-- Temporary dummy PDFs occupy the 20260520 filenames until final designed PDFs are ready.
+- Download links use the final 20260520 PDF filenames.
 
 ## Remaining Follow-Up Items
 
-- Replace the dummy 20260520 PDFs with final designed PDF releases in English, Chinese, and German when ready.
+- Keep the 20260520 PDF filenames stable for English, Chinese, and German releases.
 - Consider adding compact favicon/app icon PNG variants derived from the transparent blue-purple logo if platform-specific icon polish is needed.

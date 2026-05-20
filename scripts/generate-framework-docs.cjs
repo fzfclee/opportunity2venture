@@ -4,8 +4,7 @@
  * PDF generation status helper.
  *
  * The website now links to O2V Framework 20260520 PDF filenames.
- * Temporary dummy PDFs may occupy those filenames until the final
- * designed release PDFs are ready.
+ * Keep those filenames stable for public download links.
  */
 
 const status = {
@@ -13,7 +12,7 @@ const status = {
   primaryBrandMeaning: "Opportunity-to-Value Framework",
   coreSlogan: "From Signal to Value. From Idea to Asset.",
   judgmentChain: "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story",
-  pdfStatus: "Current download links use 20260520 placeholder PDFs until final designed PDFs are ready.",
+  pdfStatus: "Current download links use O2V Framework 20260520 PDF files.",
   currentPdfFiles: [
     "public/downloads/o2v-framework-20260520-zh.pdf",
     "public/downloads/o2v-framework-20260520-en.pdf",

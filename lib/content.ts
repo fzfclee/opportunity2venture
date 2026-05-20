@@ -46,7 +46,7 @@ type DownloadContent = {
   title: string;
   deck: string[];
   fullReleaseNote: string;
-  note: string;
+  note?: string;
   button: string;
   permissionReminder: string;
   fields: {
@@ -438,8 +438,6 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: "Download O2V Framework 20260520",
     deck: ["Opportunity-to-Value Framework", "Official Public Release 20260520", "Transition Release"],
     fullReleaseNote: "O2V Framework 20260520 PDF downloads are available in Chinese, English, and German.",
-    note:
-      "Current PDF files are placeholder release files and will be replaced with the final designed PDFs when ready.",
     button: "Download PDF",
     permissionReminder:
       "Permission is required for adaptation, translation, commercial use, training, consulting delivery, productization, model training, or substantial reuse.",
@@ -464,7 +462,6 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: "下载 O2V Framework 20260520",
     deck: ["Opportunity-to-Value Framework", "官方公开发布版 20260520", "Transition Release"],
     fullReleaseNote: "O2V Framework 20260520 PDF 提供中文、英文和德文下载。",
-    note: "当前 PDF 文件为占位发布文件，最终设计版 PDF 准备完成后会替换。",
     button: "下载 PDF",
     permissionReminder:
       "任何改编、翻译、商业使用、培训、咨询交付、产品化、模型训练或实质性复用均需获得授权。",
@@ -489,8 +486,6 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: "O2V Framework 20260520 herunterladen",
     deck: ["Opportunity-to-Value Framework", "Official Public Release 20260520", "Transition Release"],
     fullReleaseNote: "O2V Framework 20260520 PDF-Downloads sind auf Chinesisch, Englisch und Deutsch verfügbar.",
-    note:
-      "Die aktuellen PDF-Dateien sind Platzhalter und werden ersetzt, sobald die final gestalteten PDFs bereitstehen.",
     button: "PDF herunterladen",
     permissionReminder:
       "Für Anpassung, Übersetzung, kommerzielle Nutzung, Training, Beratung, Produktisierung, Modelltraining oder wesentliche Wiederverwendung ist eine Genehmigung erforderlich.",
@@ -570,7 +565,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
     subtitle: "Opportunity-to-Value Framework",
     overview: [
       "This page provides a web overview of O2V Framework 20260520. It presents the core structure, judgment chain, scoring logic, and key principles for quick reading and online reference.",
-      "The download page now points to the 20260520 PDF release files. Current files are placeholders until the final designed PDFs are added."
+      "The download page points to the 20260520 PDF release files in Chinese, English, and German."
     ],
     cta: { label: "Download PDFs", href: "/en/download" },
     sections: [
@@ -661,7 +656,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
     subtitle: "Opportunity-to-Value Framework",
     overview: [
       "本页面为 O2V Framework 20260520 的官方网页概览版，用于快速阅读和在线引用，重点呈现框架的核心结构、九步判断链路、评分逻辑和关键原则。",
-      "下载页已指向 20260520 PDF 发布文件。当前文件为占位版本，最终设计版 PDF 准备完成后会替换。"
+      "下载页已指向中文、英文和德文的 20260520 PDF 发布文件。"
     ],
     cta: { label: "下载 PDF", href: "/zh/download" },
     sections: [
@@ -754,7 +749,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
     subtitle: "Opportunity-to-Value Framework",
     overview: [
       "Diese Seite bietet einen Web-Überblick über das O2V Framework 20260520. Sie stellt die Kernstruktur, die Bewertungskette, die Scoring-Logik und die wichtigsten Prinzipien für schnelle Lektüre und Online-Referenz dar.",
-      "Die Download-Seite verweist nun auf die PDF-Dateien der Version 20260520. Die aktuellen Dateien sind Platzhalter, bis die final gestalteten PDFs ergänzt werden."
+      "Die Download-Seite verweist auf die PDF-Dateien der Version 20260520 auf Chinesisch, Englisch und Deutsch."
     ],
     cta: { label: "PDFs herunterladen", href: "/de/download" },
     sections: [
