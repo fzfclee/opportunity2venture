@@ -183,7 +183,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "Growth without compliance boundaries can become a hidden liability.",
       "And a business that earns short-term income may still fail to become a long-term asset.",
       "O2V Framework was designed to bring discipline to the earliest stage of opportunity judgment and value creation.",
-      "It helps individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors move from scattered market signals to structured opportunity judgment.",
+      "It helps individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors move from scattered market signals to structured opportunity judgment and value realization.",
       "It asks whether an opportunity has:"
     ],
     bullets: [
@@ -231,7 +231,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "没有合规边界的增长，可能变成隐藏负债。",
       "一个能赚短期收入的业务，也未必能沉淀为长期资产。",
       "O2V Framework 的目的，是为机会判断与价值创造的最前端建立一套纪律。",
-      "它帮助个人构建者、创业者、创新团队、咨询顾问、企业负责人和早期投资相关方，从分散的市场信号出发，形成结构化的机会判断。",
+      "它帮助个人构建者、创业者、创新团队、咨询顾问、企业负责人和早期投资相关方，从分散的市场信号出发，形成结构化的机会判断与价值实现。",
       "它关注一个机会是否具备："
     ],
     bullets: [
@@ -283,7 +283,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "Wachstum ohne Compliance-Grenzen kann zu einer versteckten Verbindlichkeit werden.",
       "Und ein Geschäft, das kurzfristige Einnahmen erzielt, wird nicht automatisch zu einem langfristigen Asset.",
       "Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Chancenbewertung und Wertschöpfung zu bringen.",
-      "Es hilft individuellen Buildern, Unternehmern, Innovationsteams, Beratern, Unternehmensverantwortlichen und Early-Stage-Investoren, aus verstreuten Marktsignalen eine strukturierte Chancenbewertung abzuleiten.",
+      "Es hilft individuellen Buildern, Unternehmern, Innovationsteams, Beratern, Unternehmensverantwortlichen und Early-Stage-Investoren, aus verstreuten Marktsignalen strukturierte Chancenbewertung und Wertrealisierung abzuleiten.",
       "Es fragt, ob eine Chance Folgendes besitzt:"
     ],
     bullets: [
@@ -504,28 +504,58 @@ export const downloadContent: Record<Locale, DownloadContent> = {
 
 export const businessCaseModules: Record<Locale, string[]> = {
   en: [
+    "Project Name",
+    "One-Sentence Opportunity Judgment",
+    "Target User & Persona",
+    "Core Pain and Willingness to Pay / Act",
     "Benefits Hypothesis",
     "MVP",
     "Leading Indicators",
     "Financial Metrics",
     "Verification Plan",
-    "Value Story / Financing Story in venture context"
+    "Solution Roadmap",
+    "Market & Channel Fit",
+    "Business Model",
+    "Assetization Path",
+    "Value Story",
+    "Key Risks & Compliance Level",
+    "O2V Score + Recommendation"
   ],
   zh: [
+    "项目名称",
+    "一句话机会判断",
+    "目标用户与用户画像",
+    "核心痛点与付费 / 行动意愿",
     "价值收益假设",
     "MVP",
     "领先指标",
     "财务指标",
     "验证计划",
-    "价值叙事 / 创业语境下的融资叙事"
+    "解决方案路线图",
+    "市场与渠道匹配",
+    "商业模式",
+    "资产化路径",
+    "价值叙事",
+    "关键风险与合规等级",
+    "O2V 评分与建议"
   ],
   de: [
+    "Projektname",
+    "Opportunity Judgment in einem Satz",
+    "Target User & Persona",
+    "Core Pain and Willingness to Pay / Act",
     "Benefits Hypothesis",
     "MVP",
     "Leading Indicators",
     "Financial Metrics",
     "Verification Plan",
-    "Value Story / Financing Story im Venture-Kontext"
+    "Solution Roadmap",
+    "Market & Channel Fit",
+    "Business Model",
+    "Assetization Path",
+    "Value Story",
+    "Key Risks & Compliance Level",
+    "O2V Score + Recommendation"
   ]
 };
 
