@@ -5,7 +5,8 @@ cd /d "%~dp0"
 
 echo.
 echo Publishing O2V Framework site to GitHub...
-echo Repository: https://github.com/fzfclee/opportunity2venture.git
+echo Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
+echo Recommended future repo: https://github.com/fzfclee/o2v-framework-site.git
 echo.
 
 git --version >nul 2>&1
@@ -29,6 +30,7 @@ git config user.email >nul 2>&1
 if errorlevel 1 git config user.email "fzfclee@users.noreply.github.com"
 
 git remote remove origin >nul 2>&1
+rem Current repo pending rename. Do not change this remote until the GitHub repo is explicitly renamed.
 git remote add origin https://github.com/fzfclee/opportunity2venture.git
 
 git add .

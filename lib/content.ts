@@ -118,64 +118,72 @@ export const navLabels: Record<Locale, Record<NavKey, string>> = {
 
 export const footerContent: Record<Locale, FooterLine[]> = {
   en: [
-    { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
-    { text: "From Signal to Venture. From Idea to Asset." },
+    { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
+    { text: "From Signal to Value. From Idea to Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
     { label: "Official site:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: "Citation: Li Zhi, O2V Framework, Official Public Release 20260510." }
+    { text: "Citation: Li Zhi, O2V Framework, Official Public Release 20260520." }
   ],
   zh: [
-    { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
-    { text: "从机会信号到创业资产。" },
+    { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
+    { text: "从机会信号到可验证价值。从想法到长期资产。" },
     { text: "版权所有人：李智 / Li Zhi" },
     { label: "官方网站：", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: "引用格式：李智，O2V Framework，官方公开发布版 20260510。" }
+    { text: "引用格式：李智，O2V Framework，官方公开发布版 20260520。" }
   ],
   de: [
-    { text: "O2V Framework 20260510 | Opportunity-to-Venture Framework" },
-    { text: "Vom Signal zum Venture. Von der Idee zum Asset." },
+    { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
+    { text: "Vom Signal zum Wert. Von der Idee zum Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
     { label: "Offizielle Website:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: "Zitierformat: Li Zhi, O2V Framework, Official Public Release 20260510." }
+    { text: "Zitierformat: Li Zhi, O2V Framework, Official Public Release 20260520." }
   ]
+};
+
+const homeDescriptions: Record<Locale, string> = {
+  en:
+    "O2V Framework, also known as Opportunity-to-Value Framework, is an AI-era opportunity judgment and value realization framework. It helps convert opportunity signals into validated value, Business Cases, value assets, and evidence-backed value stories.",
+  zh:
+    "O2V Framework 是一套面向 AI 时代的机会判断与价值实现框架，用于将机会信号转化为可验证价值、Business Case、价值资产和由证据支撑的价值叙事。版权所有人：李智。",
+  de:
+    "Das O2V Framework, auch Opportunity-to-Value Framework genannt, ist ein Framework für Chancenbewertung und Wertrealisierung im KI-Zeitalter. Es hilft, Chancensignale in validierten Wert, Business Cases, Value Assets und evidenzgestützte Value Stories zu überführen."
 };
 
 export const homeContent: Record<Locale, HomeContent> = {
   en: {
     metadata: {
-      title: "O2V Framework | Opportunity-to-Venture Framework for the AI Era",
-      description:
-        "O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era. It helps convert opportunity signals into verifiable business cases and venture assets. Official public release by Li Zhi.",
+      title: "O2V Framework | Opportunity-to-Value Framework for the AI Era",
+      description: homeDescriptions.en,
       alternates: localizedAlternates("en")
     },
-    title: "Opportunity-to-Venture Framework",
-    subtitle: "Opportunity-to-Venture Framework",
-    tagline: ["From Signal to Venture.", "From Idea to Asset."],
+    title: "Opportunity-to-Value Framework",
+    subtitle: "Opportunity-to-Value Framework",
+    tagline: ["From Signal to Value.", "From Idea to Asset."],
     deck: [
-      "Official Public Release 20260510",
-      "Internal Version: v1.4",
+      "Official Public Release 20260520",
+      "Internal Version: v1.5",
       "Copyright © Li Zhi. All rights reserved."
     ],
     body: [
-      "O2V Framework is a front-end opportunity judgment framework for the AI era.",
+      "O2V Framework is an AI-era opportunity judgment and value realization framework.",
       "It was created to answer a simple but critical question:",
-      "When opportunities are everywhere, how do we know which ones are worth building?",
+      "When opportunities are everywhere, how do we know which ones deserve resources, validation, ownership, and execution?",
       "In the AI era, ideas are no longer scarce.",
       "Signals are everywhere.",
       "Products can be prototyped faster than ever.",
       "Content can be generated instantly.",
-      "Almost every trend can be turned into a startup story.",
+      "Almost every trend can be turned into a compelling story.",
       "But speed does not remove uncertainty.",
       "More ideas do not mean better opportunities.",
       "A working demo does not prove real demand.",
       "User interest does not always become willingness to pay.",
       "Growth without compliance boundaries can become a hidden liability.",
       "And a business that earns short-term income may still fail to become a long-term asset.",
-      "O2V Framework was designed to bring discipline to the earliest stage of venture creation.",
-      "It helps entrepreneurs, innovators, consultants, and early-stage investors move from scattered market signals to structured opportunity judgment.",
+      "O2V Framework was designed to bring discipline to the earliest stage of opportunity judgment and value creation.",
+      "It helps individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors move from scattered market signals to structured opportunity judgment.",
       "It asks whether an opportunity has:"
     ],
     bullets: [
@@ -187,7 +195,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "a credible Business Case;",
       "a controllable compliance boundary;",
       "an assetization path;",
-      "and a financing story that can be supported by evidence."
+      "and a value story that can be supported by evidence."
     ],
     buttons: [
       { label: "Framework Overview", href: "/en/framework" },
@@ -195,37 +203,35 @@ export const homeContent: Record<Locale, HomeContent> = {
       { label: "Copyright & Citation", href: "/en/copyright" },
       { label: "Download PDF", href: "/en/download" }
     ],
-    jsonLdDescription:
-      "O2V Framework is a front-end opportunity judgment framework for the AI era, designed to convert opportunity signals into verifiable business cases and venture assets."
+    jsonLdDescription: homeDescriptions.en
   },
   zh: {
     metadata: {
-      title: "O2V Framework｜从机会信号到创业资产的前端机会判断框架",
-      description:
-        "O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将机会信号转化为可验证的 Business Case 和可经营、可融资、可资产化的创业机会。版权所有人：李智。",
+      title: "O2V Framework｜从机会信号到可验证价值的机会判断与价值实现框架",
+      description: homeDescriptions.zh,
       alternates: localizedAlternates("zh")
     },
-    title: "Opportunity-to-Venture Framework",
-    subtitle: "Opportunity-to-Venture Framework",
-    tagline: ["从机会信号到创业资产。"],
-    deck: ["官方公开发布版 20260510", "内部版本：v1.4", "版权所有人：李智 / Li Zhi"],
+    title: "Opportunity-to-Value Framework",
+    subtitle: "Opportunity-to-Value Framework",
+    tagline: ["从机会信号到可验证价值。", "从想法到长期资产。"],
+    deck: ["官方公开发布版 20260520", "内部版本：v1.5", "版权所有人：李智 / Li Zhi"],
     body: [
-      "O2V Framework 是一套面向 AI 时代的前端机会判断框架。",
+      "O2V Framework 是一套面向 AI 时代的机会判断与价值实现框架。",
       "它试图回答一个简单但关键的问题：",
-      "当机会看起来无处不在时，我们如何判断哪些机会真正值得投入？",
+      "当机会看起来无处不在时，我们如何判断哪些机会真正值得投入资源、验证、owner 和执行？",
       "在 AI 时代，点子不再稀缺。",
       "信号到处都是。",
       "产品原型可以被更快做出来。",
       "内容可以被瞬间生成。",
-      "几乎每一个趋势，都可以被包装成一个创业故事。",
+      "几乎每一个趋势，都可以被包装成一个诱人的故事。",
       "但速度并不会自动消除不确定性。",
-      "更多点子不等于更好机会。",
+      "更多点子不等于更好的机会。",
       "一个能运行的 Demo 不等于真实需求成立。",
       "用户感兴趣不等于愿意付费。",
       "没有合规边界的增长，可能变成隐藏负债。",
-      "一个能赚短期收入的生意，也未必能沉淀为长期资产。",
-      "O2V Framework 的目的，是为创业机会的最前端判断建立一套纪律。",
-      "它帮助创业者、创新团队、咨询顾问和早期投资相关方，从分散的市场信号出发，形成结构化的机会判断。",
+      "一个能赚短期收入的业务，也未必能沉淀为长期资产。",
+      "O2V Framework 的目的，是为机会判断与价值创造的最前端建立一套纪律。",
+      "它帮助个人构建者、创业者、创新团队、咨询顾问、企业负责人和早期投资相关方，从分散的市场信号出发，形成结构化的机会判断。",
       "它关注一个机会是否具备："
     ],
     bullets: [
@@ -235,9 +241,9 @@ export const homeContent: Record<Locale, HomeContent> = {
       "可验证 MVP；",
       "可衡量的领先指标；",
       "可信的 Business Case；",
-      "可控的合规边界；",
+      "可控制的合规边界；",
       "可沉淀的资产化路径；",
-      "以及能够被证据支撑的融资叙事。"
+      "以及能够被证据支撑的价值叙事。"
     ],
     buttons: [
       { label: "阅读框架概览", href: "/zh/framework" },
@@ -245,41 +251,39 @@ export const homeContent: Record<Locale, HomeContent> = {
       { label: "版权与引用", href: "/zh/copyright" },
       { label: "下载 PDF", href: "/zh/download" }
     ],
-    jsonLdDescription:
-      "O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将机会信号转化为可验证的 Business Case 和可资产化的创业机会。"
+    jsonLdDescription: homeDescriptions.zh
   },
   de: {
     metadata: {
-      title: "O2V Framework | Opportunity-to-Venture Framework im KI-Zeitalter",
-      description:
-        "Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter. Es hilft, Chancensignale in überprüfbare Business Cases und Venture Assets zu überführen. Offizielle Veröffentlichung von Li Zhi.",
+      title: "O2V Framework | Opportunity-to-Value Framework für das KI-Zeitalter",
+      description: homeDescriptions.de,
       alternates: localizedAlternates("de")
     },
-    title: "Opportunity-to-Venture Framework",
-    subtitle: "Opportunity-to-Venture Framework",
-    tagline: ["Vom Signal zum Venture.", "Von der Idee zum Asset."],
+    title: "Opportunity-to-Value Framework",
+    subtitle: "Opportunity-to-Value Framework",
+    tagline: ["Vom Signal zum Wert.", "Von der Idee zum Asset."],
     deck: [
-      "Offizielle öffentliche Veröffentlichung 20260510",
-      "Interne Version: v1.4",
+      "Offizielle öffentliche Veröffentlichung 20260520",
+      "Interne Version: v1.5",
       "Copyright © Li Zhi. All rights reserved."
     ],
     body: [
-      "Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter.",
+      "Das O2V Framework ist ein Framework für Chancenbewertung und Wertrealisierung im KI-Zeitalter.",
       "Es wurde entwickelt, um eine einfache, aber entscheidende Frage zu beantworten:",
-      "Wenn Chancen überall sichtbar sind, woran erkennen wir, welche davon wirklich den Aufbau wert sind?",
+      "Wenn Chancen überall sichtbar sind, woran erkennen wir, welche davon Ressourcen, Validierung, Ownership und Umsetzung verdienen?",
       "Im KI-Zeitalter sind Ideen nicht mehr knapp.",
       "Signale sind überall.",
       "Produktprototypen können schneller erstellt werden als je zuvor.",
       "Inhalte können sofort generiert werden.",
-      "Fast jeder Trend kann in eine Startup-Geschichte verwandelt werden.",
+      "Fast jeder Trend kann in eine überzeugende Geschichte verwandelt werden.",
       "Doch Geschwindigkeit beseitigt keine Unsicherheit.",
       "Mehr Ideen bedeuten nicht automatisch bessere Chancen.",
       "Ein funktionierender Demo-Prototyp beweist noch keine echte Nachfrage.",
       "Nutzerinteresse führt nicht immer zu Zahlungsbereitschaft.",
       "Wachstum ohne Compliance-Grenzen kann zu einer versteckten Verbindlichkeit werden.",
       "Und ein Geschäft, das kurzfristige Einnahmen erzielt, wird nicht automatisch zu einem langfristigen Asset.",
-      "Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Venture-Entstehung zu bringen.",
-      "Es hilft Unternehmern, Innovationsteams, Beratern und Early-Stage-Investoren, aus verstreuten Marktsignalen eine strukturierte Chancenbewertung abzuleiten.",
+      "Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Chancenbewertung und Wertschöpfung zu bringen.",
+      "Es hilft individuellen Buildern, Unternehmern, Innovationsteams, Beratern, Unternehmensverantwortlichen und Early-Stage-Investoren, aus verstreuten Marktsignalen eine strukturierte Chancenbewertung abzuleiten.",
       "Es fragt, ob eine Chance Folgendes besitzt:"
     ],
     bullets: [
@@ -291,7 +295,7 @@ export const homeContent: Record<Locale, HomeContent> = {
       "einen glaubwürdigen Business Case;",
       "eine kontrollierbare Compliance-Grenze;",
       "einen Pfad zur Assetisierung;",
-      "und eine Finanzierungsgeschichte, die durch Evidenz gestützt werden kann."
+      "und eine Value Story, die durch Evidenz gestützt werden kann."
     ],
     buttons: [
       { label: "Framework-Überblick", href: "/de/framework" },
@@ -299,29 +303,28 @@ export const homeContent: Record<Locale, HomeContent> = {
       { label: "Urheberrecht & Zitierung", href: "/de/copyright" },
       { label: "PDF herunterladen", href: "/de/download" }
     ],
-    jsonLdDescription:
-      "Das O2V Framework ist ein Front-End-Framework zur Chancenbewertung im KI-Zeitalter, das Chancensignale in überprüfbare Business Cases und Venture Assets überführt."
+    jsonLdDescription: homeDescriptions.de
   }
 };
 
 export const sharedHomeClosing: Record<Locale, string[]> = {
   en: [
     "O2V does not try to replace proven methodologies.",
-    "It integrates and recomposes mature practices from entrepreneurship, product discovery, innovation management, business case design, investment screening, and risk governance.",
+    "It integrates and recomposes mature practices from entrepreneurship, product discovery, innovation management, business case design, value realization, investment screening, and risk governance.",
     "Its purpose is not to generate more ideas.",
-    "Its purpose is to identify which ideas deserve time, capital, and execution."
+    "Its purpose is to identify which opportunities deserve time, resources, validation, ownership, and execution."
   ],
   zh: [
     "O2V 并不试图替代已有成熟方法论。",
-    "它融合并重新编排了创业验证、产品发现、创新管理、商业案例设计、投资筛选和风险治理等领域的成熟方法论与实践。",
+    "它融合并重新编排了创业验证、产品发现、创新管理、商业案例设计、价值实现、投资筛选和风险治理等领域的成熟方法论与实践。",
     "它的目的不是生成更多点子。",
-    "它的目的，是判断哪些点子真正值得投入时间、资本和执行。"
+    "它的目的，是判断哪些机会真正值得投入时间、资源、验证、owner 和执行。"
   ],
   de: [
     "O2V versucht nicht, bewährte Methoden zu ersetzen.",
-    "Es integriert und rekombiniert reife Praktiken aus Entrepreneurship, Product Discovery, Innovationsmanagement, Business-Case-Design, Investment Screening und Risk Governance.",
+    "Es integriert und rekombiniert reife Praktiken aus Entrepreneurship, Product Discovery, Innovationsmanagement, Business-Case-Design, Wertrealisierung, Investment Screening und Risk Governance.",
     "Sein Ziel ist nicht, mehr Ideen zu generieren.",
-    "Sein Ziel ist es, zu erkennen, welche Ideen Zeit, Kapital und Umsetzung verdienen."
+    "Sein Ziel ist es, zu erkennen, welche Chancen Zeit, Ressourcen, Validierung, Ownership und Umsetzung verdienen."
   ]
 };
 
@@ -330,7 +333,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
     metadata: {
       title: "Core Principles | O2V Framework",
       description:
-        "Core principles of O2V Framework, the Opportunity-to-Venture Framework for AI-era opportunity judgment, business case validation, compliance gate review, and venture asset development.",
+        "Core principles of O2V Framework, the Opportunity-to-Value Framework for AI-era opportunity judgment, business case validation, compliance gate review, value asset development, and value realization.",
       alternates: localizedAlternates("en", "principles")
     },
     title: "Core Principles",
@@ -342,16 +345,16 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "Leading indicators must be defined after the MVP, because they exist to judge whether the MVP is validating the value hypothesis.",
       "A Business Case is not a presentation. It is a structured argument for why an opportunity deserves resources.",
       "Short-term revenue proves demand, but long-term assets define the ceiling.",
-      "Financing stories must be supported by validation data, not ambition alone.",
+      "Value stories must be supported by validation data, not ambition alone.",
       "Compliance risk is not a minor deduction. It is a gate that determines whether an opportunity can move forward.",
-      "O2V exists to reduce early-stage misjudgment before time, capital, and execution are committed."
+      "O2V exists to reduce early-stage misjudgment before time, resources, ownership, and execution are committed."
     ]
   },
   zh: {
     metadata: {
       title: "核心原则｜O2V Framework",
       description:
-        "O2V 框架核心原则：面向 AI 时代的前端机会判断框架，用于创业机会验证、Business Case、合规风险闸门、资产化路径和融资叙事。",
+        "O2V Framework 核心原则：面向 AI 时代的机会判断与价值实现框架，用于 Business Case 验证、合规风险闸门、价值资产发展和价值叙事。",
       alternates: localizedAlternates("zh", "principles")
     },
     title: "核心原则",
@@ -363,16 +366,16 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "领先指标必须在 MVP 之后定义，因为它们的作用是判断 MVP 是否正在验证价值假设。",
       "Business Case 不是展示材料，而是说明一个机会为何值得投入资源的结构化论证。",
       "短期收入证明需求，长期资产决定天花板。",
-      "融资叙事必须由验证数据支撑，而不能只靠愿景。",
+      "价值叙事必须由验证数据支撑，而不能只靠愿景。",
       "合规风险不是普通扣分项，而是决定机会能否继续推进的闸门。",
-      "O2V 的存在，是为了在投入时间、资本和执行之前，降低早期机会误判。"
+      "O2V 的存在，是为了在投入时间、资源、owner 和执行之前，降低早期机会误判。"
     ]
   },
   de: {
     metadata: {
       title: "Core Principles | O2V Framework",
       description:
-        "Core Principles des O2V Framework zur Chancenbewertung im KI-Zeitalter, Business Case Validierung, Compliance Gate, Assetisierung und Financing Story.",
+        "Core Principles des O2V Framework zur Chancenbewertung und Wertrealisierung im KI-Zeitalter, Business Case Validierung, Compliance Gate, Value Asset Development und Value Story.",
       alternates: localizedAlternates("de", "principles")
     },
     title: "Core Principles",
@@ -384,9 +387,9 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "Leading Indicators müssen nach dem MVP definiert werden, weil sie beurteilen sollen, ob das MVP die Value Hypothesis validiert.",
       "Ein Business Case ist keine Präsentation. Er ist ein strukturiertes Argument dafür, warum eine Chance Ressourcen verdient.",
       "Kurzfristiger Umsatz beweist Nachfrage, aber langfristige Assets definieren die Obergrenze.",
-      "Finanzierungserzählungen müssen durch Validierungsdaten gestützt werden, nicht nur durch Ambition.",
+      "Value Stories müssen durch Validierungsdaten gestützt werden, nicht nur durch Ambition.",
       "Compliance-Risiko ist kein kleiner Abzug. Es ist ein Gate, das bestimmt, ob eine Chance weiterverfolgt werden kann.",
-      "O2V existiert, um frühe Fehlbewertungen zu reduzieren, bevor Zeit, Kapital und Umsetzung gebunden werden."
+      "O2V existiert, um frühe Fehlbewertungen zu reduzieren, bevor Zeit, Ressourcen, Ownership und Umsetzung gebunden werden."
     ]
   }
 };
@@ -395,77 +398,76 @@ export const downloadCards: DownloadCard[] = [
   {
     key: "zh",
     labels: {
-      en: "Chinese PDF",
-      zh: "中文 PDF",
-      de: "Chinesische PDF"
+      en: "Chinese PDF — O2V Framework 20260520",
+      zh: "中文 PDF — O2V Framework 20260520",
+      de: "Chinesische PDF — O2V Framework 20260520"
     },
-    fileName: "o2v-framework-20260510-zh.pdf",
-    href: "/downloads/o2v-framework-20260510-zh.pdf"
+    fileName: "o2v-framework-20260520-zh.pdf",
+    href: "/downloads/o2v-framework-20260520-zh.pdf"
   },
   {
     key: "en",
     labels: {
-      en: "English PDF",
-      zh: "英文 PDF",
-      de: "Englische PDF"
+      en: "English PDF — O2V Framework 20260520",
+      zh: "英文 PDF — O2V Framework 20260520",
+      de: "Englische PDF — O2V Framework 20260520"
     },
-    fileName: "o2v-framework-20260510-en.pdf",
-    href: "/downloads/o2v-framework-20260510-en.pdf"
+    fileName: "o2v-framework-20260520-en.pdf",
+    href: "/downloads/o2v-framework-20260520-en.pdf"
   },
   {
     key: "de",
     labels: {
-      en: "German PDF",
-      zh: "德文 PDF",
-      de: "Deutsche PDF"
+      en: "German PDF — O2V Framework 20260520",
+      zh: "德文 PDF — O2V Framework 20260520",
+      de: "Deutsche PDF — O2V Framework 20260520"
     },
-    fileName: "o2v-framework-20260510-de.pdf",
-    href: "/downloads/o2v-framework-20260510-de.pdf"
+    fileName: "o2v-framework-20260520-de.pdf",
+    href: "/downloads/o2v-framework-20260520-de.pdf"
   }
 ];
 
 export const downloadContent: Record<Locale, DownloadContent> = {
   en: {
     metadata: {
-      title: "Download O2V Framework 20260510",
+      title: "Download O2V Framework 20260520",
       description:
-        "Download page for O2V Framework 20260510, Official Public Release 20260510, in Chinese, English, and German PDF formats.",
+        "Download page for O2V Framework 20260520, the Opportunity-to-Value Framework, with current release PDF downloads in Chinese, English, and German.",
       alternates: localizedAlternates("en", "download")
     },
-    title: "Download O2V Framework 20260510",
-    deck: ["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"],
-    fullReleaseNote:
-      "The complete official public release of O2V Framework 20260510 is available as PDF in English, Chinese, and German.",
-    note: "Official PDF versions are available below.",
-    button: "Download",
+    title: "Download O2V Framework 20260520",
+    deck: ["Opportunity-to-Value Framework", "Official Public Release 20260520", "Transition Release"],
+    fullReleaseNote: "O2V Framework 20260520 PDF downloads are available in Chinese, English, and German.",
+    note:
+      "Current PDF files are placeholder release files and will be replaced with the final designed PDFs when ready.",
+    button: "Download PDF",
     permissionReminder:
-      "For citation, training, consulting delivery, commercial use, adaptation, translation, or substantial reuse, prior permission from Li Zhi is required.",
+      "Permission is required for adaptation, translation, commercial use, training, consulting delivery, productization, model training, or substantial reuse.",
     fields: {
       language: "Language",
       fileName: "File name",
       version: "Version",
-      internalVersion: "Internal Version",
+      internalVersion: "Internal version",
       copyright: "Copyright"
     },
-    versionValue: "Official Public Release 20260510",
-    internalVersionValue: "v1.4",
+    versionValue: "Official Public Release 20260520",
+    internalVersionValue: "v1.5",
     copyrightValue: "Copyright © Li Zhi. All rights reserved."
   },
   zh: {
     metadata: {
-      title: "下载 O2V Framework 20260510",
+      title: "下载 O2V Framework 20260520",
       description:
-        "下载 O2V Framework 20260510 官方公开发布版，提供中文、英文、德文 PDF 下载入口。",
+        "下载 O2V Framework 20260520，即 Opportunity-to-Value Framework，提供中文、英文、德文 PDF 下载入口。",
       alternates: localizedAlternates("zh", "download")
     },
-    title: "下载 O2V Framework 20260510",
-    deck: ["Opportunity-to-Venture Framework", "官方公开发布版 20260510", "内部版本：v1.4"],
-    fullReleaseNote:
-      "O2V Framework 20260510 的完整官方公开发布版以 PDF 形式提供，包含英文、中文和德文版本。",
-    note: "官方 PDF 版本可在下方下载。",
-    button: "下载",
+    title: "下载 O2V Framework 20260520",
+    deck: ["Opportunity-to-Value Framework", "官方公开发布版 20260520", "Transition Release"],
+    fullReleaseNote: "O2V Framework 20260520 PDF 提供中文、英文和德文下载。",
+    note: "当前 PDF 文件为占位发布文件，最终设计版 PDF 准备完成后会替换。",
+    button: "下载 PDF",
     permissionReminder:
-      "如需引用、培训、咨询交付、商业使用、改编、翻译或实质性复用，应事先征得李智明确同意。",
+      "任何改编、翻译、商业使用、培训、咨询交付、产品化、模型训练或实质性复用均需获得授权。",
     fields: {
       language: "语言",
       fileName: "文件名",
@@ -473,56 +475,64 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       internalVersion: "内部版本",
       copyright: "版权"
     },
-    versionValue: "官方公开发布版 20260510",
-    internalVersionValue: "v1.4",
-    copyrightValue: "版权所有人：李智 / Li Zhi。保留所有权利。"
+    versionValue: "官方公开发布版 20260520",
+    internalVersionValue: "v1.5",
+    copyrightValue: "版权所有人：李智 / Li Zhi"
   },
   de: {
     metadata: {
-      title: "O2V Framework 20260510 herunterladen",
+      title: "O2V Framework 20260520 herunterladen",
       description:
-        "Download-Seite für O2V Framework 20260510, Official Public Release 20260510, mit chinesischen, englischen und deutschen PDF-Dateien.",
+        "Download-Seite für das O2V Framework 20260520, das Opportunity-to-Value Framework, mit aktuellen PDF-Downloads auf Chinesisch, Englisch und Deutsch.",
       alternates: localizedAlternates("de", "download")
     },
-    title: "O2V Framework 20260510 herunterladen",
-    deck: ["Opportunity-to-Venture Framework", "Offizielle öffentliche Veröffentlichung 20260510", "Interne Version: v1.4"],
-    fullReleaseNote:
-      "Die vollständige offizielle Veröffentlichung des O2V Framework 20260510 steht als PDF auf Englisch, Chinesisch und Deutsch zur Verfügung.",
-    note: "Die offiziellen PDF-Versionen stehen unten zum Download bereit.",
-    button: "Herunterladen",
+    title: "O2V Framework 20260520 herunterladen",
+    deck: ["Opportunity-to-Value Framework", "Official Public Release 20260520", "Transition Release"],
+    fullReleaseNote: "O2V Framework 20260520 PDF-Downloads sind auf Chinesisch, Englisch und Deutsch verfügbar.",
+    note:
+      "Die aktuellen PDF-Dateien sind Platzhalter und werden ersetzt, sobald die final gestalteten PDFs bereitstehen.",
+    button: "PDF herunterladen",
     permissionReminder:
-      "Für Zitierung, Training, Beratungsleistungen, kommerzielle Nutzung, Anpassung, Übersetzung oder substanzielle Wiederverwendung ist die vorherige ausdrückliche Zustimmung von Li Zhi erforderlich.",
+      "Für Anpassung, Übersetzung, kommerzielle Nutzung, Training, Beratung, Produktisierung, Modelltraining oder wesentliche Wiederverwendung ist eine Genehmigung erforderlich.",
     fields: {
       language: "Sprache",
       fileName: "Dateiname",
       version: "Version",
       internalVersion: "Interne Version",
-      copyright: "Urheberrecht"
+      copyright: "Copyright"
     },
-    versionValue: "Offizielle öffentliche Veröffentlichung 20260510",
-    internalVersionValue: "v1.4",
+    versionValue: "Official Public Release 20260520",
+    internalVersionValue: "v1.5",
     copyrightValue: "Copyright © Li Zhi. All rights reserved."
   }
 };
 
-export const businessCaseModules = [
-  "Project Name",
-  "One-Sentence Opportunity Judgment",
-  "Target User & Persona",
-  "Core Pain and Willingness to Pay",
-  "Benefits Hypothesis",
-  "MVP",
-  "Leading Indicators",
-  "Financial Metrics",
-  "Verification Plan",
-  "Solution Roadmap",
-  "Market & Channel Fit",
-  "Business Model",
-  "Assetization Path",
-  "Financing Story",
-  "Key Risks & Compliance Level",
-  "O2V Score + Recommendation"
-];
+export const businessCaseModules: Record<Locale, string[]> = {
+  en: [
+    "Benefits Hypothesis",
+    "MVP",
+    "Leading Indicators",
+    "Financial Metrics",
+    "Verification Plan",
+    "Value Story / Financing Story in venture context"
+  ],
+  zh: [
+    "价值收益假设",
+    "MVP",
+    "领先指标",
+    "财务指标",
+    "验证计划",
+    "价值叙事 / 创业语境下的融资叙事"
+  ],
+  de: [
+    "Benefits Hypothesis",
+    "MVP",
+    "Leading Indicators",
+    "Financial Metrics",
+    "Verification Plan",
+    "Value Story / Financing Story im Venture-Kontext"
+  ]
+};
 
 export const deliverables: Record<Locale, string[]> = {
   en: [
@@ -533,18 +543,9 @@ export const deliverables: Record<Locale, string[]> = {
     "Business Case",
     "Validation Plan",
     "Assetization Path",
-    "Financing Story"
+    "Value Story"
   ],
-  zh: [
-    "机会信号清单",
-    "机会卡片",
-    "O2V 评分",
-    "合规风险等级",
-    "Business Case / 商业案例",
-    "验证计划",
-    "资产化路径",
-    "融资叙事框架"
-  ],
+  zh: ["机会信号清单", "机会卡片", "O2V 评分", "合规风险等级", "Business Case", "验证计划", "资产化路径", "价值叙事框架"],
   de: [
     "Opportunity Signal List",
     "Opportunity Card",
@@ -553,397 +554,282 @@ export const deliverables: Record<Locale, string[]> = {
     "Business Case",
     "Validation Plan",
     "Assetization Path",
-    "Financing Story"
+    "Value Story / Wertnarrativ"
   ]
-};
-
-const frameworkMetadata: Record<Locale, Metadata> = {
-  en: {
-    title: "O2V Framework 20260510 | Official Web Overview",
-    description:
-      "A web overview of O2V Framework 20260510, presenting the core structure, 9-step judgment chain, scoring logic, and key principles. Download the complete official public release as PDF.",
-    alternates: localizedAlternates("en", "framework")
-  },
-  zh: {
-    title: "O2V Framework 20260510｜官方网页概览版",
-    description:
-      "O2V Framework 20260510 的官方网页概览版，呈现核心结构、九步判断链路、评分逻辑和关键原则。完整官方公开发布版请下载 PDF。",
-    alternates: localizedAlternates("zh", "framework")
-  },
-  de: {
-    title: "O2V Framework 20260510 | Offizieller Web-Überblick",
-    description:
-      "Ein Web-Überblick über das O2V Framework 20260510 mit Kernstruktur, 9-stufiger Bewertungskette, Scoring-Logik und wichtigsten Prinzipien. Die vollständige offizielle Veröffentlichung ist als PDF verfügbar.",
-    alternates: localizedAlternates("de", "framework")
-  }
 };
 
 export const frameworkContent: Record<Locale, FrameworkContent> = {
   en: {
-    metadata: frameworkMetadata.en,
-    title: "O2V Framework 20260510",
-    subtitle: "Official Web Overview",
-    overview: [
-      "This page provides a web overview of O2V Framework 20260510. It presents the core structure, judgment chain, scoring logic, and key principles for quick reading and online reference.",
-      "For the complete official public release, including the full framework explanation, detailed step descriptions, scoring model, Business Case template, compliance risk gate, deliverables, copyright notice, and citation guidance, please download the PDF version from the Download page."
-    ],
-    cta: {
-      label: "Download Full PDF Release",
-      href: "/en/download"
+    metadata: {
+      title: "O2V Framework 20260520 | Official Web Overview",
+      description:
+        "A web overview of O2V Framework 20260520, the Opportunity-to-Value Framework, presenting the core structure, 9-step judgment chain, scoring logic, and key principles.",
+      alternates: localizedAlternates("en", "framework")
     },
+    title: "O2V Framework 20260520",
+    subtitle: "Opportunity-to-Value Framework",
+    overview: [
+      "This page provides a web overview of O2V Framework 20260520. It presents the core structure, judgment chain, scoring logic, and key principles for quick reading and online reference.",
+      "The download page now points to the 20260520 PDF release files. Current files are placeholders until the final designed PDFs are added."
+    ],
+    cta: { label: "Download PDFs", href: "/en/download" },
     sections: [
       {
         heading: "One-Sentence Definition",
         body: [
-          "O2V Framework, the Opportunity-to-Venture Framework, is an AI-era opportunity judgment framework that helps convert market signals into verifiable Business Cases, venture assets, and financing stories."
+          "O2V Framework, the Opportunity-to-Value Framework, is an AI-era opportunity judgment and value realization framework that helps convert opportunity signals into validated value, Business Cases, value assets, and evidence-backed value stories."
         ]
       },
       {
         heading: "Founding Statement",
         body: [
-          "O2V Framework was created for a world where ideas, prototypes, and content can be produced rapidly, but opportunity quality remains hard to judge.",
-          "Its role is to help founders, innovators, consultants, and early-stage investors decide which signals deserve time, capital, and execution."
+          "O2V Framework was designed to bring discipline to the earliest stage of opportunity judgment and value creation.",
+          "It helps teams decide whether a signal can become a validated opportunity, a credible Business Case, a value asset, and a story that deserves continued resources."
         ]
       },
       {
         heading: "Positioning Statement",
         body: [
-          "O2V is a front-end judgment framework, not a software product, sales funnel, or operating system.",
-          "It integrates methodologies and practices from entrepreneurship, product discovery, innovation management, business case validation framework design, venture opportunity assessment framework thinking, investment screening, and risk governance."
+          "O2V is not a replacement for existing methodologies. It is a structured integration and recomposition of mature practices from entrepreneurship, product discovery, innovation management, business case design, value realization, investment screening, and risk governance.",
+          "Its independent value lies in organizing mature practices into a continuous opportunity-to-value assessment chain."
         ]
       },
       {
         heading: "Why the AI Era Needs O2V",
         body: [
-          "The AI era makes opportunity signals abundant and execution faster. It also makes weak opportunities easier to package as convincing narratives.",
-          "O2V provides a disciplined path from signal to evidence, from evidence to Business Case, and from Business Case to venture asset."
+          "AI increases the speed of ideation, prototyping, and content production. It also increases the risk of mistaking activity for validated opportunity.",
+          "O2V provides a disciplined path from signal to evidence, from evidence to Business Case, and from Business Case to value asset."
         ]
       },
       {
         heading: "Applicable Scenarios",
         bullets: [
-          "Startup opportunity validation framework for founders before committing resources.",
-          "Corporate innovation screening before a pilot or internal venture is approved.",
+          "Opportunity validation before founders, builders, or teams commit resources.",
+          "Corporate innovation screening before a pilot, AI use case, or internal venture is approved.",
           "Consulting work that requires a clear opportunity card, validation plan, and recommendation.",
-          "Early-stage investment review before a financing story is accepted.",
-          "AI-era opportunity judgment framework for new products, services, content ventures, and platform opportunities."
+          "Early-stage investment review before an investor story is accepted.",
+          "AI-era opportunity judgment for new products, services, content ventures, enterprise initiatives, and platform opportunities."
         ]
       },
       {
-        heading: "The 9-Step Judgment Chain",
-        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story"]
+        heading: "9-Step Judgment Chain",
+        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story"]
       },
       {
         heading: "Step Details",
         ordered: [
-          "Signal: identify the external change, user behavior, market anomaly, technology shift, or regulatory trigger.",
-          "Scenario: define the concrete situation where the signal creates a new or intensified need.",
-          "Persona: specify the target user, decision-maker, payer, or beneficiary.",
-          "Pain: assess urgency, frequency, cost of inaction, and willingness to pay.",
-          "Product: define the smallest testable solution direction and the MVP required for learning.",
-          "Validation: connect the MVP to Benefits Hypothesis, Leading Indicators, Financial Metrics, and Verification Plan.",
-          "Business Case: build the structured argument for why the opportunity deserves resources.",
-          "Asset: clarify the Assetization Path, including reusable data, workflow, IP, brand, channel, or operational advantage.",
-          "Financing Story: translate validated evidence into an investable narrative supported by facts."
-        ]
-      },
-      {
-        heading: "O2V Scoring Model",
-        bullets: [
-          "Base Opportunity Score: 100 points",
-          "Compliance Risk Adjustment: up to -50 points",
-          "Red-line risk: immediate elimination"
-        ],
-        body: [
-          "The score is a judgment aid, not a substitute for judgment. Compliance gate review is treated as a boundary condition because unmanaged risk can invalidate an otherwise attractive opportunity."
-        ]
-      },
-      {
-        heading: "Compliance Risk Gate",
-        body: [
-          "The compliance gate evaluates legal, regulatory, data, privacy, platform, content, financial, employment, and sector-specific risks.",
-          "A high score cannot rescue an opportunity with red-line risk. Where boundaries are unclear, the recommendation should require expert review before execution."
+          "Signal: capture opportunity signals before judging them.",
+          "Scenario: test whether the signal can exist in a real use context.",
+          "Persona: clarify who uses, pays, decides, recommends, and repeatedly needs the solution.",
+          "Pain: judge whether the problem is frequent, intense, valuable, and connected to willingness to pay.",
+          "Product: define the minimum product or experience needed to validate the most critical assumption.",
+          "Validation: turn the MVP into measurable evidence.",
+          "Business Case: connect the value hypothesis, MVP, leading indicators, financial metrics, and verification plan.",
+          "Asset: identify whether the opportunity can build long-term user, data, content, methodology, product, channel, brand, ecosystem, or rights assets.",
+          "Value Story: translate validated evidence into a clear narrative explaining why the opportunity deserves resources, ownership, scaling, or investment."
         ]
       },
       {
         heading: "Business Case Template",
         body: [
           "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
-          "Leading indicators exist to judge whether the MVP is validating the value hypothesis."
+          "Leading Indicators exist to judge whether the MVP is validating the Value Hypothesis.",
+          "This chain is not only for fundraising. It is used to judge whether an opportunity deserves further resources, ownership, operation, scaling, or investment."
         ],
-        ordered: businessCaseModules
+        ordered: businessCaseModules.en
       },
+      { heading: "Core Principles", ordered: principleContent.en.principles },
+      { heading: "Framework Deliverables", ordered: deliverables.en },
       {
-        heading: "Core Principles",
-        ordered: principleContent.en.principles
-      },
-      {
-        heading: "Framework Deliverables",
-        ordered: deliverables.en
-      },
-      {
-        heading: "Copyright, Citation, and Legal Notice",
+        heading: "Copyright, Citation and Legal Notice",
         body: [
           "Copyright © Li Zhi. All rights reserved.",
-          "Citation: Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510.",
-          "O2V Framework does not claim exclusive rights over general concepts such as MVP, persona, business model, leading indicators, risk assessment, or business case.",
-          "O2V Framework is not affiliated with, endorsed by, certified by, or officially connected with Lean Startup, Design Thinking, Jobs to Be Done, Business Model Canvas, Value Proposition Canvas, Stage-Gate, or any referenced methodology or organization.",
-          "This publication is for informational and educational purposes and does not constitute legal, investment, financial, tax, or professional advice."
-        ]
-      },
-      {
-        heading: "Version Note",
-        body: [
-          "Version name: O2V Framework 20260510.",
-          "Release type: Official Public Release 20260510.",
-          "Internal Version: v1.4.",
-          "Official site: www.o2vframework.com."
+          "Citation: Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520.",
+          "Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration."
         ]
       }
     ]
   },
   zh: {
-    metadata: frameworkMetadata.zh,
-    title: "O2V Framework 20260510",
-    subtitle: "官方网页概览版",
-    overview: [
-      "本页面为 O2V Framework 20260510 的官方网页概览版，用于快速阅读和在线引用，重点呈现框架的核心结构、九步判断链路、评分逻辑和关键原则。",
-      "如需查看完整官方公开发布版，包括完整框架说明、九步法详细解释、评分模型、Business Case 模板、合规风险闸门、框架交付物、版权声明和引用说明，请前往 Download 页面下载 PDF 版本。"
-    ],
-    cta: {
-      label: "下载完整 PDF 发布版",
-      href: "/zh/download"
+    metadata: {
+      title: "O2V Framework 20260520｜官方网页概览版",
+      description:
+        "O2V Framework 20260520 的官方网页概览版，即 Opportunity-to-Value Framework，呈现核心结构、九步判断链路、评分逻辑和关键原则。",
+      alternates: localizedAlternates("zh", "framework")
     },
+    title: "O2V Framework 20260520",
+    subtitle: "Opportunity-to-Value Framework",
+    overview: [
+      "本页面为 O2V Framework 20260520 的官方网页概览版，用于快速阅读和在线引用，重点呈现框架的核心结构、九步判断链路、评分逻辑和关键原则。",
+      "下载页已指向 20260520 PDF 发布文件。当前文件为占位版本，最终设计版 PDF 准备完成后会替换。"
+    ],
+    cta: { label: "下载 PDF", href: "/zh/download" },
     sections: [
       {
         heading: "一句话定义",
         body: [
-          "O2V Framework，即 Opportunity-to-Venture Framework，是一套面向 AI 时代的前端机会判断框架，用于将机会信号转化为可验证的 Business Case、创业资产和融资叙事。"
+          "O2V Framework，即 Opportunity-to-Value Framework，是一套面向 AI 时代的机会判断与价值实现框架，用于将机会信号转化为可验证价值、Business Case、价值资产和由证据支撑的价值叙事。"
         ]
       },
       {
         heading: "创始声明",
         body: [
-          "O2V Framework 面向一个点子、原型和内容都可以被快速生产，但机会质量仍然难以判断的时代。",
-          "它帮助创业者、创新团队、咨询顾问和早期投资相关方判断哪些信号真正值得投入时间、资本和执行。"
+          "O2V Framework 的目的，是为机会判断与价值创造的最前端建立一套纪律。",
+          "它帮助团队判断一个信号是否能够成为经过验证的机会、可信的 Business Case、可沉淀的价值资产，以及值得继续获得资源支持的价值叙事。"
         ]
       },
       {
-        heading: "方法定位",
+        heading: "定位声明",
         body: [
-          "O2V 是一套前端判断框架，不是软件产品、销售漏斗或运营系统。",
-          "它融合了创业验证、产品发现、创新管理、Business Case 验证框架、创业机会评估框架、投资筛选和风险治理中的成熟方法论与实践。"
+          "O2V 并不是替代既有方法论，而是将创业验证、产品发现、创新管理、商业案例设计、价值实现、投资筛选和风险治理等成熟实践进行结构化整合与重新编排。",
+          "它的独立价值，在于将成熟实践组织为一条连续的 opportunity-to-value assessment 链路。"
         ]
       },
       {
         heading: "为什么 AI 时代需要 O2V",
         body: [
-          "AI 时代让机会信号变得丰富，也让执行速度变得更快。与此同时，弱机会也更容易被包装成看似可信的叙事。",
-          "O2V 提供从信号到证据、从证据到 Business Case、从 Business Case 到创业资产的纪律化路径。"
+          "AI 提高了构思、原型和内容生产的速度，也提高了把活动误认为已验证机会的风险。",
+          "O2V 提供一条从信号到证据、从证据到 Business Case、从 Business Case 到价值资产的纪律化路径。"
         ]
       },
       {
         heading: "适用场景",
         bullets: [
-          "创业者在投入资源前，用于创业机会验证。",
-          "企业创新团队在批准试点或内部创业项目前，用于筛选机会。",
-          "咨询项目中，用于形成机会卡、验证计划和建议结论。",
-          "早期投资评估中，用于判断融资叙事是否具备证据基础。",
-          "面向 AI 时代的新产品、新服务、内容型业务和平台机会的前端机会判断。"
+          "创始人、构建者或团队投入资源之前的机会验证。",
+          "企业在批准试点、AI 用例或内部创业项目前的创新筛选。",
+          "需要形成清晰机会卡片、验证计划和建议的咨询工作。",
+          "早期投资人在接受投资叙事之前的机会审查。",
+          "面向新产品、服务、内容型机会、企业倡议和平台机会的 AI 时代机会判断。"
         ]
       },
       {
-        heading: "O2V 九步判断链路",
+        heading: "九步判断链路",
         body: [
-          "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story",
-          "机会信号 → 场景重构 → 目标用户画像 → 真实痛点与付费动机 → 最小产品定义 → 验证设计 → 完整商业案例 → 资产化路径设计 → 融资叙事预判"
+          "机会信号 → 场景重构 → 目标用户画像 → 真实痛点与付费动机 → 最小产品定义 → 验证设计 → 完整商业案例 → 资产化路径设计 → 价值叙事"
         ]
       },
       {
-        heading: "九步法说明",
+        heading: "步骤说明",
         ordered: [
-          "Signal：识别外部变化、用户行为、市场异常、技术变化或监管触发因素。",
-          "Scenario：定义信号产生新需求或强化既有需求的具体场景。",
-          "Persona：明确目标用户、决策者、付费方或受益方。",
-          "Pain：评估痛点的紧迫性、频率、不行动成本和付费意愿。",
-          "Product：定义最小可测试解决方案方向，以及用于学习的 MVP。",
-          "Validation：将 MVP 连接到 Benefits Hypothesis、Leading Indicators、Financial Metrics 和 Verification Plan。",
-          "Business Case：形成说明机会为何值得投入资源的结构化论证。",
-          "Asset：明确 Assetization Path，包括可复用数据、流程、知识产权、品牌、渠道或运营优势。",
-          "Financing Story：将已验证证据转化为由事实支撑的可融资叙事。"
-        ]
-      },
-      {
-        heading: "O2V 评分模型",
-        bullets: ["基础机会分：100 分", "合规风险调整项：最高扣 50 分", "红线风险：直接淘汰"],
-        body: [
-          "评分是判断辅助，不是判断本身的替代。合规风险闸门被视为边界条件，因为未被控制的风险可能使一个看似有吸引力的机会失效。"
-        ]
-      },
-      {
-        heading: "合规风险闸门",
-        body: [
-          "合规风险闸门评估法律、监管、数据、隐私、平台、内容、金融、用工和行业特定风险。",
-          "高机会分不能挽救存在红线风险的机会。边界不清时，建议应要求在执行前进行专家审查。"
+          "Signal：捕捉机会信号，不急于做判断。",
+          "Scenario：判断信号是否能落入真实使用场景。",
+          "Persona：明确谁使用、谁付费、谁决策、谁推荐、谁会反复需要。",
+          "Pain：判断问题是否高频、高强度、高价值，并与付费动机相连。",
+          "Product：定义验证最关键假设的最小产品或体验。",
+          "Validation：把 MVP 转化为可衡量证据。",
+          "Business Case：整合价值收益假设、MVP、领先指标、财务指标和验证计划。",
+          "Asset：判断机会是否能沉淀用户、数据、内容、方法论、产品、渠道、品牌、生态或长期权利资产。",
+          "Value Story：将已验证证据转化为清晰的价值叙事，说明该机会为什么值得继续获得资源、owner、规模化投入或投资支持。"
         ]
       },
       {
         heading: "Business Case 模板",
         body: [
-          "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
-          "价值收益假设 → 最小验证产品 → 领先验证指标 → 财务验证指标 → 验证计划",
-          "领先指标用于判断 MVP 是否正在验证价值假设。"
+          "Business Case 验证链条：Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
+          "Leading Indicators 用于判断 MVP 是否正在验证 Value Hypothesis。",
+          "这条链路不只是为了融资，而是为了判断一个机会是否值得继续获得资源、owner、运营投入、规模化支持或投资支持。"
         ],
-        ordered: businessCaseModules
+        ordered: businessCaseModules.zh
       },
-      {
-        heading: "核心原则",
-        ordered: principleContent.zh.principles
-      },
-      {
-        heading: "框架交付物",
-        ordered: deliverables.zh
-      },
+      { heading: "核心原则", ordered: principleContent.zh.principles },
+      { heading: "框架交付物", ordered: deliverables.zh },
       {
         heading: "版权、引用与法律声明",
         body: [
           "版权所有人：李智 / Li Zhi。保留所有权利。",
-          "引用格式：来源：李智，O2V Framework：Opportunity-to-Venture Framework，从机会信号到创业资产的前端机会判断框架，官方公开发布版 20260510。",
-          "O2V Framework 不主张对 MVP、用户画像、商业模式、领先指标、风险评估、商业案例等通用概念本身享有排他性权利。",
-          "O2V Framework is not affiliated with, endorsed by, certified by, or officially connected with Lean Startup, Design Thinking, Jobs to Be Done, Business Model Canvas, Value Proposition Canvas, Stage-Gate, or any referenced methodology or organization.",
-          "本发布内容仅用于信息和教育目的，不构成法律、投资、金融、税务或专业建议。"
-        ]
-      },
-      {
-        heading: "版本说明",
-        body: [
-          "版本名称：O2V Framework 20260510。",
-          "发布类型：官方公开发布版 20260510。",
-          "内部版本：v1.4。",
-          "官方网站：www.o2vframework.com。"
+          "引用格式：来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到可验证价值的机会判断与价值实现框架，官方公开发布版 20260520。",
+          "Opportunity-to-Venture 仅作为历史发布措辞和创业语境配置保留。"
         ]
       }
     ]
   },
   de: {
-    metadata: frameworkMetadata.de,
-    title: "O2V Framework 20260510",
-    subtitle: "Offizieller Web-Überblick",
-    overview: [
-      "Diese Seite bietet einen Web-Überblick über das O2V Framework 20260510. Sie stellt die Kernstruktur, die Bewertungskette, die Scoring-Logik und die wichtigsten Prinzipien für eine schnelle Lektüre und Online-Referenz dar.",
-      "Für die vollständige offizielle Veröffentlichung, einschließlich ausführlicher Framework-Erklärung, detaillierter Schrittbeschreibungen, Scoring-Modell, Business-Case-Template, Compliance Risk Gate, Deliverables, Urheberrechtshinweis und Zitierhinweisen, laden Sie bitte die PDF-Version auf der Download-Seite herunter."
-    ],
-    cta: {
-      label: "Vollständige PDF-Version herunterladen",
-      href: "/de/download"
+    metadata: {
+      title: "O2V Framework 20260520 | Offizieller Web-Überblick",
+      description:
+        "Ein Web-Überblick über das O2V Framework 20260520, das Opportunity-to-Value Framework, mit Kernstruktur, 9-stufiger Bewertungskette, Scoring-Logik und wichtigsten Prinzipien.",
+      alternates: localizedAlternates("de", "framework")
     },
+    title: "O2V Framework 20260520",
+    subtitle: "Opportunity-to-Value Framework",
+    overview: [
+      "Diese Seite bietet einen Web-Überblick über das O2V Framework 20260520. Sie stellt die Kernstruktur, die Bewertungskette, die Scoring-Logik und die wichtigsten Prinzipien für schnelle Lektüre und Online-Referenz dar.",
+      "Die Download-Seite verweist nun auf die PDF-Dateien der Version 20260520. Die aktuellen Dateien sind Platzhalter, bis die final gestalteten PDFs ergänzt werden."
+    ],
+    cta: { label: "PDFs herunterladen", href: "/de/download" },
     sections: [
       {
         heading: "Definition in einem Satz",
         body: [
-          "Das O2V Framework, das Opportunity-to-Venture Framework, ist ein Framework zur Chancenbewertung im KI-Zeitalter, das Marktsignale in überprüfbare Business Cases, Venture Assets und Financing Stories überführt."
+          "Das O2V Framework, das Opportunity-to-Value Framework, ist ein Framework für Chancenbewertung und Wertrealisierung im KI-Zeitalter, das Chancensignale in validierten Wert, Business Cases, Value Assets und evidenzgestützte Value Stories überführt."
         ]
       },
       {
         heading: "Gründungserklärung",
         body: [
-          "Das O2V Framework wurde für eine Welt entwickelt, in der Ideen, Prototypen und Inhalte schnell produziert werden können, die Qualität einer Chance jedoch schwer zu beurteilen bleibt.",
-          "Es hilft Unternehmern, Innovationsteams, Beratern und Early-Stage-Investoren zu entscheiden, welche Signale Zeit, Kapital und Umsetzung verdienen."
+          "Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Chancenbewertung und Wertschöpfung zu bringen.",
+          "Es hilft Teams zu entscheiden, ob ein Signal zu einer validierten Chance, einem glaubwürdigen Business Case, einem Value Asset und einer Story werden kann, die weitere Ressourcen verdient."
         ]
       },
       {
         heading: "Positionierung",
         body: [
-          "O2V ist ein Front-End-Bewertungsframework, kein Softwareprodukt, Sales Funnel oder Betriebssystem.",
-          "Es integriert Methodologien und Praktiken aus Entrepreneurship, Product Discovery, Innovationsmanagement, Business-Case-Validierung, Venture Opportunity Assessment, Investment Screening und Risk Governance."
+          "O2V ersetzt keine bestehenden Methoden. Es ist eine strukturierte Integration und Rekombination reifer Praktiken aus Entrepreneurship, Product Discovery, Innovationsmanagement, Business-Case-Design, Wertrealisierung, Investment Screening und Risk Governance.",
+          "Sein eigenständiger Wert liegt darin, reife Praktiken in eine kontinuierliche opportunity-to-value assessment chain zu bringen."
         ]
       },
       {
         heading: "Warum das KI-Zeitalter O2V braucht",
         body: [
-          "Das KI-Zeitalter macht Chancensignale reichlich verfügbar und beschleunigt die Umsetzung. Zugleich lassen sich schwache Chancen leichter als überzeugende Narrative verpacken.",
-          "O2V bietet einen disziplinierten Pfad vom Signal zur Evidenz, von der Evidenz zum Business Case und vom Business Case zum Venture Asset."
+          "KI erhöht die Geschwindigkeit von Ideenfindung, Prototyping und Content-Produktion. Sie erhöht auch das Risiko, Aktivität mit validierter Chance zu verwechseln.",
+          "O2V bietet einen disziplinierten Pfad vom Signal zur Evidenz, von der Evidenz zum Business Case und vom Business Case zum Value Asset."
         ]
       },
       {
-        heading: "Anwendungsbereiche",
+        heading: "Anwendungsszenarien",
         bullets: [
-          "Startup Opportunity Validation Framework für Gründer vor der Ressourcenbindung.",
-          "Screening von Corporate-Innovation-Vorhaben vor Pilotfreigabe oder internem Venture.",
-          "Beratungsarbeit mit Opportunity Card, Validation Plan und Empfehlung.",
-          "Early-Stage-Investmentprüfung, bevor eine Financing Story akzeptiert wird.",
-          "Framework zur Chancenbewertung im KI-Zeitalter für neue Produkte, Services, Content Ventures und Plattformchancen."
+          "Opportunity Validation, bevor Gründer, Builder oder Teams Ressourcen binden.",
+          "Corporate-Innovation-Screening, bevor ein Pilot, AI Use Case oder internes Venture freigegeben wird.",
+          "Beratungsarbeit, die eine klare Opportunity Card, einen Validierungsplan und eine Empfehlung benötigt.",
+          "Early-Stage-Investmentprüfung, bevor eine Investor Story akzeptiert wird.",
+          "Chancenbewertung im KI-Zeitalter für neue Produkte, Services, Content Ventures, Enterprise Initiatives und Plattformchancen."
         ]
       },
       {
-        heading: "Die 9-stufige Bewertungskette",
-        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story"]
+        heading: "9-stufige Bewertungskette",
+        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story"]
       },
       {
         heading: "Erläuterung der Schritte",
         ordered: [
-          "Signal: externe Veränderung, Nutzerverhalten, Marktanomalie, technologische Verschiebung oder regulatorischen Auslöser identifizieren.",
-          "Scenario: konkrete Situation definieren, in der das Signal einen neuen oder verstärkten Bedarf erzeugt.",
-          "Persona: Zielnutzer, Entscheider, Zahler oder Begünstigten spezifizieren.",
-          "Pain: Dringlichkeit, Häufigkeit, Kosten des Nicht-Handelns und Zahlungsbereitschaft bewerten.",
-          "Product: kleinste testbare Lösungsrichtung und das MVP für Lernen definieren.",
-          "Validation: MVP mit Benefits Hypothesis, Leading Indicators, Financial Metrics und Verification Plan verbinden.",
-          "Business Case: strukturiertes Argument erstellen, warum die Chance Ressourcen verdient.",
-          "Asset: Assetization Path klären, einschließlich wiederverwendbarer Daten, Workflows, IP, Marke, Kanal oder operativer Vorteile.",
-          "Financing Story: validierte Evidenz in ein investierbares, faktenbasiertes Narrativ übersetzen."
-        ]
-      },
-      {
-        heading: "O2V Scoring Model",
-        bullets: [
-          "Base Opportunity Score: maximal 100 Punkte",
-          "Compliance Risk Adjustment: bis zu -50 Punkte",
-          "Red-Line-Risiken: sofortige Eliminierung"
-        ],
-        body: [
-          "Der Score ist eine Entscheidungshilfe, kein Ersatz für Urteilskraft. Das Compliance Gate wird als Grenzbedingung behandelt, weil nicht kontrolliertes Risiko eine attraktive Chance entwerten kann."
-        ]
-      },
-      {
-        heading: "Compliance Risk Gate",
-        body: [
-          "Das Compliance Risk Gate bewertet rechtliche, regulatorische, datenbezogene, Datenschutz-, Plattform-, Content-, Finanz-, Beschäftigungs- und branchenspezifische Risiken.",
-          "Ein hoher Score kann eine Chance mit Red-Line-Risiko nicht retten. Bei unklaren Grenzen sollte die Empfehlung eine fachliche Prüfung vor der Umsetzung verlangen."
+          "Signal: Chancensignale erfassen, bevor sie bewertet werden.",
+          "Scenario: prüfen, ob das Signal in einem realen Nutzungskontext bestehen kann.",
+          "Persona: klären, wer nutzt, zahlt, entscheidet, empfiehlt und wiederkehrenden Bedarf hat.",
+          "Pain: prüfen, ob das Problem häufig, intensiv, wertvoll und mit Zahlungsbereitschaft verbunden ist.",
+          "Product: das minimale Produkt oder Erlebnis definieren, mit dem die kritischste Annahme validiert wird.",
+          "Validation: das MVP in messbare Evidenz überführen.",
+          "Business Case: Value Hypothesis, MVP, Leading Indicators, Financial Metrics und Verification Plan verbinden.",
+          "Asset: prüfen, ob die Chance langfristige User-, Daten-, Content-, Methodology-, Product-, Channel-, Brand-, Ecosystem- oder Rights-Assets aufbauen kann.",
+          "Value Story: validierte Evidenz in ein klares Narrativ übersetzen, das erklärt, warum die Chance Ressourcen, Ownership, Skalierung oder Investment verdient."
         ]
       },
       {
         heading: "Business Case Template",
         body: [
           "Business Case validation chain: Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan",
-          "Leading Indicators exist to judge whether the MVP is validating the Value Hypothesis."
+          "Leading Indicators exist to judge whether the MVP is validating the Value Hypothesis.",
+          "Diese Kette dient nicht nur Fundraising. Sie beurteilt, ob eine Chance weitere Ressourcen, Ownership, Betrieb, Skalierung oder Investment verdient."
         ],
-        ordered: businessCaseModules
+        ordered: businessCaseModules.de
       },
-      {
-        heading: "Core Principles",
-        ordered: principleContent.de.principles
-      },
-      {
-        heading: "Framework Deliverables",
-        ordered: deliverables.de
-      },
+      { heading: "Core Principles", ordered: principleContent.de.principles },
+      { heading: "Framework Deliverables", ordered: deliverables.de },
       {
         heading: "Urheberrecht, Zitierung und rechtlicher Hinweis",
         body: [
           "Copyright © Li Zhi. All rights reserved.",
-          "Zitierformat: Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510.",
-          "Das O2V Framework erhebt keinen exklusiven Anspruch auf allgemeine Konzepte wie MVP, Persona, Business Model, Leading Indicators, Risk Assessment oder Business Case.",
-          "O2V Framework is not affiliated with, endorsed by, certified by, or officially connected with Lean Startup, Design Thinking, Jobs to Be Done, Business Model Canvas, Value Proposition Canvas, Stage-Gate, or any referenced methodology or organization.",
-          "Diese Veröffentlichung dient Informations- und Bildungszwecken und stellt keine Rechts-, Anlage-, Finanz-, Steuer- oder professionelle Beratung dar."
-        ]
-      },
-      {
-        heading: "Versionshinweis",
-        body: [
-          "Versionsname: O2V Framework 20260510.",
-          "Veröffentlichungstyp: Official Public Release 20260510.",
-          "Interne Version: v1.4.",
-          "Offizielle Website: www.o2vframework.com."
+          "Zitierformat: Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520.",
+          "Opportunity-to-Venture bleibt nur als historische Release-Sprache und Venture-Kontext-Konfiguration erhalten."
         ]
       }
     ]
@@ -963,7 +849,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
       {
         heading: "Citation format",
-        body: ["Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510."]
+        body: ["Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520."]
       },
       {
         heading: "Permission statement",
@@ -986,7 +872,9 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       {
         heading: "Trademark notice",
         body: [
-          "O2V Framework, Opportunity-to-Venture Framework, and Opportunity2Venture are used as identifiers for this publication site and framework release."
+          "O2V Framework and Opportunity-to-Value Framework are used as identifiers for this publication site and framework release.",
+          "Opportunity2Venture is retained as a historical / legacy alias and backup domain.",
+          "Opportunity-to-Venture Framework is retained only as historical release wording and venture-context wording."
         ]
       },
       {
@@ -1010,7 +898,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       {
         heading: "引用格式",
         body: [
-          "来源：李智，O2V Framework：Opportunity-to-Venture Framework，从机会信号到创业资产的前端机会判断框架，官方公开发布版 20260510。"
+          "来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到可验证价值的机会判断与价值实现框架，官方公开发布版 20260520。"
         ]
       },
       {
@@ -1034,7 +922,9 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       {
         heading: "商标说明",
         body: [
-          "O2V Framework、Opportunity-to-Venture Framework 和 Opportunity2Venture 在本站中作为本框架发布与官方网站识别名称使用。"
+          "O2V Framework 和 Opportunity-to-Value Framework 在本站中作为本框架发布与官方网站识别名称使用。",
+          "Opportunity2Venture 作为 historical / legacy alias 和备用域名保留。",
+          "Opportunity-to-Venture Framework 仅作为历史发布措辞和创业语境措辞保留。"
         ]
       },
       {
@@ -1057,7 +947,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
       {
         heading: "Citation format",
-        body: ["Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510."]
+        body: ["Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520."]
       },
       {
         heading: "Permission statement",
@@ -1080,7 +970,9 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       {
         heading: "Trademark notice",
         body: [
-          "O2V Framework, Opportunity-to-Venture Framework und Opportunity2Venture werden als Bezeichnungen für diese Veröffentlichung und das Framework verwendet."
+          "O2V Framework und Opportunity-to-Value Framework werden als Kennzeichen für diese Veröffentlichungsseite und Framework-Version verwendet.",
+          "Opportunity2Venture bleibt als historical / legacy alias und Backup-Domain erhalten.",
+          "Opportunity-to-Venture Framework bleibt nur als historische Release-Sprache und Venture-Kontext-Wording erhalten."
         ]
       },
       {
@@ -1107,8 +999,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "Li Zhi", strong: true },
         { text: " is the creator of " },
-        { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: ", a front-end opportunity judgment framework for the AI era." }
+        { text: "O2V Framework — Opportunity-to-Value Framework", strong: true },
+        { text: ", an AI-era opportunity judgment and value realization framework." }
       ],
       [
         { text: "Zhi holds a " },
@@ -1131,8 +1023,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       ],
       [
         { text: "O2V Framework", strong: true },
-        { text: " reflects Zhi’s long-term professional focus: helping organizations and innovators move from scattered signals and ideas to " },
-        { text: "structured, validated, investable, and asset-ready opportunities", strong: true },
+        { text: " reflects Zhi's long-term professional focus: helping organizations and innovators move from scattered signals and ideas to " },
+        { text: "structured, validated, value-generating, investable, and asset-ready opportunities", strong: true },
         { text: "." }
       ]
     ],
@@ -1162,13 +1054,13 @@ export const aboutContent: Record<Locale, AboutContent> = {
     body: [
       [
         { text: "李智", strong: true },
-        { text: "是 " },
-        { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: " 的创建者。O2V Framework 是一套面向 AI 时代的前端机会判断框架，用于将外部机会信号转化为可验证、可执行、可经营、可融资、可资产化的创业机会。" }
+        { text: "是" },
+        { text: "O2V Framework — Opportunity-to-Value Framework", strong: true },
+        { text: " 的创建者。O2V Framework 是一套面向 AI 时代的机会判断与价值实现框架，用于将外部机会信号转化为可验证、可执行、可经营、可投入、可资产化的价值机会。" }
       ],
       [
         { text: "李智毕业于" },
-        { text: "柏林工业大学" },
+        { text: "柏林工业大学", strong: true },
         { text: "，获" },
         { text: "信息学硕士", strong: true },
         { text: "学位，拥有超过 15 年数字化转型、管理咨询、企业架构、数字化产品创新、投资组合治理、产品治理和" },
@@ -1188,8 +1080,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "O2V Framework", strong: true },
         { text: " 是李智长期专业积累的一次系统化表达：帮助组织和创新者，从分散的市场信号、业务想法和技术机会出发，形成" },
-        { text: "结构化、可验证、可投资、可资产化", strong: true },
-        { text: "的机会判断。" }
+        { text: "可验证、可执行、可经营、可投入、可资产化的价值机会", strong: true },
+        { text: "。" }
       ]
     ],
     beliefIntro: "他的核心信念是：",
@@ -1210,7 +1102,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
     metadata: {
       title: "Über Li Zhi | O2V Framework",
       description:
-        "Über Li Zhi, Entwickler des O2V Frameworks, Digital Value Realization Expert, Methodologist, Enterprise Architect und ehemaliger Management Consultant bei einem weltweit renommierten Beratungsunternehmen mit über 15 Jahren Erfahrung in digitaler Transformation, Produktgovernance, Enterprise Architecture und KI-gestützter Innovation.",
+        "Über Li Zhi, Entwickler des O2V Frameworks, Digital Value Realization Expert, Methodologist, Enterprise Architect und ehemaliger Management Consultant bei einem weltweit renommierten Beratungsunternehmen mit über 15 Jahren Erfahrung.",
       alternates: localizedAlternates("de", "about")
     },
     title: "Über Li Zhi",
@@ -1219,8 +1111,8 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "Li Zhi", strong: true },
         { text: " ist der Entwickler des " },
-        { text: "O2V Framework — Opportunity-to-Venture Framework", strong: true },
-        { text: ", eines Front-End-Frameworks zur Chancenbewertung im KI-Zeitalter." }
+        { text: "O2V Framework — Opportunity-to-Value Framework", strong: true },
+        { text: ", eines Frameworks für Chancenbewertung und Wertrealisierung im KI-Zeitalter." }
       ],
       [
         { text: "Zhi besitzt einen " },
@@ -1244,7 +1136,7 @@ export const aboutContent: Record<Locale, AboutContent> = {
       [
         { text: "Das " },
         { text: "O2V Framework", strong: true },
-        { text: " spiegelt den langfristigen professionellen Fokus von Zhi wider: Organisationen und Innovatoren dabei zu helfen, aus verstreuten Signalen und Ideen strukturierte, validierte, investierbare und " },
+        { text: " spiegelt den langfristigen professionellen Fokus von Zhi wider: Organisationen und Innovatoren dabei zu helfen, aus verstreuten Signalen und Ideen strukturierte, validierte, wertschaffende, investierbare und " },
         { text: "assetfähige Chancen", strong: true },
         { text: " zu entwickeln." }
       ]
@@ -1272,9 +1164,9 @@ export function creativeWorkJsonLd(locale: Locale) {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: "O2V Framework",
-    alternateName: ["Opportunity-to-Venture Framework", "Opportunity2Venture", "O2V"],
+    alternateName: ["Opportunity-to-Value Framework", "O2V", "Opportunity-to-Venture Framework"],
     description: homeContent[locale].jsonLdDescription,
-    version: "20260510",
+    version: "20260520",
     creator: {
       "@type": "Person",
       name: "Li Zhi"
@@ -1287,14 +1179,14 @@ export function creativeWorkJsonLd(locale: Locale) {
     inLanguage: ["en", "zh-CN", "de"],
     keywords: [
       "O2V Framework",
-      "Opportunity-to-Venture Framework",
-      "Opportunity2Venture",
-      "startup opportunity validation framework",
-      "venture opportunity assessment framework",
+      "Opportunity-to-Value Framework",
       "AI-era opportunity judgment framework",
+      "value realization framework",
       "business case validation",
       "compliance gate",
-      "venture asset"
+      "value asset",
+      "value story",
+      "Opportunity-to-Venture Framework historical alias"
     ],
     url
   };

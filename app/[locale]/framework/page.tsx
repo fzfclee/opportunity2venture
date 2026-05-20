@@ -9,9 +9,9 @@ type PageProps = {
 };
 
 const frameworkDeck: Record<Locale, string[]> = {
-  en: ["Opportunity-to-Venture Framework", "Official Public Release 20260510", "Internal Version: v1.4"],
-  zh: ["Opportunity-to-Venture Framework", "官方公开发布版 20260510", "内部版本：v1.4"],
-  de: ["Opportunity-to-Venture Framework", "Offizielle öffentliche Veröffentlichung 20260510", "Interne Version: v1.4"]
+  en: ["Opportunity-to-Value Framework", "Official Public Release 20260520", "Internal Version: v1.5"],
+  zh: ["Opportunity-to-Value Framework", "官方公开发布版 20260520", "内部版本：v1.5"],
+  de: ["Opportunity-to-Value Framework", "Offizielle öffentliche Veröffentlichung 20260520", "Interne Version: v1.5"]
 };
 
 export function generateStaticParams() {
@@ -34,14 +34,14 @@ export default async function FrameworkPage({ params }: PageProps) {
       subtitle={content.subtitle}
       deck={frameworkDeck[locale]}
     >
-      <section className="border-b border-neutral-200 pb-8">
+      <section className="border-b border-[#dfe3ff] pb-8">
         {content.overview.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
         <div className="mt-6">
           <Link
             href={content.cta.href}
-            className="inline-flex border border-neutral-300 px-4 py-2 text-sm font-semibold text-neutral-950 no-underline hover:border-neutral-950"
+            className="inline-flex border border-[#5a63e9] bg-[#f7f8ff] px-4 py-2 text-sm font-semibold text-[#2733c3] no-underline hover:bg-[#eef1ff]"
           >
             {content.cta.label}
           </Link>

@@ -8,9 +8,9 @@ type PageProps = {
 };
 
 const principlesDeck: Record<Locale, string[]> = {
-  en: ["O2V Framework 20260510", "Opportunity-to-Venture Framework", "Official Public Release 20260510"],
-  zh: ["O2V Framework 20260510", "Opportunity-to-Venture Framework", "官方公开发布版 20260510"],
-  de: ["O2V Framework 20260510", "Opportunity-to-Venture Framework", "Offizielle öffentliche Veröffentlichung 20260510"]
+  en: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "Official Public Release 20260520"],
+  zh: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "官方公开发布版 20260520"],
+  de: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "Offizielle öffentliche Veröffentlichung 20260520"]
 };
 
 export function generateStaticParams() {
@@ -27,11 +27,7 @@ export default async function PrinciplesPage({ params }: PageProps) {
   const content = principleContent[locale];
 
   return (
-    <ContentLayout
-      eyebrow="O2V Framework"
-      title={content.title}
-      deck={principlesDeck[locale]}
-    >
+    <ContentLayout eyebrow="O2V Framework" title={content.title} deck={principlesDeck[locale]}>
       <ol>
         {content.principles.map((principle) => (
           <li key={principle}>{principle}</li>

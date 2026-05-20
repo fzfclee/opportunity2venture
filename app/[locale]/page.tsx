@@ -57,7 +57,7 @@ export default async function LocaleHomePage({ params }: PageProps) {
             <Link
               key={button.href}
               href={button.href}
-              className="border border-neutral-300 px-4 py-3 text-sm font-semibold text-neutral-950 no-underline hover:border-neutral-950"
+              className="border border-[#d9ddff] bg-white/80 px-4 py-3 text-sm font-semibold text-[#111427] no-underline shadow-[0_18px_45px_rgba(36,52,170,0.05)] hover:border-[#5a63e9] hover:text-[#2936c7]"
             >
               {button.label}
             </Link>

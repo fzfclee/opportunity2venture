@@ -1,12 +1,12 @@
 # O2V Framework
 
-> O2V Framework, also known as Opportunity-to-Venture Framework, is a front-end opportunity judgment framework for the AI era. It helps convert opportunity signals into verifiable business cases and venture assets.
+> O2V Framework, also known as Opportunity-to-Value Framework, is an AI-era opportunity judgment and value realization framework. It helps convert opportunity signals into validated value, Business Cases, value assets, and evidence-backed value stories.
 
 Official site: https://www.o2vframework.com  
-Backup domain: https://www.opportunity2venture.com  
+Backup domain: https://www.opportunity2venture.com, retained as a historical / legacy alias and backup domain  
 Creator and copyright holder: Li Zhi  
-Official public release version: O2V Framework 20260510  
-Internal version: v1.4  
+Official public release version: O2V Framework 20260520  
+Internal version: v1.5  
 Languages: English, Chinese, German
 
 ## Key Pages
@@ -14,22 +14,26 @@ Languages: English, Chinese, German
 - [English Founding Statement](https://www.o2vframework.com/en): English founding statement for O2V Framework.
 - [Chinese Founding Statement](https://www.o2vframework.com/zh): Chinese founding statement for O2V Framework.
 - [German Founding Statement](https://www.o2vframework.com/de): German founding statement for O2V Framework.
-- [English Framework Web Overview](https://www.o2vframework.com/en/framework): Web overview of the O2V Framework 20260510 for quick reading and online reference.
-- [Chinese Framework Web Overview](https://www.o2vframework.com/zh/framework): Chinese web overview of the O2V Framework 20260510 for quick reading and online reference.
-- [German Framework Web Overview](https://www.o2vframework.com/de/framework): German web overview of the O2V Framework 20260510 for quick reading and online reference.
+- [English Framework Web Overview](https://www.o2vframework.com/en/framework): Web overview of the O2V Framework 20260520 for quick reading and online reference.
+- [Chinese Framework Web Overview](https://www.o2vframework.com/zh/framework): Chinese web overview of the O2V Framework 20260520 for quick reading and online reference.
+- [German Framework Web Overview](https://www.o2vframework.com/de/framework): German web overview of the O2V Framework 20260520 for quick reading and online reference.
 - [English Core Principles](https://www.o2vframework.com/en/principles): Core principles behind O2V Framework.
 - [Chinese Core Principles](https://www.o2vframework.com/zh/principles): Chinese core principles behind O2V Framework.
 - [German Core Principles](https://www.o2vframework.com/de/principles): German core principles behind O2V Framework.
 - [Copyright and Citation](https://www.o2vframework.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
-- [Downloads](https://www.o2vframework.com/en/download): Download the complete official public release PDFs in English, Chinese, and German.
+- [Downloads](https://www.o2vframework.com/en/download): Current O2V Framework 20260520 PDF downloads in English, Chinese, and German.
 
 ## Core Definition
 
-O2V stands for Opportunity-to-Venture. It is designed to help entrepreneurs, innovators, consultants, and early-stage investors evaluate whether an opportunity signal can become a verifiable, executable, manageable, investable, and asset-ready venture opportunity.
+O2V stands for Opportunity-to-Value. It is designed to help individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors evaluate whether an opportunity signal can become validated value, a credible Business Case, a value asset, and an evidence-backed value story.
+
+## Core Slogan
+
+From Signal to Value. From Idea to Asset.
 
 ## 9-Step Judgment Chain
 
-Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Financing Story
+Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story
 
 ## Business Case Validation Chain
 
@@ -37,11 +41,15 @@ Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Ver
 
 ## Framework Deliverables
 
-Opportunity Signal List, Opportunity Card, O2V Score, Compliance Risk Level, Business Case, Validation Plan, Assetization Path, Financing Story.
+Opportunity Signal List, Opportunity Card, O2V Score, Compliance Risk Level, Business Case, Validation Plan, Assetization Path, Value Story.
+
+## Historical Release Note
+
+Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration. Financing Story can appear only as a venture-context form of Value Story. The current public download filenames use O2V Framework 20260520; temporary placeholder PDFs may occupy those filenames until final designed PDFs are ready.
 
 ## Citation
 
-Source: Li Zhi, O2V Framework: Opportunity-to-Venture Framework, Official Public Release 20260510.
+Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520.
 
 ## Copyright
 

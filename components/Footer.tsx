@@ -7,13 +7,13 @@ type FooterProps = {
 
 export default function Footer({ locale }: FooterProps) {
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
+    <footer className="border-t border-[#dfe3ff] bg-[#f7f8ff]">
       <div className="mx-auto w-full max-w-4xl px-5 py-8 text-sm leading-7 text-neutral-700 sm:px-8">
         {footerContent[locale].map((line) => (
           <p key={line.text}>
             {line.label ? <span>{line.label} </span> : null}
             {line.href ? (
-              <a className="underline hover:text-neutral-950" href={line.href}>
+              <a className="underline decoration-[#5a63e9]/40 hover:text-[#2936c7]" href={line.href}>
                 {line.text}
               </a>
             ) : (

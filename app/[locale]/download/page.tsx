@@ -30,7 +30,7 @@ export default async function DownloadPage({ params }: PageProps) {
       <p>{content.note}</p>
       <div className="not-prose mt-8 grid gap-4">
         {downloadCards.map((card) => (
-          <section key={card.fileName} className="border border-neutral-200 p-5">
+          <section key={card.fileName} className="border border-[#d9ddff] bg-white p-5 shadow-[0_18px_45px_rgba(36,52,170,0.06)]">
             <h2 className="text-lg font-semibold text-neutral-950">{card.labels[locale]}</h2>
             <dl className="mt-4 grid gap-2 text-sm leading-6 text-neutral-700 sm:grid-cols-[160px_1fr]">
               <dt className="font-semibold text-neutral-950">{content.fields.language}</dt>
@@ -47,7 +47,7 @@ export default async function DownloadPage({ params }: PageProps) {
             <p className="mt-4 text-sm leading-6 text-neutral-700">{content.permissionReminder}</p>
             <a
               href={card.href}
-              className="mt-5 inline-flex border border-neutral-300 px-4 py-2 text-sm font-semibold text-neutral-950 no-underline hover:border-neutral-950"
+              className="mt-5 inline-flex border border-[#5a63e9] bg-[#f7f8ff] px-4 py-2 text-sm font-semibold text-[#2733c3] no-underline hover:bg-[#eef1ff]"
             >
               {content.button}
             </a>

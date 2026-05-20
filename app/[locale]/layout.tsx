@@ -23,7 +23,7 @@ export default async function LocaleLayout({
   const locale = resolvedParams.locale as Locale;
 
   return (
-    <div className="min-h-screen bg-white text-neutral-950">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#f8f9ff_0%,#ffffff_18rem)] text-neutral-950">
       <Header locale={locale} />
       <main>{children}</main>
       <Footer locale={locale} />

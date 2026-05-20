@@ -37,19 +37,19 @@ export default async function AboutPage({ params }: PageProps) {
 
   return (
     <ContentLayout eyebrow="O2V Framework" title={content.title} subtitle={content.subtitle}>
-      <div className="not-prose mb-8 flex flex-col gap-6 border-b border-neutral-200 pb-8 sm:flex-row sm:items-start">
+      <div className="not-prose mb-8 flex flex-col gap-6 border-b border-[#dfe3ff] pb-8 sm:flex-row sm:items-start">
         <Image
           src="/lizhi.jpg"
           alt="Li Zhi"
           width={180}
           height={180}
-          className="h-40 w-40 border border-neutral-200 object-cover sm:h-44 sm:w-44"
+          className="h-40 w-40 border border-[#d9ddff] object-cover sm:h-44 sm:w-44"
           priority
         />
         <div className="max-w-xl text-sm leading-7 text-neutral-700">
-          <p>O2V Framework 20260510</p>
-          <p>Opportunity-to-Venture Framework</p>
-          <p>Official Public Release 20260510</p>
+          <p>O2V Framework 20260520</p>
+          <p>Opportunity-to-Value Framework</p>
+          <p>Official Public Release 20260520</p>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default async function AboutPage({ params }: PageProps) {
       ))}
 
       <p>{content.beliefIntro}</p>
-      <blockquote className="border-l border-neutral-300 pl-5 text-neutral-800">
+      <blockquote className="border-l border-[#5a63e9] pl-5 text-neutral-800">
         <RichText parts={content.belief} />
       </blockquote>
 

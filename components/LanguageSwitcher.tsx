@@ -18,26 +18,26 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
   const safeSuffix = supportedPageSuffixes.has(suffix) ? suffix : "";
 
   return (
-    <nav aria-label="Language switcher" className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+    <nav aria-label="Language switcher" className="flex flex-wrap items-center justify-end gap-x-2 gap-y-1 text-xs leading-5">
       {locales.map((locale, index) => {
         const href = safeSuffix ? `/${locale}/${safeSuffix}` : `/${locale}`;
         const active = locale === currentLocale;
 
         return (
-          <span key={locale} className="inline-flex items-center gap-x-3">
+          <span key={locale} className="inline-flex items-center gap-x-2">
             <Link
               href={href}
               hrefLang={locale}
               aria-current={active ? "page" : undefined}
               className={
                 active
-                  ? "font-semibold text-neutral-950 no-underline"
-                  : "text-neutral-600 underline hover:text-neutral-950"
+                  ? "font-semibold text-[#2733c3] no-underline"
+                  : "text-neutral-600 underline decoration-[#5a63e9]/40 hover:text-[#2936c7]"
               }
             >
               {languageLabels[locale]}
             </Link>
-            {index < locales.length - 1 ? <span className="text-neutral-300">|</span> : null}
+            {index < locales.length - 1 ? <span className="text-[#c9cffd]">|</span> : null}
           </span>
         );
       })}
