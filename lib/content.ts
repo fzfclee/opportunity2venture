@@ -396,16 +396,6 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
 
 export const downloadCards: DownloadCard[] = [
   {
-    key: "zh",
-    labels: {
-      en: "Chinese PDF — O2V Framework 20260520",
-      zh: "中文 PDF — O2V Framework 20260520",
-      de: "Chinesische PDF — O2V Framework 20260520"
-    },
-    fileName: "o2v-framework-20260520-zh.pdf",
-    href: "/downloads/o2v-framework-20260520-zh.pdf"
-  },
-  {
     key: "en",
     labels: {
       en: "English PDF — O2V Framework 20260520",
@@ -414,6 +404,16 @@ export const downloadCards: DownloadCard[] = [
     },
     fileName: "o2v-framework-20260520-en.pdf",
     href: "/downloads/o2v-framework-20260520-en.pdf"
+  },
+  {
+    key: "zh",
+    labels: {
+      en: "Chinese PDF — O2V Framework 20260520",
+      zh: "中文 PDF — O2V Framework 20260520",
+      de: "Chinesische PDF — O2V Framework 20260520"
+    },
+    fileName: "o2v-framework-20260520-zh.pdf",
+    href: "/downloads/o2v-framework-20260520-zh.pdf"
   },
   {
     key: "de",
