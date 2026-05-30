@@ -15,11 +15,10 @@
 ## PDF / Word Status
 
 - Existing PDF files were not modified in this update.
-- No editable Word source files were found in the repository during this update.
-- Existing PDF files may still need to be regenerated to reflect the updated slogan: From Signal to Impact. From Idea to Asset.
+- Editable Word source files were later added under `public/downloads/` and updated to reflect the new slogan, evidence-throughout wording, Value Story context, and current logo.
+- Existing PDF files may still need to be regenerated manually from the updated Word files to reflect the updated slogan: From Signal to Impact. From Idea to Asset.
 
 ## Remaining Follow-Up Items
 
-- Regenerate or replace the final PDF files if the published PDF design should reflect the updated Impact slogan.
-- If editable Word source files are later added to the repo, update their slogan and evidence-throughout wording before regenerating PDFs.
+- Regenerate or replace the final PDF files from the updated Word sources if the published PDF design should reflect the updated Impact slogan.
 - Keep the current download page wording and 20260520 PDF filenames stable unless a later release explicitly changes them.
