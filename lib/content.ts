@@ -119,7 +119,7 @@ export const navLabels: Record<Locale, Record<NavKey, string>> = {
 export const footerContent: Record<Locale, FooterLine[]> = {
   en: [
     { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
-    { text: "From Signal to Value. From Idea to Asset." },
+    { text: "From Signal to Impact. From Idea to Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
     { label: "Official site:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
@@ -127,7 +127,7 @@ export const footerContent: Record<Locale, FooterLine[]> = {
   ],
   zh: [
     { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
-    { text: "从机会信号到可验证价值。从想法到长期资产。" },
+    { text: "从机会信号到实际影响。从创意构想到长期资产。" },
     { text: "版权所有人：李智 / Li Zhi" },
     { label: "官方网站：", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
@@ -135,7 +135,7 @@ export const footerContent: Record<Locale, FooterLine[]> = {
   ],
   de: [
     { text: "O2V Framework 20260520 | Opportunity-to-Value Framework" },
-    { text: "Vom Signal zum Wert. Von der Idee zum Asset." },
+    { text: "Vom Signal zur Wirkung. Von der Idee zum Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
     { label: "Offizielle Website:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
@@ -161,7 +161,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     },
     title: "Opportunity-to-Value Framework",
     subtitle: "Opportunity-to-Value Framework",
-    tagline: ["From Signal to Value.", "From Idea to Asset."],
+    tagline: ["From Signal to Impact.", "From Idea to Asset."],
     deck: [
       "Official Public Release 20260520",
       "Internal Version: v1.5",
@@ -182,6 +182,11 @@ export const homeContent: Record<Locale, HomeContent> = {
       "User interest does not always become willingness to pay.",
       "Growth without compliance boundaries can become a hidden liability.",
       "And a business that earns short-term income may still fail to become a long-term asset.",
+      "In O2V, evidence runs through every step.",
+      "Signals must become evidence before they deserve commitment.",
+      "Evidence reveals impact.",
+      "Impact then drives better decisions: Proceed, Pivot, Reframe, or Stop.",
+      "A Stop decision can also be a successful value outcome, because it protects time, resources, capital, and execution capacity from being consumed by weak or negative opportunities.",
       "O2V Framework was designed to bring discipline to the earliest stage of opportunity judgment and value creation.",
       "It helps individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors move from scattered market signals to structured opportunity judgment and value realization.",
       "It asks whether an opportunity has:"
@@ -207,13 +212,13 @@ export const homeContent: Record<Locale, HomeContent> = {
   },
   zh: {
     metadata: {
-      title: "O2V Framework｜从机会信号到可验证价值的机会判断与价值实现框架",
+      title: "O2V Framework｜从机会信号到实际影响的机会判断与价值实现框架",
       description: homeDescriptions.zh,
       alternates: localizedAlternates("zh")
     },
     title: "Opportunity-to-Value Framework",
     subtitle: "Opportunity-to-Value Framework",
-    tagline: ["从机会信号到可验证价值。", "从想法到长期资产。"],
+    tagline: ["从机会信号到实际影响。", "从创意构想到长期资产。"],
     deck: ["官方公开发布版 20260520", "内部版本：v1.5", "版权所有人：李智 / Li Zhi"],
     body: [
       "O2V Framework 是一套面向 AI 时代的机会判断与价值实现框架。",
@@ -230,6 +235,11 @@ export const homeContent: Record<Locale, HomeContent> = {
       "用户感兴趣不等于愿意付费。",
       "没有合规边界的增长，可能变成隐藏负债。",
       "一个能赚短期收入的业务，也未必能沉淀为长期资产。",
+      "在 O2V 中，证据贯穿每一个环节。",
+      "信号必须先变成证据，才值得被继续投入。",
+      "证据揭示真实影响。",
+      "真实影响再驱动更好的决策：Proceed、Pivot、Reframe 或 Stop。",
+      "Stop 决策也可以是一种成功的价值结果，因为它避免时间、资源、资本和执行能力继续被弱机会或负向机会消耗。",
       "O2V Framework 的目的，是为机会判断与价值创造的最前端建立一套纪律。",
       "它帮助个人构建者、创业者、创新团队、咨询顾问、企业负责人和早期投资相关方，从分散的市场信号出发，形成结构化的机会判断与价值实现。",
       "它关注一个机会是否具备："
@@ -261,7 +271,7 @@ export const homeContent: Record<Locale, HomeContent> = {
     },
     title: "Opportunity-to-Value Framework",
     subtitle: "Opportunity-to-Value Framework",
-    tagline: ["Vom Signal zum Wert.", "Von der Idee zum Asset."],
+    tagline: ["Vom Signal zur Wirkung.", "Von der Idee zum Asset."],
     deck: [
       "Offizielle öffentliche Veröffentlichung 20260520",
       "Interne Version: v1.5",
@@ -282,6 +292,11 @@ export const homeContent: Record<Locale, HomeContent> = {
       "Nutzerinteresse führt nicht immer zu Zahlungsbereitschaft.",
       "Wachstum ohne Compliance-Grenzen kann zu einer versteckten Verbindlichkeit werden.",
       "Und ein Geschäft, das kurzfristige Einnahmen erzielt, wird nicht automatisch zu einem langfristigen Asset.",
+      "In O2V läuft Evidenz durch jeden Schritt.",
+      "Signale müssen zu Evidenz werden, bevor sie Commitment verdienen.",
+      "Evidenz zeigt Wirkung.",
+      "Wirkung führt dann zu besseren Entscheidungen: Proceed, Pivot, Reframe oder Stop.",
+      "Eine Stop-Entscheidung kann ebenfalls ein erfolgreiches Wertergebnis sein, weil sie Zeit, Ressourcen, Kapital und Umsetzungskapazität vor schwachen oder negativen Chancen schützt.",
       "Das O2V Framework wurde entwickelt, um Disziplin in die früheste Phase der Chancenbewertung und Wertschöpfung zu bringen.",
       "Es hilft individuellen Buildern, Unternehmern, Innovationsteams, Beratern, Unternehmensverantwortlichen und Early-Stage-Investoren, aus verstreuten Marktsignalen strukturierte Chancenbewertung und Wertrealisierung abzuleiten.",
       "Es fragt, ob eine Chance Folgendes besitzt:"
@@ -345,9 +360,9 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "Leading indicators must be defined after the MVP, because they exist to judge whether the MVP is validating the value hypothesis.",
       "A Business Case is not a presentation. It is a structured argument for why an opportunity deserves resources.",
       "Short-term revenue proves demand, but long-term assets define the ceiling.",
-      "Value stories must be supported by validation data, not ambition alone.",
+      "Evidence must run through the entire O2V chain. A signal, Business Case, or Value Story without evidence should not drive major resource commitment.",
       "Compliance risk is not a minor deduction. It is a gate that determines whether an opportunity can move forward.",
-      "O2V exists to reduce early-stage misjudgment before time, resources, ownership, and execution are committed."
+      "A Stop decision can also be a successful value outcome when evidence prevents further waste of time, resources, capital, and execution capacity."
     ]
   },
   zh: {
@@ -366,9 +381,9 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "领先指标必须在 MVP 之后定义，因为它们的作用是判断 MVP 是否正在验证价值假设。",
       "Business Case 不是展示材料，而是说明一个机会为何值得投入资源的结构化论证。",
       "短期收入证明需求，长期资产决定天花板。",
-      "价值叙事必须由验证数据支撑，而不能只靠愿景。",
+      "证据必须贯穿 O2V 的完整链路。没有证据支撑的信号、Business Case 或价值叙事，不应驱动重大资源投入。",
       "合规风险不是普通扣分项，而是决定机会能否继续推进的闸门。",
-      "O2V 的存在，是为了在投入时间、资源、明确负责人并推进执行之前，降低早期机会误判。",
+      "当证据避免时间、资源、资本和执行能力继续被浪费时，Stop 决策也可以是一种成功的价值结果。",
     ]
   },
   de: {
@@ -387,9 +402,9 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
       "Leading Indicators müssen nach dem MVP definiert werden, weil sie beurteilen sollen, ob das MVP die Value Hypothesis validiert.",
       "Ein Business Case ist keine Präsentation. Er ist ein strukturiertes Argument dafür, warum eine Chance Ressourcen verdient.",
       "Kurzfristiger Umsatz beweist Nachfrage, aber langfristige Assets definieren die Obergrenze.",
-      "Value Stories müssen durch Validierungsdaten gestützt werden, nicht nur durch Ambition.",
+      "Evidenz muss durch die gesamte O2V-Kette laufen. Ein Signal, Business Case oder eine Value Story ohne Evidenz sollte kein wesentliches Ressourcen-Commitment auslösen.",
       "Compliance-Risiko ist kein kleiner Abzug. Es ist ein Gate, das bestimmt, ob eine Chance weiterverfolgt werden kann.",
-      "O2V existiert, um frühe Fehlbewertungen zu reduzieren, bevor Zeit, Ressourcen, klare Verantwortung und Umsetzung gebunden werden."
+      "Eine Stop-Entscheidung kann ebenfalls ein erfolgreiches Wertergebnis sein, wenn Evidenz weitere Verschwendung von Zeit, Ressourcen, Kapital und Umsetzungskapazität verhindert."
     ]
   }
 };
@@ -638,7 +653,14 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
       },
       {
         heading: "9-Step Judgment Chain",
-        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story"]
+        body: [
+          "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story",
+          "Evidence is not an additional step in O2V.",
+          "It runs through the whole judgment chain.",
+          "The framework does not assume every opportunity should move forward.",
+          "Evidence may support Proceed, Pivot, Reframe, or Stop.",
+          "In O2V, stopping early can also be a successful value outcome when evidence shows weak impact, negative impact, unacceptable risk, or insufficient value potential."
+        ]
       },
       {
         heading: "Step Details",
@@ -730,7 +752,12 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
       {
         heading: "九步判断链路",
         body: [
-          "机会信号 → 场景重构 → 目标用户画像 → 真实痛点与付费动机 → 最小产品定义 → 验证设计 → 完整商业案例 → 资产化路径设计 → 价值叙事"
+          "机会信号 → 场景重构 → 目标用户画像 → 真实痛点与付费动机 → 最小产品定义 → 验证设计 → 完整商业案例 → 资产化路径设计 → 价值叙事",
+          "证据不是 O2V 中额外增加的一步。",
+          "它贯穿整条判断链路。",
+          "O2V 并不假设每个机会都应该继续推进。",
+          "证据可能支持 Proceed、Pivot、Reframe 或 Stop。",
+          "在 O2V 中，当证据显示影响较弱、影响为负、风险不可接受或价值潜力不足时，尽早停止也可以是一种成功的价值结果。"
         ]
       },
       {
@@ -762,7 +789,7 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
         heading: "版权、引用与法律声明",
         body: [
           "版权所有人：李智 / Li Zhi。保留所有权利。",
-          "引用格式：来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到可验证价值的机会判断与价值实现框架，官方公开发布版 20260520。",
+          "引用格式：来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到实际影响的机会判断与价值实现框架，官方公开发布版 20260520。",
           "Opportunity-to-Venture 仅作为历史发布措辞和创业语境配置保留。"
         ]
       }
@@ -822,7 +849,14 @@ export const frameworkContent: Record<Locale, FrameworkContent> = {
       },
       {
         heading: "9-stufige Bewertungskette",
-        body: ["Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story"]
+        body: [
+          "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story",
+          "Evidenz ist kein zusätzlicher Schritt in O2V.",
+          "Sie läuft durch die gesamte Bewertungskette.",
+          "Das Framework nimmt nicht an, dass jede Chance weiterverfolgt werden sollte.",
+          "Evidenz kann Proceed, Pivot, Reframe oder Stop unterstützen.",
+          "In O2V kann frühes Stoppen ebenfalls ein erfolgreiches Wertergebnis sein, wenn Evidenz schwache Wirkung, negative Wirkung, inakzeptables Risiko oder unzureichendes Wertpotenzial zeigt."
+        ]
       },
       {
         heading: "Erläuterung der Schritte",
@@ -923,7 +957,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       {
         heading: "引用格式",
         body: [
-          "来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到可验证价值的机会判断与价值实现框架，官方公开发布版 20260520。"
+          "来源：李智，O2V Framework：Opportunity-to-Value Framework，从机会信号到实际影响的机会判断与价值实现框架，官方公开发布版 20260520。"
         ]
       },
       {
@@ -1211,6 +1245,9 @@ export function creativeWorkJsonLd(locale: Locale) {
       "compliance gate",
       "value asset",
       "value story",
+      "evidence-backed opportunity judgment",
+      "impact",
+      "assetization",
       "Opportunity-to-Venture Framework historical alias"
     ],
     url

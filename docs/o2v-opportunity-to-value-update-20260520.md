@@ -3,7 +3,8 @@
 ## Changed
 
 - Changed primary brand meaning from Opportunity-to-Venture to Opportunity-to-Value.
-- Changed core slogan from "From Signal to Venture" to "From Signal to Value".
+- Changed core slogan from "From Signal to Venture" to the 20260520 Opportunity-to-Value transition wording.
+- Current website slogan is tracked in `docs/o2v-slogan-impact-update-20260520.md`.
 - Changed the 9-step chain last step from Financing Story to Value Story.
 - Updated website metadata, page content, JSON-LD, footer, README, llms.txt, and maintenance script wording to use Opportunity-to-Value as the primary brand.
 - Integrated the new website logo system:

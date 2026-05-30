@@ -10,7 +10,7 @@
 const status = {
   currentWebsiteRelease: "O2V Framework 20260520",
   primaryBrandMeaning: "Opportunity-to-Value Framework",
-  coreSlogan: "From Signal to Value. From Idea to Asset.",
+  coreSlogan: "From Signal to Impact. From Idea to Asset.",
   judgmentChain: "Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story",
   pdfStatus: "Current download links use O2V Framework 20260520 PDF files.",
   currentPdfFiles: [

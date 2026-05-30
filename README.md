@@ -43,7 +43,10 @@ npm run build
 
 - O2V Framework now uses Opportunity-to-Value Framework as the primary brand meaning.
 - Opportunity-to-Venture is retained only as a venture-context configuration / historical release wording.
-- Core slogan is: From Signal to Value. From Idea to Asset.
+- Core slogan is: From Signal to Impact. From Idea to Asset.
+- Chinese slogan is: 从机会信号到实际影响。从创意构想到长期资产。
+- Evidence runs through every step of O2V. Signals, Business Cases, and Value Stories should be supported by evidence.
+- Impact in the slogan is intentionally neutral. O2V uses evidence to reveal whether an opportunity creates positive impact, weak impact, negative impact, or no meaningful impact, and then supports Proceed, Pivot, Reframe, or Stop decisions.
 - Primary 9-step chain ends with Value Story, not Financing Story.
 - Financing Story can appear only as a venture-context form of Value Story.
 - Do not expand Lite / Enterprise configurations on the current public website yet.
