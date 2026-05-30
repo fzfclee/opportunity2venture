@@ -12,11 +12,10 @@
 - Clarified that Proceed, Pivot, Reframe, and Stop are all valid evidence-based decisions.
 - Clarified that a Stop decision can also be a successful value outcome when it prevents further waste.
 
-## PDF / Word Status
+## PDF Status
 
-- Editable Word source files are retained under `public/downloads/`.
-- Word source files reflect the updated slogan, evidence-throughout wording, Value Story context, and current logo.
-- The 20260520 PDF files have been regenerated from the updated source content and now reflect the slogan: From Signal to Impact. From Idea to Asset.
+- The editable Word source files were removed from this website repo after the final PDF files were prepared.
+- The 20260520 PDF files reflect the slogan: From Signal to Impact. From Idea to Asset.
 - The public download filenames remain stable:
   - `public/downloads/o2v-framework-20260520-en.pdf`
   - `public/downloads/o2v-framework-20260520-zh.pdf`
@@ -24,5 +23,4 @@
 
 ## Remaining Follow-Up Items
 
-- Use `scripts/generate-release-pdfs.py` to regenerate PDF files from the updated Word/source content when release wording changes.
 - Keep the current download page wording and 20260520 PDF filenames stable unless a later release explicitly changes them.
