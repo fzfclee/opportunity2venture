@@ -108,7 +108,7 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `public/downloads/o2v-framework-20260520-de.docx`
 
 Keep the 20260520 PDF filenames stable for public download links.
-Word source files are retained for manual PDF regeneration.
+Word source files are retained as the editable source for regenerating the PDF files.
 
 ## License
 

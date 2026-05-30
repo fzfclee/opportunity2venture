@@ -14,11 +14,15 @@
 
 ## PDF / Word Status
 
-- Existing PDF files were not modified in this update.
-- Editable Word source files were later added under `public/downloads/` and updated to reflect the new slogan, evidence-throughout wording, Value Story context, and current logo.
-- Existing PDF files may still need to be regenerated manually from the updated Word files to reflect the updated slogan: From Signal to Impact. From Idea to Asset.
+- Editable Word source files are retained under `public/downloads/`.
+- Word source files reflect the updated slogan, evidence-throughout wording, Value Story context, and current logo.
+- The 20260520 PDF files have been regenerated from the updated source content and now reflect the slogan: From Signal to Impact. From Idea to Asset.
+- The public download filenames remain stable:
+  - `public/downloads/o2v-framework-20260520-en.pdf`
+  - `public/downloads/o2v-framework-20260520-zh.pdf`
+  - `public/downloads/o2v-framework-20260520-de.pdf`
 
 ## Remaining Follow-Up Items
 
-- Regenerate or replace the final PDF files from the updated Word sources if the published PDF design should reflect the updated Impact slogan.
+- Use `scripts/generate-release-pdfs.py` to regenerate PDF files from the updated Word/source content when release wording changes.
 - Keep the current download page wording and 20260520 PDF filenames stable unless a later release explicitly changes them.
