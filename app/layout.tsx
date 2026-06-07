@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s"
   },
   description:
-    "O2V Framework, also known as Opportunity-to-Value Framework, is an AI-era opportunity judgment and value realization framework.",
+    "O2V Framework 20260607 is the Opportunity-to-Value Framework with Enterprise and Venture configurations for turning signals into evidence-backed impact, assets, and value stories.",
   alternates: {
     canonical: `${siteUrl}/`,
     languages: {
