@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ContentLayout from "@/components/ContentLayout";
-import { aboutContent, type RichParagraph } from "@/lib/content";
+import { aboutContent, internalVersion, releaseVersion, type RichParagraph } from "@/lib/content";
 import { locales, type Locale } from "@/lib/i18n";
 
 type PageProps = {
@@ -47,9 +47,10 @@ export default async function AboutPage({ params }: PageProps) {
           priority
         />
         <div className="max-w-xl text-sm leading-7 text-neutral-700">
-          <p>O2V Framework 20260520</p>
+          <p>O2V Framework {releaseVersion}</p>
           <p>Opportunity-to-Value Framework</p>
-          <p>Official Public Release 20260520</p>
+          <p>Official Public Release {releaseVersion}</p>
+          <p>Internal Version: {internalVersion}</p>
         </div>
       </div>
 

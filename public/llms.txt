@@ -1,63 +1,59 @@
 # O2V Framework
 
-> O2V Framework, also known as Opportunity-to-Value Framework, is an AI-era opportunity judgment and value realization framework. It helps convert opportunity signals into validated value, Business Cases, value assets, and evidence-backed value stories.
+> O2V Framework, also known as Opportunity-to-Value Framework, is a multi-configuration framework for converting opportunity signals into validated value, business cases, long-term assets, and evidence-backed value stories.
 
-Official site: https://www.o2vframework.com  
-Backup domain: https://www.opportunity2venture.com, retained as a historical / legacy alias and backup domain  
-Creator and copyright holder: Li Zhi  
-Official public release version: O2V Framework 20260520  
-Internal version: v1.5  
+Official site: https://www.o2vframework.com
+Backup domain: https://www.opportunity2venture.com, retained as a historical / legacy alias and backup domain
+Creator and copyright holder: Li Zhi
+Official public release version: O2V Framework 20260607
+Internal version: v1.6
 Languages: English, Chinese, German
+
+## Public Structure
+
+O2V Framework is the only parent framework.
+
+The default public website entry is the O2V Enterprise Configuration. Its current methodology scope includes AiNOVA and Valence.
+
+AiNOVA is the AI-native Operating Model for Enterprise Value Realization. It is not an IT or Digital & Tech department model.
+
+Valence is the Product Value Operations & Governance Model. It may be used with AiNOVA, but it is not reduced to an AiNOVA submodule.
+
+O2V Venture Configuration is retained as the venture-context configuration for founders, builders, consultants, independent professionals, creators, AI builders, and small teams.
+
+Core Principles are shared by both Enterprise and Venture configurations. Configuration-specific method practices are concrete expressions of the same principles.
+
+Toolkit, Agents, Evidence System, Advisory Services, and Partner Ecosystem are future ecosystem roadmap items.
 
 ## Key Pages
 
-- [English Founding Statement](https://www.o2vframework.com/en): English founding statement for O2V Framework.
-- [Chinese Founding Statement](https://www.o2vframework.com/zh): Chinese founding statement for O2V Framework.
-- [German Founding Statement](https://www.o2vframework.com/de): German founding statement for O2V Framework.
-- [English Framework Web Overview](https://www.o2vframework.com/en/framework): Web overview of the O2V Framework 20260520 for quick reading and online reference.
-- [Chinese Framework Web Overview](https://www.o2vframework.com/zh/framework): Chinese web overview of the O2V Framework 20260520 for quick reading and online reference.
-- [German Framework Web Overview](https://www.o2vframework.com/de/framework): German web overview of the O2V Framework 20260520 for quick reading and online reference.
-- [English Core Principles](https://www.o2vframework.com/en/principles): Core principles behind O2V Framework.
-- [Chinese Core Principles](https://www.o2vframework.com/zh/principles): Chinese core principles behind O2V Framework.
-- [German Core Principles](https://www.o2vframework.com/de/principles): German core principles behind O2V Framework.
-- [Copyright and Citation](https://www.o2vframework.com/en/copyright): Copyright, citation, trademark, reference methodology, and legal notices.
-- [Downloads](https://www.o2vframework.com/en/download): Current O2V Framework 20260520 PDF downloads in English, Chinese, and German.
+- [English Enterprise Configuration](https://www.o2vframework.com/en/enterprise): Default enterprise-facing O2V entry.
+- [Chinese Enterprise Configuration](https://www.o2vframework.com/zh/enterprise): Chinese enterprise-facing O2V entry.
+- [German Enterprise Configuration](https://www.o2vframework.com/de/enterprise): German enterprise-facing O2V entry.
+- [English Venture Configuration](https://www.o2vframework.com/en/venture): Venture-context O2V configuration.
+- [AiNOVA](https://www.o2vframework.com/en/ainova): AI-native Operating Model for Enterprise Value Realization.
+- [Valence](https://www.o2vframework.com/en/valence): Product Value Operations & Governance Model.
+- [Downloads](https://www.o2vframework.com/en/download): Current public PDF downloads in English, Chinese, and German.
+- [Copyright and Citation](https://www.o2vframework.com/en/copyright): Copyright, citation, trademark, reserved-rights, and license-boundary notices.
+- [Enterprise Copyright](https://www.o2vframework.com/en/enterprise/copyright): Copyright and method-practice rights notice for O2V Enterprise Configuration, AiNOVA, and Valence.
+- [Venture Copyright](https://www.o2vframework.com/en/venture/copyright): Copyright and method-practice rights notice for O2V Venture Configuration.
 
-## Core Definition
+## Core Chain
 
-O2V stands for Opportunity-to-Value. It is designed to help individual builders, entrepreneurs, innovators, consultants, enterprise leaders, and early-stage investors evaluate whether an opportunity signal can become validated value, a credible Business Case, a value asset, and an evidence-backed value story.
+Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story
 
-## Core Slogan
+## Public Boundary
 
-From Signal to Impact. From Idea to Asset.
+The public website content does not disclose detailed playbooks, templates, scorecards, calculation formulas, internal knowledge-base paths, client details, specific systems, or partner names.
 
-Chinese slogan:
-从机会信号到实际影响。从创意构想到长期资产。
-
-Evidence runs through every step of O2V. Signals must become evidence, evidence supports Business Cases, and Business Cases lead to impact, assets, and evidence-backed Value Stories.
-
-O2V does not assume every opportunity should proceed. Evidence may support Proceed, Pivot, Reframe, or Stop. A Stop decision can also be a successful value outcome when it prevents further waste.
-
-## 9-Step Judgment Chain
-
-Signal → Scenario → Persona → Pain → Product → Validation → Business Case → Asset → Value Story
-
-## Business Case Validation Chain
-
-Benefits Hypothesis → MVP → Leading Indicators → Financial Metrics → Verification Plan
-
-## Framework Deliverables
-
-Opportunity Signal List, Opportunity Card, O2V Score, Compliance Risk Level, Business Case, Validation Plan, Assetization Path, Value Story.
+Website source code is licensed under Apache License 2.0. O2V methodology, publication text, brand names, logos, PDF materials, AiNOVA, Valence, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.
 
 ## Historical Release Note
 
-Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration. Financing Story can appear only as a venture-context form of Value Story. The current public download filenames use O2V Framework 20260520.
+Opportunity-to-Venture is retained only as historical release wording and as a venture-context configuration. Financing Story can appear only as a venture-context form of Value Story. Current Enterprise Configuration PDF filenames are o2v-framework-enterprise-configuration-20260607-en.pdf, o2v-framework-enterprise-configuration-20260607-zh.pdf, and o2v-framework-enterprise-configuration-20260607-de.pdf.
 
 ## Citation
 
-Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260520.
+Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release 20260607, Internal Version: v1.6.
 
-## Copyright
-
-Copyright © Li Zhi. All rights reserved. Permission is required for citation, adaptation, translation, reproduction, commercial use, training, consulting delivery, productization, model training, or substantial reuse of O2V Framework.
+Copyright Li Zhi. All rights reserved.
