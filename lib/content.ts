@@ -702,8 +702,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: `Download O2V Framework ${releaseVersion}`,
     deck: releaseDeck.en,
     fullReleaseNote:
-      "The current public website identity is O2V Framework 20260607 / Internal Version v1.6. Existing PDF files remain available in Chinese, English, and German.",
-    note: "PDF filenames now follow the current Enterprise Configuration release identity.",
+      "PDF downloads may reference earlier release files. The current web release is O2V Framework 20260607 / Internal Version v1.6.",
+    note: "PDF filenames may be updated separately from the current web release.",
     button: "Download PDF",
     permissionReminder:
       "Permission is required for substantial reuse, adaptation, commercial use, training, consulting delivery, productization, model training, or redistribution.",
@@ -728,8 +728,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: `下载 O2V Framework ${releaseVersion}`,
     deck: releaseDeck.zh,
     fullReleaseNote:
-      "当前官网公开身份为 O2V Framework 20260607 / Internal Version v1.6。现有中文、英文、德文 PDF 文件继续保留。",
-    note: "PDF 文件名现在使用当前 Enterprise Configuration 发布身份。",
+      "PDF 下载文件可能仍指向早期发布文件。当前官网版本为 O2V Framework 20260607 / Internal Version v1.6。",
+    note: "PDF 文件名可能与当前官网版本分开更新。",
     button: "下载 PDF",
     permissionReminder:
       "对框架进行实质性复用、改编、商业使用、培训、咨询交付、产品化、模型训练或再分发，应获得授权。",
@@ -754,8 +754,8 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     title: `O2V Framework ${releaseVersion} herunterladen`,
     deck: releaseDeck.de,
     fullReleaseNote:
-      "The current public website identity is O2V Framework 20260607 / Internal Version v1.6. Existing PDF files remain available in Chinese, English, and German.",
-    note: "PDF filenames now follow the current Enterprise Configuration release identity.",
+      "PDF downloads may reference earlier release files. The current web release is O2V Framework 20260607 / Internal Version v1.6.",
+    note: "PDF filenames may be updated separately from the current web release.",
     button: "PDF herunterladen",
     permissionReminder:
       "Permission is required for substantial reuse, adaptation, commercial use, training, consulting delivery, productization, model training, or redistribution.",
@@ -1224,7 +1224,7 @@ export const valenceContent: Record<Locale, PageContent> = {
       {
         heading: "Where Valence Fits",
         body: [
-          "Valence sits inside the O2V Enterprise Configuration as the product value operations and governance model.",
+          "Valence is used in the O2V Enterprise Configuration while remaining an independent O2V method asset.",
           "It is most useful after a product, platform, AI use case, shared service, or strategic initiative has moved beyond initial launch and needs continuing value judgment.",
           "It helps teams see whether product activity is turning into adoption, impact, investment efficiency, reusable capability, and long-term asset value."
         ]
@@ -1367,7 +1367,7 @@ export const valenceContent: Record<Locale, PageContent> = {
       {
         heading: "Valence 在哪里发挥作用",
         body: [
-          "Valence 位于 O2V Enterprise Configuration 之内，是产品价值运营与治理模型。",
+          "Valence 在 O2V Enterprise Configuration 中被使用，同时仍然是独立的 O2V 方法资产。",
           "当数字产品、平台、AI use case、共享服务或战略举措已经越过初始上线阶段，需要持续判断价值时，Valence 最能发挥作用。",
           "它帮助团队判断产品活动是否真正转化为 adoption、impact、investment efficiency、可复用能力和长期资产价值。"
         ]
@@ -1510,7 +1510,7 @@ export const valenceContent: Record<Locale, PageContent> = {
       {
         heading: "Where Valence Fits",
         body: [
-          "Valence sits inside the O2V Enterprise Configuration as the product value operations and governance model.",
+          "Valence is used in the O2V Enterprise Configuration while remaining an independent O2V method asset.",
           "It is most useful after a product, platform, AI use case, shared service, or strategic initiative has moved beyond initial launch and needs continuing value judgment.",
           "It helps teams see whether product activity is turning into adoption, impact, investment efficiency, reusable capability, and long-term asset value."
         ]

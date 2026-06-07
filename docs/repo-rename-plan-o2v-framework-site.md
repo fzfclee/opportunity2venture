@@ -7,6 +7,7 @@
 - Canonical website domain: `https://www.o2vframework.com`
 - Legacy / backup domain: `https://www.opportunity2venture.com`
 - Current public brand: O2V Framework / Opportunity-to-Value Framework
+- Current public release: O2V Framework 20260607 / Internal Version v1.6
 
 The current repo name reflects the original Opportunity-to-Venture release. It should be treated as historical naming while the website brand now centers on O2V Framework.
 
@@ -60,17 +61,16 @@ git remote set-url origin https://github.com/fzfclee/o2v-framework-site.git
   - `/en`
   - `/zh`
   - `/de`
-  - `/en/framework`
   - `/en/download`
   - `/en/about`
-- Verify 20260520 PDF download links resolve.
+- Verify current page routes resolve. PDF download files may reference earlier release assets and should not be treated as the current web release identity.
 
 ## Rollback Considerations
 
 - GitHub usually preserves redirects after repo rename, but external integrations should still be checked.
 - If deployment breaks, reconnect Vercel to the renamed repo rather than changing the canonical domain.
 - If a critical integration cannot follow the rename, GitHub can rename the repo back to `fzfclee/opportunity2venture`.
-- Keep current 20260520 PDF URLs unchanged during and after the repo rename.
+- Do not treat historical 20260520 PDF URLs as the current web release identity during or after the repo rename.
 - Do not change website canonical URLs as part of repo rollback.
 
 ## Links / References To Check After Rename

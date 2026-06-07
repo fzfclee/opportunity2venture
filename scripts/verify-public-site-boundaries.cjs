@@ -113,7 +113,8 @@ const oldReleasePatterns = [
 ];
 
 const oldReleaseAllowed = [
-  /No old public release identity should remain in public content/i
+  /No old public release identity should remain in public content/i,
+  /prior Opportunity-to-Value transition release/i
 ];
 
 function readIfExists(relativePath) {

@@ -57,7 +57,7 @@ Use Enterprise Configuration PDF filenames with the 20260607 release date.
 Where needed, distinguish:
 
 - website / framework public release: `20260607`
-- current PDF filenames: `o2v-framework-enterprise-configuration-20260607-*.pdf`
+- download filenames currently linked: `o2v-framework-enterprise-configuration-20260607-*.pdf`
 
 ## Route Requirements
 
