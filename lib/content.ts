@@ -218,9 +218,9 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
       "An enterprise-first framework for turning strategic, digital, and AI opportunities into measurable impact and long-term assets."
     ],
     bullets: [
-      "O2V Framework is an Opportunity-to-Value Framework.",
-      "The default Enterprise Configuration helps organizations turn strategic, digital, and AI opportunities into measurable impact and long-term assets.",
-      "The Venture Configuration helps founders, builders, consultants, independent professionals, creators, AI builders, and small teams turn ideas into validated ventures, business cases, and assets."
+      "O2V Framework ist ein Opportunity-to-Value Framework.",
+      "Die standardmäßige Enterprise Configuration hilft Organisationen, strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets zu überführen.",
+      "Die Venture Configuration hilft Gründern, Buildern, Beratern, unabhängigen Fachleuten, Creators, AI Buildern und kleinen Teams, Ideen in validierte Ventures, Business Cases und Assets zu überführen."
     ],
     cards: [
       {
@@ -366,27 +366,27 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
       "Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets überführt."
     ],
     bullets: [
-      "O2V Framework is an Opportunity-to-Value Framework.",
-      "The default Enterprise Configuration helps organizations turn strategic, digital, and AI opportunities into measurable impact and long-term assets.",
-      "The Venture Configuration helps founders, builders, consultants, independent professionals, creators, AI builders, and small teams turn ideas into validated ventures, business cases, and assets."
+      "O2V Framework ist ein Opportunity-to-Value Framework.",
+      "Die standardmäßige Enterprise Configuration hilft Organisationen, strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets zu überführen.",
+      "Die Venture Configuration hilft Gründern, Buildern, Beratern, unabhängigen Fachleuten, Creators, AI Buildern und kleinen Teams, Ideen in validierte Ventures, Business Cases und Assets zu überführen."
     ],
     cards: [
       {
         title: "AiNOVA",
         subtitle: "AI-native Operating Model for Enterprise Value Realization",
-        body: "AiNOVA helps enterprises operate opportunity-to-value logic across strategic signals, validation evidence, leadership decision-making, product governance, and continuous run-phase intake.",
+        body: "AiNOVA hilft Unternehmen, die Opportunity-to-Value-Logik über strategische Signale, Validierungsevidenz, Leadership-Entscheidungen, Produkt-Governance und kontinuierliche Run-Phase-Intake hinweg zu betreiben.",
         href: "/de/ainova"
       },
       {
         title: "Valence",
         subtitle: "Product Value Operations & Governance Model",
-        body: "Valence helps organizations govern whether digital products, AI use cases, platforms, shared services, and strategic initiatives continue to create value after launch.",
+        body: "Valence hilft Organisationen zu steuern, ob digitale Produkte, AI Use Cases, Plattformen, Shared Services und strategische Initiativen nach dem Launch weiterhin Wert schaffen.",
         href: "/de/valence"
       }
     ],
     sections: [
       {
-        heading: "Why Enterprise Needs O2V",
+        heading: "Warum Unternehmen O2V brauchen",
         body: [
           "Viele Organisationen haben nicht zu wenig Strategie, KI-Ideen, digitale Initiativen oder Technologieinvestitionen.",
           "Was häufig fehlt, ist ein leichtgewichtiges Operating Model, das strategische Signale kontinuierlich in Opportunity Judgment, Validierungsevidenz, Investitionsentscheidungen, Product Governance und messbare Business-Wirkung übersetzt.",
@@ -394,7 +394,7 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
         ]
       },
       {
-        heading: "What Is O2V Enterprise Configuration",
+        heading: "Was ist die O2V Enterprise Configuration",
         body: [
           "Die O2V Enterprise Configuration ist die Enterprise-orientierte Konfiguration des O2V Framework.",
           "Sie hilft Unternehmen, Opportunity-to-Value-Logik über Strategie, Business, Technologie, Finanzen, Governance und Führungsentscheidungen hinweg zu betreiben.",
@@ -402,16 +402,16 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
         ]
       },
       {
-        heading: "Framework Core",
+        heading: "Framework-Kern",
         body: [
-          "The shared O2V chain is Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
-          "Evidence is not a separate tenth step. It runs through every step, turning signals into evidence, evidence into business cases, impact into decisions, and decisions into long-term assets.",
-          "Enterprise methods such as AiNOVA and Valence are concrete method practices built from the same O2V principles."
+          "Die gemeinsame O2V-Kette lautet: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
+          "Evidence ist kein separater zehnter Schritt. Sie zieht sich durch jeden Schritt und verwandelt Signale in Evidenz, Evidenz in Business Cases, Wirkung in Entscheidungen und Entscheidungen in langfristige Assets.",
+          "Enterprise-Methoden wie AiNOVA und Valence sind konkrete Method Practices, die aus denselben O2V-Prinzipien abgeleitet sind."
         ],
         visual: "o2v"
       },
       {
-        heading: "Future Ecosystem Note",
+        heading: "Hinweis zum zukünftigen Ökosystem",
         body: [
           "Rund um die zentralen Methoden-Assets können zukünftige O2V Enterprise Ecosystem Capabilities Enterprise Toolkits, Agents, Evidence Systems, Partner Platforms und Advisory Services umfassen.",
           "Diese Ökosystem-Komponenten werden bewusst kommerziell vom Kern-IP der Methodik getrennt gehalten."
@@ -456,7 +456,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     sections: [
       {
-        heading: "Venture-context O2V logic",
+        heading: "O2V-Logik im Venture-Kontext",
         body: [
           "In the AI era, ideas are no longer scarce. Signals are everywhere, prototypes can be created quickly, and almost every trend can become a compelling story.",
           "But speed does not remove uncertainty. A working demo does not prove real demand, user interest does not always become willingness to pay, and short-term income may still fail to become a long-term asset.",
@@ -464,7 +464,7 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Evidence-throughout principle",
+        heading: "Evidence-throughout-Prinzip",
         body: [
           "Evidence runs through every step. Signals must become evidence before they deserve commitment.",
           "Evidence reveals impact, and impact drives better decisions: Proceed, Pivot, Reframe, or Stop.",
@@ -472,11 +472,11 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Framework Core",
+        heading: "Framework-Kern",
         body: [
-          "The shared O2V chain is Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
-          "The Venture Configuration uses the same O2V principles as Enterprise Configuration, but applies them to founder, builder, consultant, creator, AI builder, and small-team contexts.",
-          "Financing Story can appear in venture contexts, but it remains a specific expression of Value Story rather than a replacement for the O2V chain."
+          "Die gemeinsame O2V-Kette lautet: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
+          "Die Venture Configuration nutzt dieselben O2V-Prinzipien wie die Enterprise Configuration, wendet sie aber auf Kontexte von Gründern, Buildern, Beratern, Creators, AI Buildern und kleinen Teams an.",
+          "Financing Story kann in Venture-Kontexten erscheinen, bleibt aber eine spezifische Ausprägung der Value Story und ersetzt nicht die O2V-Kette."
         ],
         visual: "o2v"
       }
@@ -548,7 +548,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     sections: [
       {
-        heading: "Venture-context O2V logic",
+        heading: "O2V-Logik im Venture-Kontext",
         body: [
           "Im KI-Zeitalter sind Ideen nicht mehr knapp. Signale sind überall, Prototypen können schnell entstehen, und fast jeder Trend kann in eine überzeugende Geschichte verwandelt werden.",
           "Doch Geschwindigkeit beseitigt keine Unsicherheit. Ein funktionierender Demo-Prototyp beweist noch keine echte Nachfrage, Nutzerinteresse führt nicht immer zu Zahlungsbereitschaft, und kurzfristige Einnahmen werden nicht automatisch zu einem langfristigen Asset.",
@@ -556,7 +556,7 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Evidence-throughout principle",
+        heading: "Evidence-throughout-Prinzip",
         body: [
           "Evidenz läuft durch jeden Schritt. Signale müssen zu Evidenz werden, bevor sie Commitment verdienen.",
           "Evidenz zeigt Wirkung, und Wirkung führt zu besseren Entscheidungen: Proceed, Pivot, Reframe oder Stop.",
@@ -564,11 +564,11 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Framework Core",
+        heading: "Framework-Kern",
         body: [
-          "The shared O2V chain is Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
-          "The Venture Configuration uses the same O2V principles as Enterprise Configuration, but applies them to founder, builder, consultant, creator, AI builder, and small-team contexts.",
-          "Financing Story can appear in venture contexts, but it remains a specific expression of Value Story rather than a replacement for the O2V chain."
+          "Die gemeinsame O2V-Kette lautet: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
+          "Die Venture Configuration nutzt dieselben O2V-Prinzipien wie die Enterprise Configuration, wendet sie aber auf Kontexte von Gründern, Buildern, Beratern, Creators, AI Buildern und kleinen Teams an.",
+          "Financing Story kann in Venture-Kontexten erscheinen, bleibt aber eine spezifische Ausprägung der Value Story und ersetzt nicht die O2V-Kette."
         ],
         visual: "o2v"
       }
