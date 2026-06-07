@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
-    "start": "next start",
-    "verify:public-site": "node scripts/verify-public-site-boundaries.cjs"
+    "start": "next start"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

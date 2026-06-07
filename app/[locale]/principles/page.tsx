@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ContentLayout from "@/components/ContentLayout";
-import { internalVersion, principleContent, releaseVersion } from "@/lib/content";
+import { principleContent } from "@/lib/content";
 import { locales, type Locale } from "@/lib/i18n";
 
 type PageProps = {
@@ -8,9 +8,9 @@ type PageProps = {
 };
 
 const principlesDeck: Record<Locale, string[]> = {
-  en: [`O2V Framework ${releaseVersion}`, "Opportunity-to-Value Framework", `Internal Version: ${internalVersion}`],
-  zh: [`O2V Framework ${releaseVersion}`, "Opportunity-to-Value Framework", `内部版本：${internalVersion}`],
-  de: [`O2V Framework ${releaseVersion}`, "Opportunity-to-Value Framework", `Interne Version: ${internalVersion}`]
+  en: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "Official Public Release 20260520"],
+  zh: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "官方公开发布版 20260520"],
+  de: ["O2V Framework 20260520", "Opportunity-to-Value Framework", "Offizielle öffentliche Veröffentlichung 20260520"]
 };
 
 export function generateStaticParams() {

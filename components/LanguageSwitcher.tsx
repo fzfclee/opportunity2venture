@@ -8,19 +8,7 @@ type LanguageSwitcherProps = {
   currentLocale: Locale;
 };
 
-const supportedPageSuffixes = new Set([
-  "",
-  "enterprise",
-  "venture",
-  "ainova",
-  "valence",
-  "principles",
-  "copyright",
-  "enterprise/copyright",
-  "venture/copyright",
-  "download",
-  "about"
-]);
+const supportedPageSuffixes = new Set(["", "framework", "principles", "copyright", "download", "about"]);
 
 export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
   const pathname = usePathname();
