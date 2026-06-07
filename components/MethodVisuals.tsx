@@ -160,8 +160,12 @@ export default function MethodVisual({ type }: { type: VisualType }) {
   const endX = xs[xs.length - 1];
 
   return (
-    <div className="not-prose mt-6 w-full overflow-hidden border border-[#dfe3ff] bg-white shadow-[0_18px_45px_rgba(36,52,170,0.06)]">
-      <svg viewBox="0 0 1360 940" role="img" aria-label={`${spec.title} visual map`} className="block h-auto w-full">
+    <div
+      className="not-prose mt-6 w-full overflow-hidden border border-[#dfe3ff] bg-white shadow-[0_18px_45px_rgba(36,52,170,0.06)]"
+      role="img"
+      aria-label={`${spec.title}: ${spec.subtitle}`}
+    >
+      <svg viewBox="0 0 1360 940" aria-hidden="true" focusable="false" className="block h-auto w-full">
         <defs>
           <linearGradient id={`wave-${type}`} x1="0" x2="1" y1="0" y2="0">
             <stop offset="0%" stopColor="#0458ff" stopOpacity="0.25" />

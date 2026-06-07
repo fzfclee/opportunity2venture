@@ -218,9 +218,9 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
       "An enterprise-first framework for turning strategic, digital, and AI opportunities into measurable impact and long-term assets."
     ],
     bullets: [
-      "O2V Framework ist ein Opportunity-to-Value Framework.",
-      "Die standardmäßige Enterprise Configuration hilft Organisationen, strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets zu überführen.",
-      "Die Venture Configuration hilft Gründern, Buildern, Beratern, unabhängigen Fachleuten, Creators, AI Buildern und kleinen Teams, Ideen in validierte Ventures, Business Cases und Assets zu überführen."
+      "O2V Framework is an Opportunity-to-Value Framework.",
+      "The default Enterprise Configuration helps organizations turn strategic, digital, and AI opportunities into measurable impact and long-term assets.",
+      "The Venture Configuration helps founders, builders, consultants, independent professionals, creators, AI builders, and small teams turn ideas into validated ventures, business cases, and assets."
     ],
     cards: [
       {
@@ -361,7 +361,7 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
     title: "O2V Framework",
     subtitle: "Opportunity-to-Value Framework",
     tagline: ["Vom Signal zur Wirkung.", "Von der Idee zum Asset."],
-    deck: [`Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
+    deck: [`Official Public Release ${releaseVersion}`, `Interne Version: ${internalVersion}`],
     body: [
       "Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets überführt."
     ],
@@ -386,11 +386,11 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
     ],
     sections: [
       {
-        heading: "Warum Unternehmen O2V brauchen",
+        heading: "Warum O2V für Unternehmen relevant ist",
         body: [
           "Viele Organisationen haben nicht zu wenig Strategie, KI-Ideen, digitale Initiativen oder Technologieinvestitionen.",
           "Was häufig fehlt, ist ein leichtgewichtiges Operating Model, das strategische Signale kontinuierlich in Opportunity Judgment, Validierungsevidenz, Investitionsentscheidungen, Product Governance und messbare Business-Wirkung übersetzt.",
-          "Die O2V Enterprise Configuration wurde für genau diese Lücke entwickelt."
+          "Die O2V Enterprise Configuration adressiert genau diese Lücke."
         ]
       },
       {
@@ -825,7 +825,7 @@ export const ainovaContent: Record<Locale, PageContent> = {
       {
         heading: "Where AiNOVA Fits",
         body: [
-          "AiNOVA sits inside O2V Enterprise Configuration. It translates the parent O2V principles into an enterprise operating model for strategy, digital, technology, data, AI, product, finance, governance, and leadership contexts.",
+          "AiNOVA is a core method asset of the O2V Enterprise Configuration. It translates the parent O2V principles into an enterprise operating model for strategy, digital, technology, data, AI, product, finance, governance, and leadership contexts.",
           "It is useful when an organization has many AI or digital ideas, but lacks a consistent way to judge which signals deserve commitment, which initiatives should be validated, and which products or capabilities should become long-term assets."
         ]
       },
@@ -1097,7 +1097,7 @@ export const ainovaContent: Record<Locale, PageContent> = {
       {
         heading: "Where AiNOVA Fits",
         body: [
-          "AiNOVA sits inside O2V Enterprise Configuration. It translates the parent O2V principles into an enterprise operating model for strategy, digital, technology, data, AI, product, finance, governance, and leadership contexts.",
+          "AiNOVA is a core method asset of the O2V Enterprise Configuration. It translates the parent O2V principles into an enterprise operating model for strategy, digital, technology, data, AI, product, finance, governance, and leadership contexts.",
           "It is useful when an organization has many AI or digital ideas, but lacks a consistent way to judge which signals deserve commitment, which initiatives should be validated, and which products or capabilities should become long-term assets."
         ]
       },

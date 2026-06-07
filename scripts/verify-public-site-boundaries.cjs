@@ -19,7 +19,8 @@ const sourceFiles = [
   "app/[locale]/copyright/page.tsx",
   "app/[locale]/enterprise/copyright/page.tsx",
   "app/[locale]/venture/copyright/page.tsx",
-  "app/[locale]/download/page.tsx"
+  "app/[locale]/download/page.tsx",
+  "app/[locale]/about/page.tsx"
 ];
 
 const requiredRoutes = [
@@ -40,7 +41,10 @@ const requiredRoutes = [
   "/de/enterprise/copyright",
   "/en/venture/copyright",
   "/zh/venture/copyright",
-  "/de/venture/copyright"
+  "/de/venture/copyright",
+  "/en/about",
+  "/zh/about",
+  "/de/about"
 ];
 
 const forbiddenPublicPatterns = [
