@@ -19,5 +19,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ValencePage({ params }: PageProps) {
   const { locale } = await params;
 
-  return <PublicContentPage content={valenceContent[locale]} eyebrow="Valence by O2V" />;
+  return <PublicContentPage content={valenceContent[locale]} eyebrow="Valence by O2V" locale={locale} />;
 }

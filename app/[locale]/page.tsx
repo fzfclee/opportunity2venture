@@ -28,7 +28,7 @@ export default async function LocaleHomePage({ params }: PageProps) {
           __html: JSON.stringify(creativeWorkJsonLd(locale))
         }}
       />
-      <EnterpriseContentPage content={content} />
+      <EnterpriseContentPage content={content} locale={locale} />
     </>
   );
 }

@@ -116,7 +116,7 @@ export type RichParagraph = RichTextPart[];
 const releaseDeck: Record<Locale, string[]> = {
   en: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
   zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${releaseVersion}`, `内部版本：${internalVersion}`],
-  de: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Interne Version: ${internalVersion}`]
+  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`]
 };
 
 export const navLabels: Record<Locale, Record<NavKey, string>> = {
@@ -183,14 +183,14 @@ export const footerContent: Record<Locale, FooterLine[]> = {
   de: [
     { text: `O2V Framework ${releaseVersion} | Opportunity-to-Value Framework` },
     { text: "Vom Signal zur Wirkung. Von der Idee zum Asset." },
-    { text: "Copyright © Li Zhi. All rights reserved." },
+    { text: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten." },
     {
       text:
-        "O2V Enterprise Configuration, AiNOVA, Valence, O2V Venture Configuration, related method practices, text, diagrams, artifact taxonomy, and publication materials are O2V-related method assets by Li Zhi. All rights reserved unless separately licensed in writing."
+        "O2V Enterprise Configuration, AiNOVA, Valence, O2V Venture Configuration sowie zugehörige Methodenpraktiken, Texte, Diagramme, Artefakt-Taxonomien und Veröffentlichungsmaterialien sind O2V-bezogene Methoden-Assets von Li Zhi. Alle Rechte vorbehalten, sofern keine gesonderte schriftliche Lizenz vorliegt."
     },
     { label: "Offizielle Website:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: `Zitierformat: Li Zhi, O2V Framework, Official Public Release ${releaseVersion}.` }
+    { text: `Zitierformat: Li Zhi, O2V Framework, offizielle öffentliche Version ${releaseVersion}.` }
   ]
 };
 
@@ -361,7 +361,7 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
     title: "O2V Framework",
     subtitle: "Opportunity-to-Value Framework",
     tagline: ["Vom Signal zur Wirkung.", "Von der Idee zum Asset."],
-    deck: [`Official Public Release ${releaseVersion}`, `Interne Version: ${internalVersion}`],
+    deck: [`Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`],
     body: [
       "Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets überführt."
     ],
@@ -436,7 +436,7 @@ const ventureDescriptions: Record<Locale, string> = {
   zh:
     "O2V 创业配置面向创业者、构建者、顾问、专家型个体、内容创作者、AI builder 和小团队，帮助他们将创意构想转化为可验证的新事业、Business Case 和长期资产。",
   de:
-    "O2V Venture Configuration helps founders, builders, consultants, independent professionals, creators, AI builders, and small teams turn ideas into validated ventures, business cases, and long-term assets."
+    "Die O2V Venture Configuration hilft Gründern, Buildern, Beratern, unabhängigen Professionals, Creators, AI Buildern und kleinen Teams, Ideen in validierte Ventures, Business Cases und langfristige Assets zu überführen."
 };
 
 export const ventureContent: Record<Locale, PageContent> = {
@@ -448,7 +448,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     },
     eyebrow: "O2V Framework",
     title: "O2V Venture Configuration",
-    subtitle: "Opportunity-to-Value Framework for venture-context opportunity judgment",
+    subtitle: "Opportunity-to-Value Framework für Opportunity Judgment im Venture-Kontext",
     deck: releaseDeck.en,
     intro: [
       "This configuration is for founders, builders, consultants, independent professionals, creators, AI builders, and small teams turning ideas into validated ventures, business cases, and long-term assets.",
@@ -456,7 +456,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     sections: [
       {
-        heading: "O2V-Logik im Venture-Kontext",
+        heading: "O2V Logic in the Venture Context",
         body: [
           "In the AI era, ideas are no longer scarce. Signals are everywhere, prototypes can be created quickly, and almost every trend can become a compelling story.",
           "But speed does not remove uncertainty. A working demo does not prove real demand, user interest does not always become willingness to pay, and short-term income may still fail to become a long-term asset.",
@@ -464,7 +464,7 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Evidence-throughout-Prinzip",
+        heading: "Evidence-throughout Principle",
         body: [
           "Evidence runs through every step. Signals must become evidence before they deserve commitment.",
           "Evidence reveals impact, and impact drives better decisions: Proceed, Pivot, Reframe, or Stop.",
@@ -472,7 +472,7 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Framework-Kern",
+        heading: "Framework Core",
         body: [
           "Die gemeinsame O2V-Kette lautet: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
           "Die Venture Configuration nutzt dieselben O2V-Prinzipien wie die Enterprise Configuration, wendet sie aber auf Kontexte von Gründern, Buildern, Beratern, Creators, AI Buildern und kleinen Teams an.",
@@ -575,7 +575,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     buttons: [
       { label: "Prinzipien", href: "/de/principles" },
-      { label: "Download", href: "/de/download" }
+      { label: "Downloads", href: "/de/download" }
     ]
   }
 };
@@ -638,22 +638,22 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
   },
   de: {
     metadata: {
-      title: "Core Principles | O2V Framework",
+      title: "Kernprinzipien | O2V Framework",
       description:
-        "Core principles of O2V Framework 20260607: minimum structure, maximum evidence, AI-assisted execution, and human judgment at decision points.",
+        "Kernprinzipien des O2V Framework 20260607: minimale Struktur, maximale Evidenz, KI-gestützte Ausführung und menschliches Urteil an Entscheidungspunkten.",
       alternates: localizedAlternates("de", "principles")
     },
-    title: "Core Principles",
+    title: "Kernprinzipien",
     principles: [
-      "O2V is the parent Opportunity-to-Value Framework. Configurations and method assets sit under O2V rather than competing with it.",
-      "Signals are not opportunities yet. Signals must become evidence before they deserve commitment.",
-      "Evidence runs through every step of the O2V chain.",
-      "Impact is neutral. It can be positive, weak, negative, or not meaningful.",
-      "A Stop decision can be a successful value outcome when it protects time, resources, capital, and execution capacity.",
-      "Minimum structure creates enough discipline without turning O2V into a heavy management framework.",
-      "Maximum evidence means every major commitment should be supported by fit-for-stage evidence.",
-      "AI-assisted execution can increase speed, but human judgment remains required at decision points.",
-      "All O2V configurations, method practices, and future ecosystem components should express the same parent principles while remaining modular, separable, and context-adaptable."
+      "O2V ist das übergeordnete Opportunity-to-Value Framework. Konfigurationen und Methoden-Assets stehen unter O2V und konkurrieren nicht mit ihm.",
+      "Signale sind noch keine Opportunities. Signale müssen zu Evidenz werden, bevor sie Commitment verdienen.",
+      "Evidenz durchzieht jeden Schritt der O2V-Kette.",
+      "Impact ist neutral. Er kann positiv, schwach, negativ oder nicht wesentlich sein.",
+      "Eine Stop-Entscheidung kann ein erfolgreicher Wertbeitrag sein, wenn sie Zeit, Ressourcen, Kapital und Ausführungsfähigkeit schützt.",
+      "Minimale Struktur schafft genug Disziplin, ohne O2V in ein schweres Management-Framework zu verwandeln.",
+      "Maximale Evidenz bedeutet, dass jedes wesentliche Commitment durch phasengerechte Evidenz gestützt sein sollte.",
+      "KI-gestützte Ausführung kann Geschwindigkeit erhöhen, aber an Entscheidungspunkten bleibt menschliches Urteil erforderlich.",
+      "Alle O2V-Konfigurationen, Methodenpraktiken und zukünftigen Ökosystem-Komponenten sollten dieselben übergeordneten Prinzipien ausdrücken und zugleich modular, trennbar und kontextfähig bleiben."
     ]
   }
 };
@@ -696,27 +696,27 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     metadata: {
       title: `Download O2V Framework ${releaseVersion}`,
       description:
-        "Download page for O2V Framework. Existing PDF files remain available in Chinese, English, and German while the public website identity is updated to the 20260607 release.",
+        "Downloadseite für das O2V Framework. Bestehende PDF-Dateien bleiben in Chinesisch, Englisch und Deutsch verfügbar, während die öffentliche Website auf die Version 20260607 aktualisiert ist.",
       alternates: localizedAlternates("en", "download")
     },
     title: `Download O2V Framework ${releaseVersion}`,
     deck: releaseDeck.en,
     fullReleaseNote:
-      "PDF downloads may reference earlier release files. The current web release is O2V Framework 20260607 / Internal Version v1.6.",
-    note: "PDF filenames may be updated separately from the current web release.",
+      "PDF-Downloads können weiterhin auf frühere Veröffentlichungsdateien verweisen. Die aktuelle Website-Version ist O2V Framework 20260607 / Interne Version v1.6.",
+    note: "PDF-Dateinamen können unabhängig von der aktuellen Website-Version aktualisiert werden.",
     button: "Download PDF",
     permissionReminder:
-      "Permission is required for substantial reuse, adaptation, commercial use, training, consulting delivery, productization, model training, or redistribution.",
+      "Für wesentliche Wiederverwendung, Anpassung, kommerzielle Nutzung, Training, Beratungsauslieferung, Produktisierung, Modelltraining oder Weiterverteilung ist eine Genehmigung erforderlich.",
     fields: {
       language: "Language",
       fileName: "File name",
-      version: "Website release",
-      internalVersion: "Internal version",
-      copyright: "Copyright"
+      version: "Website-Version",
+      internalVersion: "Interne Version",
+      copyright: "Urheberrecht"
     },
-    versionValue: `Official Public Release ${releaseVersion}`,
+    versionValue: `Offizielle öffentliche Version ${releaseVersion}`,
     internalVersionValue: internalVersion,
-    copyrightValue: "Copyright © Li Zhi. All rights reserved."
+    copyrightValue: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten."
   },
   zh: {
     metadata: {
@@ -748,27 +748,27 @@ export const downloadContent: Record<Locale, DownloadContent> = {
     metadata: {
       title: `O2V Framework ${releaseVersion} herunterladen`,
       description:
-        "Download page for O2V Framework. Existing PDF files remain available in Chinese, English, and German while the public website identity is updated to the 20260607 release.",
+        "Downloadseite für das O2V Framework. Bestehende PDF-Dateien bleiben in Chinesisch, Englisch und Deutsch verfügbar, während die öffentliche Website auf die Version 20260607 aktualisiert ist.",
       alternates: localizedAlternates("de", "download")
     },
     title: `O2V Framework ${releaseVersion} herunterladen`,
     deck: releaseDeck.de,
     fullReleaseNote:
-      "PDF downloads may reference earlier release files. The current web release is O2V Framework 20260607 / Internal Version v1.6.",
-    note: "PDF filenames may be updated separately from the current web release.",
+      "PDF-Downloads können weiterhin auf frühere Veröffentlichungsdateien verweisen. Die aktuelle Website-Version ist O2V Framework 20260607 / Interne Version v1.6.",
+    note: "PDF-Dateinamen können unabhängig von der aktuellen Website-Version aktualisiert werden.",
     button: "PDF herunterladen",
     permissionReminder:
-      "Permission is required for substantial reuse, adaptation, commercial use, training, consulting delivery, productization, model training, or redistribution.",
+      "Für wesentliche Wiederverwendung, Anpassung, kommerzielle Nutzung, Training, Beratungsauslieferung, Produktisierung, Modelltraining oder Weiterverteilung ist eine Genehmigung erforderlich.",
     fields: {
       language: "Sprache",
       fileName: "Dateiname",
-      version: "Website release",
-      internalVersion: "Internal version",
-      copyright: "Copyright"
+      version: "Website-Version",
+      internalVersion: "Interne Version",
+      copyright: "Urheberrecht"
     },
-    versionValue: `Official Public Release ${releaseVersion}`,
+    versionValue: `Offizielle öffentliche Version ${releaseVersion}`,
     internalVersionValue: internalVersion,
-    copyrightValue: "Copyright © Li Zhi. All rights reserved."
+    copyrightValue: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten."
   }
 };
 
@@ -1049,7 +1049,7 @@ export const ainovaContent: Record<Locale, PageContent> = {
     metadata: {
       title: "AiNOVA | O2V Framework",
       description:
-        "AiNOVA is an AI-native Operating Model for Enterprise Value Realization under O2V Framework.",
+        "AiNOVA ist ein AI-native Operating Model for Enterprise Value Realization unter dem O2V Framework.",
       alternates: localizedAlternates("de", "ainova")
     },
     eyebrow: "AiNOVA by O2V",
@@ -1057,133 +1057,133 @@ export const ainovaContent: Record<Locale, PageContent> = {
     subtitle: "AI-native Operating Model for Enterprise Value Realization",
     deck: releaseDeck.de,
     intro: [
-      "AiNOVA by O2V is not an IT operating model.",
-      "It is an AI-native operating model for enterprise value realization. It helps organizations turn strategic, digital, and AI opportunities into evidence-backed decisions, measurable impact, reusable capability assets, and long-term value.",
-      "Its boundary is not a department. Its boundary is the value flow: from signal to impact, from idea to asset."
+      "AiNOVA by O2V ist kein IT-Operating-Model.",
+      "Es ist ein AI-native Operating Model für Enterprise Value Realization. Es hilft Organisationen, strategische, digitale und KI-bezogene Opportunities in evidenzgestützte Entscheidungen, messbare Wirkung, wiederverwendbare Capability Assets und langfristigen Wert zu überführen.",
+      "Die Grenze von AiNOVA ist keine Abteilung. Die Grenze ist der Wertfluss: vom Signal zur Wirkung, von der Idee zum Asset."
     ],
     sections: [
       {
-        heading: "Adoption Levels",
+        heading: "Adoptionsstufen",
         ordered: [
-          "Enterprise Overlay Model: for large organizations with existing governance systems.",
-          "Digital & Tech / Digital / AI Operating Model: for digital, technology, data, or AI organizations.",
-          "Enterprise Value Realization Reference Model: for Strategy Office, CSO, business leadership, and enterprise-level strategic initiatives."
+          "Enterprise Overlay Model: für große Organisationen mit bestehenden Governance-Systemen.",
+          "Digital & Technology / Digital / AI Operating Model: für Digital-, Technologie-, Daten- oder KI-Organisationen.",
+          "Enterprise Value Realization Reference Model: für Strategy Office, CSO, Geschäftsleitung und strategische Initiativen auf Unternehmensebene."
         ]
       },
       {
         heading: "AiNOVA Operating Flow",
         body: [
-          "AiNOVA organizes enterprise value realization as a flow from signal capture to run-phase value governance. The flow is deliberately stage-based, not department-based."
+          "AiNOVA organisiert Enterprise Value Realization als Fluss von der Signalerfassung bis zur Wert-Governance in der Run-Phase. Der Fluss ist bewusst phasenbasiert und nicht abteilungsbasiert."
         ],
         visual: "ainova"
       },
       {
         heading: "Workforce & Ways of Working",
         body: [
-          "AiNOVA includes Workforce & Ways of Working because enterprise AI value depends on more than use cases. People, roles, leadership absorption capacity, decision rights, governance mechanisms, evidence routines, and operating rhythms must change together.",
-          "This layer helps organizations move from isolated AI pilots to repeatable AI-native work patterns. It also gives leadership a practical way to absorb high-density evidence, make timely trade-off decisions, and keep governance lightweight rather than ceremonial."
+          "AiNOVA enthält Workforce & Ways of Working, weil Enterprise-AI-Wert von mehr abhängt als von Use Cases. Menschen, Rollen, Aufnahmefähigkeit der Führung, Entscheidungsrechte, Governance-Mechanismen, Evidenzroutinen und Operating Rhythms müssen gemeinsam verändert werden.",
+          "Diese Ebene hilft Organisationen, von isolierten KI-Piloten zu wiederholbaren AI-native Arbeitsmustern zu kommen. Sie gibt dem Leadership Team außerdem einen praktischen Weg, verdichtete Evidenz aufzunehmen, rechtzeitig Trade-off-Entscheidungen zu treffen und Governance leichtgewichtig statt zeremoniell zu halten."
         ]
       },
       {
-        heading: "Five Domains",
+        heading: "Fünf Domains",
         ordered: [
-          "Strategic Signal & Opportunity Domain: captures signals from strategy, market shifts, business pressure, digital change, AI capability, customer needs, and operational friction, then decides which signals deserve structured attention.",
-          "Value Hypothesis & Validation Domain: turns selected signals into value hypotheses and evidence plans, so the organization can test value before making heavy commitments.",
-          "Leadership & Decision Domain: compresses evidence into decision-ready material and supports leadership choices such as proceed, pivot, reframe, pause, merge, scale, or stop.",
-          "Product / Initiative Value Governance Domain: governs whether products, platforms, AI use cases, shared services, or strategic initiatives continue to create measurable value after launch.",
-          "Continuous Intake & Run Domain: keeps run-phase requests connected to value realization, so change requests, enhancements, operational needs, risk changes, and new signals do not become disconnected demand."
+          "Strategic Signal & Opportunity Domain: erfasst Signale aus Strategie, Marktverschiebungen, Geschäftsdruck, digitalem Wandel, KI-Fähigkeiten, Kundenbedürfnissen und operativer Reibung und entscheidet, welche Signale strukturierte Aufmerksamkeit verdienen.",
+          "Value Hypothesis & Validation Domain: überführt ausgewählte Signale in Werthypothesen und Evidenzpläne, damit die Organisation Wert prüfen kann, bevor sie große Commitments eingeht.",
+          "Leadership & Decision Domain: verdichtet Evidenz zu entscheidungsreifem Material und unterstützt Leadership-Entscheidungen wie Proceed, Pivot, Reframe, Pause, Merge, Scale oder Stop.",
+          "Product / Initiative Value Governance Domain: steuert, ob Produkte, Plattformen, KI-Use-Cases, Shared Services oder strategische Initiativen nach dem Launch weiterhin messbaren Wert schaffen.",
+          "Continuous Intake & Run Domain: hält Run-Phase-Anfragen mit Value Realization verbunden, damit Change Requests, Enhancements, operative Bedarfe, Risikoveränderungen und neue Signale nicht zu entkoppelter Nachfrage werden."
         ]
       },
       {
-        heading: "Where AiNOVA Fits",
+        heading: "Wo AiNOVA einzuordnen ist",
         body: [
-          "AiNOVA is a core method asset of the O2V Enterprise Configuration. It translates the parent O2V principles into an enterprise operating model for strategy, digital, technology, data, AI, product, finance, governance, and leadership contexts.",
-          "It is useful when an organization has many AI or digital ideas, but lacks a consistent way to judge which signals deserve commitment, which initiatives should be validated, and which products or capabilities should become long-term assets."
+          "AiNOVA ist ein zentrales Methoden-Asset der O2V Enterprise Configuration. Es übersetzt die übergeordneten O2V-Prinzipien in ein Enterprise Operating Model für Strategie, Digital, Technologie, Daten, KI, Produkt, Finanzen, Governance und Leadership-Kontexte.",
+          "Es ist besonders nützlich, wenn eine Organisation viele KI- oder digitale Ideen hat, aber keinen konsistenten Weg besitzt, um zu beurteilen, welche Signale Commitment verdienen, welche Initiativen validiert werden sollten und welche Produkte oder Fähigkeiten zu langfristigen Assets werden können."
         ]
       },
       {
         heading: "Operating Logic",
         ordered: [
-          "Capture strategic, digital, and AI signals without assuming they are already opportunities.",
-          "Convert selected signals into value hypotheses and validation evidence.",
-          "Compress evidence into leadership-ready decision material.",
-          "Use product and initiative governance to decide whether to scale, improve, pause, merge, or stop.",
-          "Keep run-phase intake connected to value realization rather than treating it as disconnected BAU demand."
+          "Strategische, digitale und KI-bezogene Signale erfassen, ohne sie bereits als Opportunities zu behandeln.",
+          "Ausgewählte Signale in Werthypothesen und Validierungsevidenz überführen.",
+          "Evidenz zu leadership-ready Entscheidungsmaterial verdichten.",
+          "Produkt- und Initiativen-Governance nutzen, um über Scale, Improve, Pause, Merge oder Stop zu entscheiden.",
+          "Run-Phase-Intake mit Value Realization verbunden halten, statt ihn als entkoppelte BAU-Nachfrage zu behandeln."
         ]
       },
       {
-        heading: "Who AiNOVA Is For",
+        heading: "Für wen AiNOVA gedacht ist",
         bullets: [
-          "Enterprise leadership teams that need AI and digital investment to connect with measurable business outcomes.",
-          "Strategy, transformation, finance, product, data, technology, and governance leaders who need a shared opportunity-to-value language.",
-          "Organizations with many AI ideas, but uneven validation discipline, unclear ownership, or fragmented decision forums.",
-          "Business and functional teams that need AI-native ways of operating without reducing value realization to an IT delivery queue."
+          "Enterprise Leadership Teams, die KI- und Digitalinvestitionen mit messbaren Geschäftsergebnissen verbinden müssen.",
+          "Strategie-, Transformations-, Finanz-, Produkt-, Daten-, Technologie- und Governance-Verantwortliche, die eine gemeinsame Opportunity-to-Value-Sprache benötigen.",
+          "Organisationen mit vielen KI-Ideen, aber uneinheitlicher Validierungsdisziplin, unklarem Ownership oder fragmentierten Entscheidungsforen.",
+          "Business- und Funktionsteams, die AI-native Arbeitsweisen brauchen, ohne Value Realization auf eine IT-Delivery-Queue zu reduzieren."
         ]
       },
       {
-        heading: "What AiNOVA Governs",
+        heading: "Was AiNOVA steuert",
         body: [
-          "AiNOVA governs the enterprise value realization flow, not a single department.",
-          "Its governance objects include strategic signals, opportunity hypotheses, validation evidence, leadership decision material, AI or digital initiatives, product and platform value, run-phase intake, and enterprise value stories."
+          "AiNOVA steuert den Enterprise-Value-Realization-Fluss, nicht eine einzelne Abteilung.",
+          "Zu den Governance-Objekten gehören strategische Signale, Opportunity-Hypothesen, Validierungsevidenz, Leadership-Entscheidungsmaterial, KI- oder digitale Initiativen, Produkt- und Plattformwert, Run-Phase-Intake und Enterprise Value Stories."
         ]
       },
       {
-        heading: "What AiNOVA Changes",
+        heading: "Was AiNOVA verändert",
         body: [
-          "AiNOVA shifts enterprise AI and digital work from initiative accumulation to value realization discipline.",
-          "It makes strategic signals visible, turns selected signals into value hypotheses, connects validation evidence with leadership decisions, and keeps product or initiative governance tied to value after launch.",
-          "The model is designed to sit on top of existing enterprise governance where needed. It does not require organizations to replace every existing forum, portfolio process, or product operating model."
+          "AiNOVA verschiebt Enterprise-AI- und Digitalarbeit von der Ansammlung von Initiativen hin zu Value-Realization-Disziplin.",
+          "Es macht strategische Signale sichtbar, überführt ausgewählte Signale in Werthypothesen, verbindet Validierungsevidenz mit Leadership-Entscheidungen und hält Produkt- oder Initiativen-Governance nach dem Launch an Wert gebunden.",
+          "Das Modell kann bei Bedarf auf bestehender Enterprise Governance aufsetzen. Es verlangt nicht, dass Organisationen jedes bestehende Forum, jeden Portfolio-Prozess oder jedes Product Operating Model ersetzen."
         ]
       },
       {
-        heading: "Decision Questions",
+        heading: "Entscheidungsfragen",
         bullets: [
-          "Which strategic, digital, or AI signals deserve structured attention?",
-          "What evidence is strong enough to move from interest to commitment?",
-          "Which opportunities should become pilots, products, platforms, capabilities, or assets?",
-          "Which initiatives should scale, pivot, reframe, pause, merge, or stop?",
-          "How should leadership see value, risk, adoption, and investment efficiency without drowning in project status detail?"
+          "Welche strategischen, digitalen oder KI-bezogenen Signale verdienen strukturierte Aufmerksamkeit?",
+          "Welche Evidenz ist stark genug, um von Interesse zu Commitment zu wechseln?",
+          "Welche Opportunities sollten zu Piloten, Produkten, Plattformen, Fähigkeiten oder Assets werden?",
+          "Welche Initiativen sollten skalieren, pivotieren, reframed, pausiert, zusammengeführt oder gestoppt werden?",
+          "Wie kann Leadership Wert, Risiko, Adoption und Investment Efficiency sehen, ohne in Projektstatusdetails zu ertrinken?"
         ]
       },
       {
-        heading: "Expected Public Outcomes",
+        heading: "Erwartete öffentliche Ergebnisse",
         bullets: [
-          "A clearer enterprise opportunity-to-value language.",
-          "More consistent validation discipline before commitment.",
-          "Leadership decisions supported by compressed evidence rather than isolated opinions.",
-          "A stronger connection between AI-native execution, product governance, and long-term asset creation.",
-          "A practical bridge between enterprise strategy, business ownership, digital execution, and value realization."
+          "Eine klarere Enterprise Opportunity-to-Value-Sprache.",
+          "Konsistentere Validierungsdisziplin vor Commitment.",
+          "Leadership-Entscheidungen, die durch verdichtete Evidenz statt isolierte Meinungen gestützt werden.",
+          "Eine stärkere Verbindung zwischen AI-native Execution, Product Governance und langfristiger Asset-Bildung.",
+          "Eine praktische Brücke zwischen Enterprise Strategy, Business Ownership, digitaler Ausführung und Value Realization."
         ]
       },
       {
-        heading: "Main Artifacts",
+        heading: "Wichtige Artefakte",
         bullets: [
-          "Strategic Signal Map: a structured view of strategic, digital, and AI signals worth attention.",
-          "Opportunity Framing Brief: a concise description of the scenario, stakeholder, pain, value hypothesis, and decision need.",
-          "Validation Evidence Pack: the evidence base used to judge whether a signal deserves commitment.",
-          "Leadership Decision Brief: compressed decision material for leadership review and commitment choices.",
-          "Product / Initiative Value View: a governance view connecting product or initiative state with value, adoption, risk, and investment efficiency.",
-          "Run-phase Value Intake Record: a value-connected record for post-launch changes, enhancements, risk updates, and operational requests.",
-          "Enterprise Value Story: the evidence-backed narrative of what value was created, protected, avoided, or stopped."
+          "Strategische Signalkarte: eine strukturierte Sicht auf strategische, digitale und KI-bezogene Signale, die Aufmerksamkeit verdienen.",
+          "Opportunity-Kurzprofil: eine knappe Beschreibung von Szenario, Stakeholder, Pain, Werthypothese und Entscheidungsbedarf.",
+          "Validierungsevidenz-Paket: die Evidenzbasis zur Beurteilung, ob ein Signal Commitment verdient.",
+          "Leadership-Entscheidungsvorlage: verdichtetes Entscheidungsmaterial für Leadership Review und Commitment-Entscheidungen.",
+          "Wertsicht auf Produkt oder Initiative: eine Governance-Sicht, die Produkt- oder Initiativenstatus mit Wert, Adoption, Risiko und Investment Efficiency verbindet.",
+          "Wertbezogener Run-Phase-Intake-Datensatz: ein wertbezogener Datensatz für Änderungen, Enhancements, Risiko-Updates und operative Anfragen nach dem Launch.",
+          "Enterprise-Wertgeschichte: die evidenzgestützte Erzählung darüber, welcher Wert geschaffen, geschützt, vermieden oder gestoppt wurde."
         ]
       },
       {
-        heading: "Important Relationships",
+        heading: "Wichtige Beziehungen",
         body: [
-          "Leadership Governance Model belongs to the Leadership & Decision Domain. It is not a project status meeting. It is a leadership information compression and decision preparation mechanism. The cadence should be adapted to each enterprise context.",
-          "Run-phase Value Intake Model belongs to the Continuous Intake & Run Domain. It governs change requests, bugs, enhancements, business-as-usual requests, shared-service requests, compliance changes, and run-phase changes after the initial validation cycle.",
-          "Valence is used by AiNOVA in the Product / Initiative Value Governance Domain, but Valence remains an independent O2V method asset."
+          "Das Leadership Governance Model gehört zur Leadership & Decision Domain. Es ist kein Projektstatusmeeting, sondern ein Mechanismus zur Informationsverdichtung und Entscheidungsvorbereitung für Leadership. Die Kadenz sollte an den jeweiligen Enterprise-Kontext angepasst werden.",
+          "Das Run-phase Value Intake Model gehört zur Continuous Intake & Run Domain. Es steuert Change Requests, Bugs, Enhancements, Business-as-usual-Anfragen, Shared-Service-Anfragen, Compliance-Änderungen und Run-Phase-Änderungen nach dem initialen Validierungszyklus.",
+          "Valence wird von AiNOVA in der Product / Initiative Value Governance Domain genutzt, bleibt aber ein eigenständiges O2V Methoden-Asset."
         ]
       },
       {
-        heading: "Publication Scope",
+        heading: "Veröffentlichungsumfang",
         body: [
-          "This page publishes AiNOVA's public expression layer: naming, positioning, domain structure, operating flow, artifact categories, and relationship with O2V and Valence.",
-          "Detailed playbooks, templates, scoring rules, calculation methods and client-specific implementation materials are not published on this site."
+          "Diese Seite veröffentlicht die öffentliche Ausdrucksebene von AiNOVA: Name, Positionierung, Domain-Struktur, Operating Flow, Artefaktkategorien sowie die Beziehung zu O2V und Valence.",
+          "Detaillierte Playbooks, Templates, Scoring-Regeln, Berechnungsmethoden und kundenspezifische Implementierungsmaterialien werden auf dieser Website nicht veröffentlicht."
         ]
       }
     ],
-    buttons: [{ label: "Download Detailed Introduction PDF", href: "/downloads/ainova-detailed-introduction.pdf" }]
+    buttons: [{ label: "Detaillierte Einführung als PDF herunterladen", href: "/downloads/ainova-detailed-introduction.pdf" }]
   }
 };
 
@@ -1477,7 +1477,7 @@ export const valenceContent: Record<Locale, PageContent> = {
   de: {
     metadata: {
       title: "Valence | O2V Framework",
-      description: "Valence is a Product Value Operations & Governance Model under O2V Framework.",
+      description: "Valence ist ein Product Value Operations & Governance Model unter dem O2V Framework.",
       alternates: localizedAlternates("de", "valence")
     },
     eyebrow: "Valence by O2V",
@@ -1485,137 +1485,137 @@ export const valenceContent: Record<Locale, PageContent> = {
     subtitle: "Product Value Operations & Governance Model",
     deck: releaseDeck.de,
     intro: [
-      "Valence by O2V is an independent product value operations and governance model.",
-      "It helps organizations judge whether digital products, AI use cases, business platforms, shared services, or strategic initiatives continue to create value after launch.",
-      "It is not delivery tracking. It is value governance."
+      "Valence by O2V ist ein eigenständiges Modell für Product Value Operations und Governance.",
+      "Es hilft Organisationen zu beurteilen, ob digitale Produkte, KI-Use-Cases, Business-Plattformen, Shared Services oder strategische Initiativen nach dem Launch weiterhin Wert schaffen.",
+      "Valence ist kein Delivery Tracking. Es ist Value Governance."
     ],
     sections: [
       {
-        heading: "Questions Valence Helps Answer",
+        heading: "Fragen, die Valence beantwortbar macht",
         bullets: [
-          "Is the product still being adopted?",
-          "Is investment efficiency still justified?",
-          "Should the product or initiative be promoted, improved, optimized, merged, suspended, or decommissioned?",
-          "Are governance actions producing measurable signals?",
-          "Is the product becoming a long-term asset or only consuming resources?"
+          "Wird das Produkt weiterhin angenommen?",
+          "Ist die Investment Efficiency weiterhin gerechtfertigt?",
+          "Sollte das Produkt oder die Initiative promoted, verbessert, optimiert, zusammengeführt, suspendiert oder decommissioned werden?",
+          "Erzeugen Governance-Maßnahmen messbare Signale?",
+          "Wird das Produkt zu einem langfristigen Asset oder verbraucht es nur Ressourcen?"
         ]
       },
       {
         heading: "Valence Governance Flow",
         body: [
-          "Valence organizes product value operations as a lifecycle governance flow after launch. The flow connects product signals, value evidence, governance decisions, action records, and the O2V value story."
+          "Valence organisiert Product Value Operations nach dem Launch als Lifecycle-Governance-Fluss. Der Fluss verbindet Produktsignale, Wertevidenz, Governance-Entscheidungen, Action Records und die O2V Value Story."
         ],
         visual: "valence"
       },
       {
-        heading: "Where Valence Fits",
+        heading: "Wo Valence einzuordnen ist",
         body: [
-          "Valence is used in the O2V Enterprise Configuration while remaining an independent O2V method asset.",
-          "It is most useful after a product, platform, AI use case, shared service, or strategic initiative has moved beyond initial launch and needs continuing value judgment.",
-          "It helps teams see whether product activity is turning into adoption, impact, investment efficiency, reusable capability, and long-term asset value."
+          "Valence wird in der O2V Enterprise Configuration genutzt und bleibt zugleich ein eigenständiges O2V Methoden-Asset.",
+          "Es ist besonders nützlich, nachdem ein Produkt, eine Plattform, ein KI-Use-Case, ein Shared Service oder eine strategische Initiative über den initialen Launch hinaus ist und fortlaufende Wertbeurteilung benötigt.",
+          "Es hilft Teams zu sehen, ob Produktaktivität zu Adoption, Impact, Investment Efficiency, wiederverwendbarer Fähigkeit und langfristigem Asset-Wert wird."
         ]
       },
       {
-        heading: "Governance Logic",
+        heading: "Governance-Logik",
         ordered: [
-          "Read product or initiative signals after launch.",
-          "Compare evidence of adoption, business value, operational value, and investment efficiency.",
-          "Identify whether the current state suggests scale, improvement, optimization, merge, suspension, or decommissioning.",
-          "Turn governance decisions into visible action records and follow-up evidence.",
-          "Connect product lifecycle decisions back to the O2V value story."
+          "Produkt- oder Initiativensignale nach dem Launch lesen.",
+          "Evidenz zu Adoption, Business Value, Operational Value und Investment Efficiency vergleichen.",
+          "Erkennen, ob der aktuelle Zustand Scale, Verbesserung, Optimierung, Merge, Suspend oder Decommissioning nahelegt.",
+          "Governance-Entscheidungen in sichtbare Action Records und Follow-up-Evidenz überführen.",
+          "Product-Lifecycle-Entscheidungen wieder mit der O2V Value Story verbinden."
         ]
       },
       {
-        heading: "Who Valence Is For",
+        heading: "Für wen Valence gedacht ist",
         bullets: [
-          "Product, platform, digital, data, AI, and shared-service owners who need value-based governance after launch.",
-          "Leadership teams that need to see whether product portfolios are creating impact or only consuming resources.",
-          "Organizations with many live products or initiatives, but weak lifecycle discipline after go-live.",
-          "Teams that need a practical way to discuss adoption, value, investment efficiency, and product lifecycle decisions together."
+          "Product-, Plattform-, Digital-, Daten-, KI- und Shared-Service-Owner, die nach dem Launch wertbasierte Governance benötigen.",
+          "Leadership Teams, die erkennen müssen, ob Produktportfolios Wirkung schaffen oder nur Ressourcen verbrauchen.",
+          "Organisationen mit vielen laufenden Produkten oder Initiativen, aber schwacher Lifecycle-Disziplin nach Go-live.",
+          "Teams, die einen praktischen Weg brauchen, um Adoption, Wert, Investment Efficiency und Product-Lifecycle-Entscheidungen gemeinsam zu diskutieren."
         ]
       },
       {
-        heading: "What Valence Governs",
+        heading: "Was Valence steuert",
         body: [
-          "Valence governs product value after launch. It looks at whether a product, AI use case, platform, shared service, or strategic initiative is still being adopted, still creating impact, and still justified by the resources it consumes.",
-          "It is designed for ongoing product and initiative decisions, not only annual portfolio cleanup. It helps teams see when a product should receive more focus, when it needs correction, and when it should stop consuming capacity."
+          "Valence steuert Produktwert nach dem Launch. Es betrachtet, ob ein Produkt, KI-Use-Case, eine Plattform, ein Shared Service oder eine strategische Initiative weiterhin angenommen wird, weiterhin Wirkung schafft und durch die verbrauchten Ressourcen noch gerechtfertigt ist.",
+          "Es ist für laufende Produkt- und Initiativenentscheidungen gedacht, nicht nur für jährliches Portfolio-Cleanup. Es hilft Teams zu erkennen, wann ein Produkt mehr Fokus erhalten sollte, wann es Korrektur braucht und wann es keine Kapazität mehr verbrauchen sollte."
         ]
       },
       {
-        heading: "Lifecycle Decisions",
+        heading: "Lifecycle-Entscheidungen",
         bullets: [
-          "Monitor when adoption and investment efficiency are acceptable and no major governance action is needed.",
-          "Promote when the product is valuable and usable, but target users have not been sufficiently activated.",
-          "Improve when low adoption is caused by product, process, data, or user-experience issues.",
-          "Optimize when the product creates value but cost, resource burden, or operating effort is too high.",
-          "Keep as-is with justification, suspend, or decommission when weak evidence, dependencies, cost, risk, low-value retention needs, or lack of continued justification require management attention."
+          "Monitor, wenn Adoption und Investment Efficiency akzeptabel sind und keine größere Governance-Maßnahme nötig ist.",
+          "Promote, wenn das Produkt wertvoll und nutzbar ist, Zielnutzer aber noch nicht ausreichend aktiviert wurden.",
+          "Improve, wenn niedrige Adoption durch Produkt-, Prozess-, Daten- oder User-Experience-Probleme verursacht wird.",
+          "Optimize, wenn das Produkt Wert schafft, Kosten, Ressourcenbelastung oder operativer Aufwand aber zu hoch sind.",
+          "Keep as-is with Justification, Suspend oder Decommission, wenn schwache Evidenz, Abhängigkeiten, Kosten, Risiken, Low-Value-Retention-Bedarfe oder fehlende fortlaufende Rechtfertigung Management Attention erfordern."
         ]
       },
       {
-        heading: "Decision Matrix Overview",
+        heading: "Überblick über die Entscheidungsmatrix",
         body: [
-          "Valence uses a practical value-governance matrix built around Adoption and Investment Efficiency.",
-          "When both are acceptable, the default state is Monitor. When adoption is weak but value logic remains credible, the product may need Promote or Improve. When adoption is acceptable but investment efficiency is weak, the product may need Optimize. When both are weak, the product enters Management Attention.",
-          "The matrix is a governance trigger, not an automatic decision. Final state should also consider repeated weak signals, product type, root cause, risk events, and management judgment."
+          "Valence nutzt eine praktische Value-Governance-Matrix rund um Adoption und Investment Efficiency.",
+          "Wenn beide akzeptabel sind, ist der Standardzustand Monitor. Wenn Adoption schwach ist, die Wertlogik aber glaubwürdig bleibt, braucht das Produkt möglicherweise Promote oder Improve. Wenn Adoption akzeptabel ist, Investment Efficiency aber schwach, braucht das Produkt möglicherweise Optimize. Wenn beide schwach sind, gelangt das Produkt in Management Attention.",
+          "Die Matrix ist ein Governance-Trigger, keine automatische Entscheidung. Der finale Zustand sollte auch wiederholte schwache Signale, Produkttyp, Root Cause, Risikoereignisse und Management Judgment berücksichtigen."
         ]
       },
       {
-        heading: "Lifecycle States",
+        heading: "Lifecycle-Zustände",
         bullets: [
-          "Monitor: the product is performing within acceptable range and only needs normal observation.",
-          "Promote: the product is valuable but not sufficiently adopted; the main issue is activation.",
-          "Improve: the product, process, data, or experience needs correction before users can use it well.",
-          "Optimize: the product has value, but cost, effort, support load, or resource consumption is too high.",
-          "Keep as-is with Justification: temporarily keep a weak or hard-to-prove product because an approved business reason exists.",
-          "Suspend: pause new investment, delivery, promotion, or active operation while waiting for a dependency, decision, budget, compliance answer, strategic clarity, or defined restart trigger.",
-          "Decommission: retire and close the product, application, or capability when continued retention is no longer justified."
+          "Monitor: Das Produkt bewegt sich in einem akzeptablen Bereich und braucht nur normale Beobachtung.",
+          "Promote: Das Produkt ist wertvoll, aber noch nicht ausreichend angenommen; das Hauptproblem ist Aktivierung.",
+          "Improve: Produkt, Prozess, Daten oder Experience brauchen Korrektur, bevor Nutzer es gut verwenden können.",
+          "Optimize: Das Produkt hat Wert, aber Kosten, Aufwand, Supportlast oder Ressourcenverbrauch sind zu hoch.",
+          "Keep as-is with Justification: Ein schwaches oder schwer nachweisbares Produkt wird temporär gehalten, weil ein genehmigter geschäftlicher Grund besteht.",
+          "Suspend: Neue Investitionen, Delivery, Promotion oder aktive Operation werden pausiert, bis Abhängigkeit, Entscheidung, Budget, Compliance-Antwort, strategische Klarheit oder ein definierter Restart-Trigger vorliegt.",
+          "Decommission: Produkt, Anwendung oder Fähigkeit werden stillgelegt und geschlossen, wenn fortlaufende Retention nicht mehr gerechtfertigt ist."
         ]
       },
       {
-        heading: "What Valence Is Not",
+        heading: "Was Valence nicht ist",
         body: [
-          "Valence is not a project status tracker, release calendar, ticket queue, or delivery performance dashboard.",
-          "It can use delivery and adoption signals, but its purpose is value governance: deciding what deserves more commitment, what needs correction, and what should stop."
+          "Valence ist kein Projektstatus-Tracker, Release-Kalender, Ticket-Queue oder Delivery-Performance-Dashboard.",
+          "Es kann Delivery- und Adoption-Signale nutzen, aber sein Zweck ist Value Governance: zu entscheiden, was mehr Commitment verdient, was Korrektur braucht und was stoppen sollte."
         ]
       },
       {
-        heading: "Expected Public Outcomes",
+        heading: "Erwartete öffentliche Ergebnisse",
         bullets: [
-          "A clearer language for product value after launch.",
-          "More disciplined product lifecycle decisions.",
-          "Better visibility into adoption, impact, investment efficiency, and asset potential.",
-          "Governance actions that connect back to O2V evidence and value story.",
-          "Less unmanaged accumulation of low-value products, platforms, services, or initiatives."
+          "Eine klarere Sprache für Produktwert nach dem Launch.",
+          "Diszipliniertere Product-Lifecycle-Entscheidungen.",
+          "Bessere Sichtbarkeit von Adoption, Impact, Investment Efficiency und Asset-Potenzial.",
+          "Governance-Maßnahmen, die wieder an O2V-Evidenz und Value Story anschließen.",
+          "Weniger ungesteuerte Ansammlung von Low-Value-Produkten, Plattformen, Services oder Initiativen."
         ]
       },
       {
-        heading: "Main Artifacts",
+        heading: "Wichtige Artefakte",
         bullets: [
-          "Product Value Signal Log: a structured view of adoption, usage, value, risk, and operating signals after launch.",
-          "Product Value View: a concise view of whether the product or initiative is still creating measurable value.",
-          "Investment Efficiency Snapshot: a lightweight view of value relative to cost, complexity, and operating capacity.",
-          "Lifecycle Decision Record: a record of decisions such as scale, improve, optimize, merge, suspend, or decommission.",
-          "Governance Action Log: visible follow-up actions tied to governance decisions.",
-          "Follow-up Evidence Pack: evidence used to check whether governance actions changed adoption, impact, or efficiency.",
-          "Product Value Story: the evidence-backed narrative of what value the product created, protected, improved, avoided, or stopped."
+          "Produktsignal-Protokoll: eine strukturierte Sicht auf Adoption, Nutzung, Wert, Risiko und Operating-Signale nach dem Launch.",
+          "Produktwert-Sicht: eine knappe Sicht darauf, ob Produkt oder Initiative weiterhin messbaren Wert schaffen.",
+          "Momentaufnahme der Investment Efficiency: eine leichtgewichtige Sicht auf Wert im Verhältnis zu Kosten, Komplexität und operativer Kapazität.",
+          "Lifecycle-Entscheidungsdatensatz: ein Entscheidungsdatensatz für Scale, Improve, Optimize, Merge, Suspend oder Decommission.",
+          "Governance-Aktionsprotokoll: sichtbare Folgeaktionen, die an Governance-Entscheidungen gebunden sind.",
+          "Follow-up-Evidenzpaket: Evidenz zur Prüfung, ob Governance-Maßnahmen Adoption, Impact oder Efficiency verändert haben.",
+          "Produktwert-Geschichte: die evidenzgestützte Erzählung darüber, welchen Wert das Produkt geschaffen, geschützt, verbessert, vermieden oder gestoppt hat."
         ]
       },
       {
-        heading: "Relationship with AiNOVA",
+        heading: "Beziehung zu AiNOVA",
         body: [
-          "Valence is an independent O2V method asset.",
-          "AiNOVA uses Valence in its Product / Initiative Value Governance Domain."
+          "Valence ist ein eigenständiges O2V Methoden-Asset.",
+          "AiNOVA nutzt Valence in seiner Product / Initiative Value Governance Domain."
         ]
       },
       {
-        heading: "Publication Scope",
+        heading: "Veröffentlichungsumfang",
         body: [
-          "This page publishes Valence's public expression layer: naming, positioning, governance flow, decision matrix overview, lifecycle states, artifact categories, and relationship with O2V and AiNOVA.",
-          "Detailed playbooks, templates, scoring rules, calculation methods and client-specific implementation materials are not published on this site."
+          "Diese Seite veröffentlicht die öffentliche Ausdrucksebene von Valence: Name, Positionierung, Governance Flow, Überblick über die Entscheidungsmatrix, Lifecycle-Zustände, Artefaktkategorien sowie die Beziehung zu O2V und AiNOVA.",
+          "Detaillierte Playbooks, Templates, Scoring-Regeln, Berechnungsmethoden und kundenspezifische Implementierungsmaterialien werden auf dieser Website nicht veröffentlicht."
         ]
       }
     ],
-    buttons: [{ label: "Download Detailed Introduction PDF", href: "/downloads/valence-detailed-introduction.pdf" }]
+    buttons: [{ label: "Detaillierte Einführung als PDF herunterladen", href: "/downloads/valence-detailed-introduction.pdf" }]
   }
 };
 
@@ -1715,43 +1715,43 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
     metadata: {
       title: "Urheberrecht, Zitierung und rechtlicher Hinweis | O2V Framework",
       description:
-        "Copyright, citation format, permission statement, rights boundary, source code license boundary, and legal notice for O2V Framework, AiNOVA, and Valence.",
+        "Urheberrecht, Zitierformat, Genehmigungshinweis, Rechteabgrenzung, Quellcode-Lizenzgrenze und rechtlicher Hinweis für O2V Framework, AiNOVA und Valence.",
       alternates: localizedAlternates("de", "copyright")
     },
     title: "Urheberrecht, Zitierung und rechtlicher Hinweis",
     sections: [
-      { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
+      { heading: "Rechteinhaber", body: ["Urheberrecht © Li Zhi. Alle Rechte vorbehalten."] },
       {
-        heading: "Citation format",
-        body: [`Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release ${releaseVersion}.`]
+        heading: "Zitierformat",
+        body: [`Quelle: Li Zhi, O2V Framework: Opportunity-to-Value Framework, offizielle öffentliche Version ${releaseVersion}.`]
       },
       {
-        heading: "Source code license boundary",
+        heading: "Grenze der Quellcode-Lizenz",
         body: [
-          "Website source code is licensed under the Apache License 2.0 unless otherwise stated.",
-          "O2V Framework, Opportunity-to-Value Framework, AiNOVA, Valence, publication text, diagrams, brand names, logo assets, citation language, and downloadable materials are not automatically licensed for unrestricted reuse by the source code license."
+          "Der Quellcode der Website steht, sofern nicht anders angegeben, unter der Apache License 2.0.",
+          "O2V Framework, Opportunity-to-Value Framework, AiNOVA, Valence, Veröffentlichungstexte, Diagramme, Markennamen, Logo-Assets, Zitierformulierungen und herunterladbare Materialien werden durch die Quellcode-Lizenz nicht automatisch für uneingeschränkte Wiederverwendung lizenziert."
         ]
       },
       {
-        heading: "Permission statement",
+        heading: "Genehmigungshinweis",
         body: [
-          "Permission is required for citation beyond fair reference, adaptation, translation, reproduction, commercial use, training, consulting delivery, productization, model training, or substantial reuse of O2V Framework, AiNOVA, Valence, or related method assets."
+          "Für Zitate über angemessene Bezugnahme hinaus, Anpassung, Übersetzung, Vervielfältigung, kommerzielle Nutzung, Training, Beratungsauslieferung, Produktisierung, Modelltraining oder wesentliche Wiederverwendung von O2V Framework, AiNOVA, Valence oder zugehörigen Methoden-Assets ist eine Genehmigung erforderlich."
         ]
       },
       {
-        heading: "Public method boundary",
+        heading: "Öffentliche Methodengrenze",
         body: [
-          "Public website content intentionally summarizes method positioning, relationships, and boundaries. It does not disclose detailed playbooks, templates, scorecards, calculation formulas, implementation procedures, client-specific materials, or internal knowledge-base paths."
+          "Die öffentlichen Website-Inhalte fassen bewusst nur Methodenpositionierung, Beziehungen und Grenzen zusammen. Detaillierte Playbooks, Templates, Scorecards, Berechnungsformeln, Implementierungsabläufe, kundenspezifische Materialien oder interne Knowledge-Base-Pfade werden nicht offengelegt."
         ]
       },
       {
-        heading: "Rights boundary",
+        heading: "Rechteabgrenzung",
         body: [
-          "O2V does not claim exclusive rights over generic concepts such as MVP, persona, business case, adoption, investment efficiency, governance, or product lifecycle."
+          "O2V beansprucht keine ausschließlichen Rechte an generischen Konzepten wie MVP, Persona, Business Case, Adoption, Investment Efficiency, Governance oder Product Lifecycle."
         ]
       },
       {
-        heading: "Legal disclaimer",
+        heading: "Rechtlicher Hinweis",
         body: [
           "Diese Website und Framework-Veröffentlichung dienen ausschließlich Informations- und Bildungszwecken und stellen keine Rechts-, Anlage-, Finanz-, Steuer- oder professionelle Beratung dar."
         ]
@@ -1824,20 +1824,20 @@ export const aboutContent: Record<Locale, AboutContent> = {
     metadata: {
       title: "Über Li Zhi | O2V Framework",
       description:
-        "About Li Zhi, creator of O2V Framework, AiNOVA, and Valence, digital value realization expert, methodologist, and enterprise architect.",
+        "Über Li Zhi, den Erfinder von O2V Framework, AiNOVA und Valence, Experten für digitale Wertrealisierung, Methodologen und Enterprise Architect.",
       alternates: localizedAlternates("de", "about")
     },
     title: "Über Li Zhi",
-    subtitle: "Digital Value Realization Expert | Methodologist | Enterprise Architect",
+    subtitle: "Experte für digitale Wertrealisierung | Methodologe | Enterprise Architect",
     body: [
       [
         { text: "Li Zhi", strong: true },
-        { text: " is the creator of " },
+        { text: " ist der Erfinder des " },
         { text: "O2V Framework", strong: true },
-        { text: ", including the current Enterprise Configuration method assets AiNOVA and Valence." }
+        { text: " einschließlich der aktuellen Methoden-Assets der Enterprise Configuration: AiNOVA und Valence." }
       ],
       [
-        { text: "His work focuses on helping organizations and builders connect strategy, evidence, governance, and execution so opportunities can become measurable impact and long-term assets." }
+        { text: "Seine Arbeit konzentriert sich darauf, Organisationen und Builder dabei zu unterstützen, Strategie, Evidenz, Governance und Ausführung zu verbinden, damit Opportunities zu messbarer Wirkung und langfristigen Assets werden." }
       ]
     ],
     beliefIntro: "Seine Arbeit basiert auf einer einfachen Überzeugung:",

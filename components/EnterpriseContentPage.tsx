@@ -2,6 +2,7 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import MethodVisual from "@/components/MethodVisuals";
 import type { Card, Section } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
 type EnterprisePageContent = {
   title: string;
@@ -17,9 +18,10 @@ type EnterprisePageContent = {
 
 type EnterpriseContentPageProps = {
   content: EnterprisePageContent;
+  locale?: Locale;
 };
 
-export default function EnterpriseContentPage({ content }: EnterpriseContentPageProps) {
+export default function EnterpriseContentPage({ content, locale = "en" }: EnterpriseContentPageProps) {
   return (
     <ContentLayout
       eyebrow="O2V Enterprise Configuration"
@@ -79,7 +81,7 @@ export default function EnterpriseContentPage({ content }: EnterpriseContentPage
               ))}
             </ol>
           ) : null}
-          {section.visual ? <MethodVisual type={section.visual} /> : null}
+          {section.visual ? <MethodVisual type={section.visual} locale={locale} /> : null}
         </section>
       ))}
 

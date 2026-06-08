@@ -87,7 +87,12 @@ const boundaryStatementAllowed = [
   /不披露/,
   /不应公开/,
   /不发布/,
-  /不在本站发布/
+  /不在本站发布/,
+  /nicht offengelegt/i,
+  /nicht veröffentlicht/i,
+  /werden nicht offengelegt/i,
+  /werden nicht veröffentlicht/i,
+  /lizenziert .* nicht automatisch/i
 ];
 
 const requiredPublicPatterns = [

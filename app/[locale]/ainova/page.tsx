@@ -19,5 +19,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function AiNOVAPage({ params }: PageProps) {
   const { locale } = await params;
 
-  return <PublicContentPage content={ainovaContent[locale]} eyebrow="AiNOVA by O2V" />;
+  return <PublicContentPage content={ainovaContent[locale]} eyebrow="AiNOVA by O2V" locale={locale} />;
 }

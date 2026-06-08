@@ -1,4 +1,5 @@
 import type { Section } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
 type VisualType = NonNullable<Section["visual"]>;
 
@@ -21,7 +22,7 @@ type Spec = {
   outcomes: Array<string | [string, string]>;
 };
 
-const specs: Record<VisualType, Spec> = {
+const enSpecs: Record<VisualType, Spec> = {
   o2v: {
     eyebrow: "O2V Framework",
     title: "Opportunity-to-Value Framework",
@@ -74,6 +75,64 @@ const specs: Record<VisualType, Spec> = {
       { title: "Matrix", body1: "Trigger governance", body2: "attention", icon: "chart" },
       { title: "Decision", body1: "Choose lifecycle", body2: "direction", icon: "shield" },
       { title: "Action", body1: "Track follow-up", body2: "and evidence", icon: "people" }
+    ],
+    outcomes: ["Monitor / Promote / Improve", "Optimize / Keep as-is / Suspend", "Merge / Decommission"]
+  }
+};
+
+const deSpecs: Record<VisualType, Spec> = {
+  o2v: {
+    eyebrow: "O2V Framework",
+    title: "Opportunity-to-Value Framework",
+    subtitle: "Eine skalierbare Karte vom Signal zur Wirkung und von der Idee zum Asset",
+    note1: "Nicht mehr Ideen sammeln, sondern Signale zu Evidenz machen,",
+    note2: "und Evidenz in Entscheidungen, Assets und Value Stories überführen.",
+    band: "Kernkette von Opportunity zu Value",
+    spine: "Evidence Spine",
+    nodes: [
+      { title: "Signal", body1: "Opportunity-", body2: "Signal", icon: "signal" },
+      { title: "Szenario", body1: "Realer Kontext", body2: "für Wert", icon: "doc" },
+      { title: "Persona", body1: "Betroffener", body2: "Stakeholder", icon: "people" },
+      { title: "Pain", body1: "Relevante", body2: "Reibung", icon: "shield" },
+      { title: "Produkt", body1: "Antwort-", body2: "konzept", icon: "doc" },
+      { title: "Validierung", body1: "Phasengerechte", body2: "Evidenz", icon: "shield" },
+      { title: "Business Case", body1: "Entscheidungs-", body2: "logik", icon: "chart" },
+      { title: "Asset", body1: "Wiederverwendbarer", body2: "Wert", icon: "people" },
+      { title: "Value Story", body1: "Evidenzgestützte", body2: "Erzählung", icon: "chart" }
+    ],
+    outcomes: ["Signale werden Evidenz", ["Impact steuert", "Proceed / Pivot / Reframe / Stop"], "Assets sichern Wert"]
+  },
+  ainova: {
+    eyebrow: "AiNOVA by O2V",
+    title: "AI-native Operating Model",
+    subtitle: "Eine leichtgewichtige Operating Map für Enterprise Value Realization",
+    note1: "Nicht mehr KI-Piloten starten, sondern KI vom Signal zum Wert bewegen,",
+    note2: "und von Tools zu leadership-ready Arbeitsweisen überführen.",
+    band: "Workforce & Ways of Working",
+    spine: "Evidence Spine",
+    nodes: [
+      { title: "Signal", body1: "Opportunities", body2: "und Wertsignale erkennen", icon: "signal" },
+      { title: "Opportunity", body1: "Use Cases und", body2: "Investmentlogik formen", icon: "doc" },
+      { title: "Readiness", body1: "Rollen, Fähigkeiten", body2: "und Governance vorbereiten", icon: "people" },
+      { title: "Validierung", body1: "Wert validieren", body2: "und Risiko steuern", icon: "shield" },
+      { title: "Operate", body1: "Operation skalieren", body2: "und Wert steuern", icon: "chart" }
+    ],
+    outcomes: ["KI-Opportunities schneller in Aktion bringen", "Leadership-Aufnahmefähigkeit stärken", "Wiederholbare AI-native Arbeitsmuster aufbauen"]
+  },
+  valence: {
+    eyebrow: "Valence by O2V",
+    title: "Product Value Governance",
+    subtitle: "Eine leichtgewichtige Karte für Product Value Operations und Lifecycle-Entscheidungen",
+    note1: "Nicht mehr Delivery Status verfolgen, sondern Produkte von Aktivität zu Wert bewegen,",
+    note2: "und von unklarem Run-Kostenverbrauch zu evidenzgestützten Lifecycle-Entscheidungen.",
+    band: "Value Governance Flow",
+    spine: "Lifecycle State Set",
+    nodes: [
+      { title: "Signale", body1: "Adoption, Nutzung,", body2: "Kosten und Risiko lesen", icon: "signal" },
+      { title: "Evidenz", body1: "Wert und Effizienz", body2: "vergleichen", icon: "doc" },
+      { title: "Matrix", body1: "Governance-", body2: "Aufmerksamkeit auslösen", icon: "chart" },
+      { title: "Entscheidung", body1: "Lifecycle-", body2: "Richtung wählen", icon: "shield" },
+      { title: "Aktion", body1: "Follow-up und", body2: "Evidenz verfolgen", icon: "people" }
     ],
     outcomes: ["Monitor / Promote / Improve", "Optimize / Keep as-is / Suspend", "Merge / Decommission"]
   }
@@ -153,8 +212,8 @@ function NodeView({ node, index, x, compact }: { node: Node; index: number; x: n
   );
 }
 
-export default function MethodVisual({ type }: { type: VisualType }) {
-  const spec = specs[type];
+export default function MethodVisual({ type, locale = "en" }: { type: VisualType; locale?: Locale }) {
+  const spec = (locale === "de" ? deSpecs : enSpecs)[type];
   const compact = spec.nodes.length > 5;
   const xs = positionsByCount[spec.nodes.length];
   const endX = xs[xs.length - 1];

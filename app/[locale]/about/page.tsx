@@ -11,7 +11,7 @@ type PageProps = {
 const releaseLabel: Record<Locale, string> = {
   en: "Official Public Release",
   zh: "官方公开发布版",
-  de: "Official Public Release"
+  de: "Offizielle öffentliche Version"
 };
 
 const internalLabel: Record<Locale, string> = {

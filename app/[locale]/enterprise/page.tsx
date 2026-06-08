@@ -20,5 +20,5 @@ export default async function EnterprisePage({ params }: PageProps) {
   const { locale } = await params;
   const content = enterpriseContent[locale];
 
-  return <EnterpriseContentPage content={content} />;
+  return <EnterpriseContentPage content={content} locale={locale} />;
 }

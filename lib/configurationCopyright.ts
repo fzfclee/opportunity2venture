@@ -16,7 +16,7 @@ type ConfigurationCopyrightContent = {
 const releaseDeck: Record<Locale, string[]> = {
   en: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
   zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${releaseVersion}`, `内部版本：${internalVersion}`],
-  de: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Interne Version: ${internalVersion}`]
+  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`]
 };
 
 export function getConfigurationCopyrightContent(
@@ -80,6 +80,73 @@ export function getConfigurationCopyrightContent(
         {
           heading: "法律免责声明",
           body: ["本站与框架发布内容仅用于信息和教育目的，不构成法律、投资、金融、税务或其他专业建议。"]
+        }
+      ]
+    };
+  }
+
+  if (locale === "de") {
+    const title =
+      scope === "enterprise"
+        ? "Urheberrecht, Zitierung und rechtlicher Hinweis zur Enterprise Configuration"
+        : "Urheberrecht, Zitierung und rechtlicher Hinweis zur Venture Configuration";
+    const subtitle =
+      scope === "enterprise"
+        ? "Gilt für O2V Enterprise Configuration, AiNOVA und Valence."
+        : "Gilt für O2V Venture Configuration und ihre Methodenpraktiken im Venture-Kontext.";
+    const methodAssets =
+      scope === "enterprise"
+        ? "O2V Enterprise Configuration, AiNOVA, Valence, zugehörige Methodenpraktiken, Veröffentlichungstexte, Diagramme, Markennamen, Zitierformulierungen und herunterladbare Materialien"
+        : "O2V Venture Configuration, Methodenpraktiken im Venture-Kontext, Veröffentlichungstexte, Diagramme, Markennamen, Zitierformulierungen und herunterladbare Materialien";
+
+    return {
+      metadata: {
+        title: `${title} | O2V Framework`,
+        description: subtitle,
+        alternates: localizedAlternates(locale, path)
+      },
+      title,
+      subtitle,
+      deck: releaseDeck.de,
+      sections: [
+        { heading: "Rechteinhaber", body: ["Urheberrecht © Li Zhi. Alle Rechte vorbehalten."] },
+        { heading: "Konfigurationsumfang", body: [subtitle] },
+        {
+          heading: "Rechte an Methodenpraktiken",
+          body: [
+            `${methodAssets} sind O2V-bezogene Methoden-Assets von Li Zhi. Alle Rechte vorbehalten, sofern keine gesonderte schriftliche Lizenz vorliegt.`
+          ]
+        },
+        {
+          heading: "Grenze der Quellcode-Lizenz",
+          body: [
+            "Der Quellcode der Website steht, sofern nicht anders angegeben, unter der Apache License 2.0.",
+            "Die Quellcode-Lizenz lizenziert O2V Framework, Konfigurationsmethoden, Methodenpraktiken, Veröffentlichungstexte, Markennamen, Logo-Assets, PDF-Materialien oder andere Methoden-Assets nicht automatisch zur uneingeschränkten Wiederverwendung."
+          ]
+        },
+        {
+          heading: "Genehmigungshinweis",
+          body: [
+            "Für Zitate über angemessene Bezugnahme hinaus, Anpassung, Übersetzung, Vervielfältigung, kommerzielle Nutzung, Training, Beratungsauslieferung, Produktisierung, Modelltraining oder wesentliche Wiederverwendung ist eine Genehmigung erforderlich."
+          ]
+        },
+        {
+          heading: "Öffentliche Methodengrenze",
+          body: [
+            "Die öffentlichen Website-Inhalte fassen bewusst nur Methodenpositionierung, Beziehungen und Grenzen zusammen. Detaillierte Playbooks, Templates, Scorecards, Berechnungsformeln, Implementierungsabläufe, Kundendetails, konkrete Systeme, Partnernamen oder interne Knowledge-Base-Pfade werden nicht offengelegt."
+          ]
+        },
+        {
+          heading: "Rechteabgrenzung",
+          body: [
+            "O2V beansprucht keine ausschließlichen Rechte an generischen Konzepten wie MVP, Persona, Business Case, Adoption, Investment Efficiency, Governance oder Product Lifecycle."
+          ]
+        },
+        {
+          heading: "Rechtlicher Hinweis",
+          body: [
+            "Diese Website und Framework-Veröffentlichung dienen ausschließlich Informations- und Bildungszwecken und stellen keine Rechts-, Anlage-, Finanz-, Steuer- oder professionelle Beratung dar."
+          ]
         }
       ]
     };

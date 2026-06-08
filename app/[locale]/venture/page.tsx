@@ -19,5 +19,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function VenturePage({ params }: PageProps) {
   const { locale } = await params;
 
-  return <PublicContentPage content={ventureContent[locale]} eyebrow="O2V Venture Configuration" />;
+  return <PublicContentPage content={ventureContent[locale]} eyebrow="O2V Venture Configuration" locale={locale} />;
 }

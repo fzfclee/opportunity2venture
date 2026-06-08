@@ -2,15 +2,18 @@ import Link from "next/link";
 import ContentLayout from "@/components/ContentLayout";
 import MethodVisual from "@/components/MethodVisuals";
 import type { PageContent } from "@/lib/content";
+import type { Locale } from "@/lib/i18n";
 
 type PublicContentPageProps = {
   content: PageContent;
   eyebrow?: string;
+  locale?: Locale;
 };
 
 export default function PublicContentPage({
   content,
-  eyebrow = "O2V Framework"
+  eyebrow = "O2V Framework",
+  locale = "en"
 }: PublicContentPageProps) {
   return (
     <ContentLayout
@@ -66,7 +69,7 @@ export default function PublicContentPage({
               ))}
             </ol>
           ) : null}
-          {section.visual ? <MethodVisual type={section.visual} /> : null}
+          {section.visual ? <MethodVisual type={section.visual} locale={locale} /> : null}
           {section.flow?.length ? (
             <div className="not-prose mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {section.flow.map((item, index) => (
