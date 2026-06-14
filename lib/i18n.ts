@@ -1,4 +1,4 @@
-export const locales = ["en", "zh", "de"] as const;
+export const locales = ["en", "zh"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -8,8 +8,7 @@ export const siteUrl = "https://www.o2vframework.com";
 
 export const languageLabels: Record<Locale, string> = {
   en: "English",
-  zh: "中文",
-  de: "Deutsch"
+  zh: "中文"
 };
 
 export function isLocale(value: string): value is Locale {
@@ -26,7 +25,6 @@ export function localizedAlternates(locale: Locale, path = "") {
     languages: {
       en: `${siteUrl}/en${cleanPath}`,
       "zh-CN": `${siteUrl}/zh${cleanPath}`,
-      de: `${siteUrl}/de${cleanPath}`,
       "x-default": `${siteUrl}${defaultPath}`
     }
   };

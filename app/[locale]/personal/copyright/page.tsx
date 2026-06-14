@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
 import ContentLayout from "@/components/ContentLayout";
-import { copyrightContent, internalVersion, publicReleaseDate } from "@/lib/content";
+import { getConfigurationCopyrightContent } from "@/lib/configurationCopyright";
 import { locales, type Locale } from "@/lib/i18n";
 
 type PageProps = {
   params: Promise<{ locale: Locale }>;
-};
-
-const copyrightDeck: Record<Locale, string[]> = {
-  en: ["Opportunity-to-Value Framework", `Official Public Release ${publicReleaseDate}`, `Internal Version: ${internalVersion}`],
-  zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${publicReleaseDate}`, `内部版本：${internalVersion}`]
 };
 
 export function generateStaticParams() {
@@ -18,15 +13,15 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  return copyrightContent[locale].metadata;
+  return getConfigurationCopyrightContent(locale, "personal").metadata;
 }
 
-export default async function CopyrightPage({ params }: PageProps) {
+export default async function PersonalCopyrightPage({ params }: PageProps) {
   const { locale } = await params;
-  const content = copyrightContent[locale];
+  const content = getConfigurationCopyrightContent(locale, "personal");
 
   return (
-    <ContentLayout eyebrow="O2V Framework" title={content.title} deck={copyrightDeck[locale]}>
+    <ContentLayout eyebrow="O2V Personal Configuration" title={content.title} subtitle={content.subtitle} deck={content.deck}>
       {content.sections.map((section) => (
         <section key={section.heading}>
           <h2>{section.heading}</h2>

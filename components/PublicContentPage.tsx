@@ -27,13 +27,13 @@ export default function PublicContentPage({
       ))}
 
       {content.cards?.length ? (
-        <div className="not-prose mt-8 grid gap-4 sm:grid-cols-2">
+        <div className="not-prose mt-8 grid gap-3 min-[560px]:grid-cols-3">
           {content.cards.map((card) => (
             <section
               key={card.title}
-              className="border border-[#d9ddff] bg-white p-5 shadow-[0_18px_45px_rgba(36,52,170,0.06)]"
+              className="border border-[#d9ddff] bg-white p-4 shadow-[0_18px_45px_rgba(36,52,170,0.06)]"
             >
-              <h2 className="text-lg font-semibold leading-7 text-[#111427]">
+              <h2 className="text-base font-semibold leading-6 text-[#111427]">
                 {card.href ? (
                   <Link href={card.href} className="no-underline hover:text-[#2936c7]">
                     {card.title}
@@ -42,8 +42,8 @@ export default function PublicContentPage({
                   card.title
                 )}
               </h2>
-              {card.subtitle ? <p className="mt-2 text-sm font-semibold text-[#4f58dd]">{card.subtitle}</p> : null}
-              <p className="mt-3 text-sm leading-7 text-neutral-700">{card.body}</p>
+              {card.subtitle ? <p className="mt-2 text-xs font-semibold leading-5 text-[#4f58dd]">{card.subtitle}</p> : null}
+              <p className="mt-3 text-xs leading-6 text-neutral-700">{card.body}</p>
             </section>
           ))}
         </div>

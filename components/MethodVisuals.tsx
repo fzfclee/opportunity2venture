@@ -213,7 +213,7 @@ function NodeView({ node, index, x, compact }: { node: Node; index: number; x: n
 }
 
 export default function MethodVisual({ type, locale = "en" }: { type: VisualType; locale?: Locale }) {
-  const spec = (locale === "de" ? deSpecs : enSpecs)[type];
+  const spec = enSpecs[type];
   const compact = spec.nodes.length > 5;
   const xs = positionsByCount[spec.nodes.length];
   const endX = xs[xs.length - 1];

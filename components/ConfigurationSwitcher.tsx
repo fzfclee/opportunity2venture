@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 
-type ConfigurationMode = "enterprise" | "venture";
+export type ConfigurationMode = "enterprise" | "venture" | "personal";
 
 type ConfigurationSwitcherProps = {
   locale: Locale;
@@ -11,25 +11,21 @@ type ConfigurationSwitcherProps = {
 const labels: Record<Locale, Record<ConfigurationMode, string>> = {
   en: {
     enterprise: "Enterprise",
-    venture: "Venture"
+    venture: "Venture",
+    personal: "Personal"
   },
   zh: {
     enterprise: "企业配置",
-    venture: "创业配置"
-  },
-  de: {
-    enterprise: "Enterprise",
-    venture: "Venture"
+    venture: "创业配置",
+    personal: "个人配置"
   }
 };
 
-export default function ConfigurationSwitcher({
-  locale,
-  activeMode
-}: ConfigurationSwitcherProps) {
+export default function ConfigurationSwitcher({ locale, activeMode }: ConfigurationSwitcherProps) {
   const items: Array<{ mode: ConfigurationMode; href: string }> = [
     { mode: "enterprise", href: `/${locale}` },
-    { mode: "venture", href: `/${locale}/venture` }
+    { mode: "venture", href: `/${locale}/venture` },
+    { mode: "personal", href: `/${locale}/personal` }
   ];
 
   return (
@@ -49,7 +45,7 @@ export default function ConfigurationSwitcher({
               "px-3 py-1.5 font-semibold no-underline transition",
               isActive
                 ? "bg-[#eef1ff] text-[#2733c3]"
-                : "text-neutral-400 hover:bg-[#f7f8ff] hover:text-neutral-600"
+                : "text-neutral-300 hover:bg-[#f7f8ff] hover:text-neutral-500"
             ].join(" ")}
           >
             {labels[locale][item.mode]}

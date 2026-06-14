@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
