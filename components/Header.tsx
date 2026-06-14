@@ -34,7 +34,7 @@ function navItemsFor(mode: ConfigurationMode): NavItem[] {
     return [
       { key: "home", path: "personal" },
       { key: "clear", path: "personal/clear" },
-      { key: "principles", path: "principles" },
+      { key: "principles", path: "personal/principles" },
       { key: "copyright", path: "personal/copyright" },
       { key: "download", path: "download" },
       { key: "about", path: "about" }
@@ -45,7 +45,7 @@ function navItemsFor(mode: ConfigurationMode): NavItem[] {
     return [
       { key: "home", path: "venture" },
       { key: "clear", path: "venture/clear" },
-      { key: "principles", path: "principles" },
+      { key: "principles", path: "venture/principles" },
       { key: "copyright", path: "venture/copyright" },
       { key: "download", path: "download" },
       { key: "about", path: "about" }
@@ -57,7 +57,7 @@ function navItemsFor(mode: ConfigurationMode): NavItem[] {
     { key: "clear", path: "enterprise/clear" },
     { key: "ainova", path: "ainova" },
     { key: "valence", path: "valence" },
-    { key: "principles", path: "principles" },
+    { key: "principles", path: "enterprise/principles" },
     { key: "copyright", path: "enterprise/copyright" },
     { key: "download", path: "download" },
     { key: "about", path: "about" }

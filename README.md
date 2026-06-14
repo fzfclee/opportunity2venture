@@ -106,7 +106,9 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `/en/personal/clear`, `/zh/personal/clear`
 - `/en/ainova`, `/zh/ainova`
 - `/en/valence`, `/zh/valence`
-- `/en/principles`, `/zh/principles`
+- `/en/enterprise/principles`, `/zh/enterprise/principles`
+- `/en/venture/principles`, `/zh/venture/principles`
+- `/en/personal/principles`, `/zh/personal/principles`
 - `/en/copyright`, `/zh/copyright`
 - `/en/enterprise/copyright`, `/zh/enterprise/copyright`
 - `/en/venture/copyright`, `/zh/venture/copyright`

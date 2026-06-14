@@ -44,7 +44,9 @@ Valence is the Product Value Operations & Governance Model. It is used in the O2
 - [CLEAR](https://www.o2vframework.com/zh/personal/clear): Chinese page for CLEAR in Personal Configuration.
 - [AiNOVA](https://www.o2vframework.com/en/ainova): AI-native Operating Model for Enterprise Value Realization.
 - [Valence](https://www.o2vframework.com/en/valence): Product Value Operations & Governance Model.
-- [Principles](https://www.o2vframework.com/en/principles): Shared O2V principles.
+- [Enterprise Principles](https://www.o2vframework.com/en/enterprise/principles): Shared O2V principles in Enterprise Configuration context.
+- [Venture Principles](https://www.o2vframework.com/en/venture/principles): Shared O2V principles in Venture Configuration context.
+- [Personal Principles](https://www.o2vframework.com/en/personal/principles): Shared O2V principles in Personal Configuration context.
 - [Downloads](https://www.o2vframework.com/en/download): PDF download page. PDF files may reference earlier release assets; the current web release is O2V Framework / Official Public Release 20260614 / Internal Version v2.0.
 - [Copyright and Citation](https://www.o2vframework.com/en/copyright): Overall copyright, citation, reserved-rights, and license-boundary notice.
 - [Enterprise Copyright](https://www.o2vframework.com/en/enterprise/copyright): Rights notice for O2V Enterprise Configuration, CLEAR in the Enterprise Configuration, AiNOVA, and Valence.

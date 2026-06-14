@@ -294,7 +294,7 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
       { label: "CLEAR", href: "/en/enterprise/clear" },
       { label: "AiNOVA", href: "/en/ainova" },
       { label: "Valence", href: "/en/valence" },
-      { label: "Principles", href: "/en/principles" }
+      { label: "Principles", href: "/en/enterprise/principles" }
     ],
     jsonLdDescription:
       "O2V Enterprise Configuration turns strategic, digital, and AI signals into evidence-backed value, governance, impact, and assets."
@@ -369,7 +369,7 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
       { label: "CLEAR", href: "/zh/enterprise/clear" },
       { label: "AiNOVA", href: "/zh/ainova" },
       { label: "Valence", href: "/zh/valence" },
-      { label: "原则", href: "/zh/principles" }
+      { label: "原则", href: "/zh/enterprise/principles" }
     ],
     jsonLdDescription:
       "O2V Enterprise Configuration 帮助企业把战略、数字化和 AI 信号转化为证据支持的价值、治理、影响和资产。"
@@ -421,7 +421,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     buttons: [
       { label: "CLEAR", href: "/en/venture/clear" },
-      { label: "Principles", href: "/en/principles" },
+      { label: "Principles", href: "/en/venture/principles" },
       { label: "Download", href: "/en/download" }
     ]
   },
@@ -466,7 +466,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     ],
     buttons: [
       { label: "CLEAR", href: "/zh/venture/clear" },
-      { label: "原则", href: "/zh/principles" },
+      { label: "原则", href: "/zh/venture/principles" },
       { label: "下载", href: "/zh/download" }
     ]
   }
@@ -518,7 +518,7 @@ export const personalContent: Record<Locale, PageContent> = {
     buttons: [
       { label: "CLEAR", href: "/en/personal/clear" },
       { label: "Public Skill Repo", href: "https://github.com/fzfclee/signal-to-action-planner" },
-      { label: "Principles", href: "/en/principles" }
+      { label: "Principles", href: "/en/personal/principles" }
     ]
   },
   zh: {
@@ -565,7 +565,7 @@ export const personalContent: Record<Locale, PageContent> = {
     buttons: [
       { label: "CLEAR", href: "/zh/personal/clear" },
       { label: "公开 Skill Repo", href: "https://github.com/fzfclee/signal-to-action-planner" },
-      { label: "原则", href: "/zh/principles" }
+      { label: "原则", href: "/zh/personal/principles" }
     ]
   }
 };

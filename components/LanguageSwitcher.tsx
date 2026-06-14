@@ -11,13 +11,21 @@ type LanguageSwitcherProps = {
 const supportedPageSuffixes = new Set([
   "",
   "enterprise",
+  "enterprise/clear",
+  "enterprise/principles",
+  "enterprise/copyright",
   "venture",
+  "venture/clear",
+  "venture/principles",
+  "venture/copyright",
+  "personal",
+  "personal/clear",
+  "personal/principles",
+  "personal/copyright",
   "ainova",
   "valence",
   "principles",
   "copyright",
-  "enterprise/copyright",
-  "venture/copyright",
   "download",
   "about"
 ]);
