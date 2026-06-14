@@ -1,10 +1,10 @@
-# O2V Multi-Configuration Site Upgrade 20260607
+﻿# O2V Multi-Configuration Site Upgrade 20260607
 
 Status: implemented after Zhi confirmed `docs/o2v-site-public-content-draft-20260607.md`.
 
 ## Scope
 
-- Public identity upgraded to `O2V Framework 20260607 / Internal Version: v1.6`.
+- Public identity upgraded to `O2V Framework / Official Public Release 20260614 / Internal Version: v2.0`.
 - Default public website entry changed to O2V Enterprise Configuration.
 - O2V Framework retained as the only parent framework.
 - O2V Enterprise Configuration now presents AiNOVA and Valence as the current public methodology scope.

@@ -1,12 +1,12 @@
-# O2V Framework Website
+﻿# O2V Framework Website
 
-Official static publication site for **O2V Framework 20260607**, the **Opportunity-to-Value Framework**.
+Official static publication site for **O2V Framework**, the **Opportunity-to-Value Framework**.
 
 ## Publication Identity
 
 - Project name: O2V Framework website
-- Official public release: 20260607
-- Internal version: v1.6
+- Official public release date: 20260614
+- Internal version: v2.0
 - Brand: O2V Framework / Opportunity-to-Value Framework
 - Main domain: https://www.o2vframework.com
 - Backup domain: https://www.opportunity2venture.com
@@ -63,9 +63,9 @@ npm run verify:public-site
 - Do not use Agile Manifesto-style "A over B" language.
 - Do not add Daily / Weekly / Monthly outputs to the framework.
 - Framework Deliverables must remain generic.
-- Public website version uses 20260607.
+- Public website identity uses O2V Framework with Official Public Release 20260614 and Internal Version v2.0.
 - Current download links use Enterprise Configuration filenames with the 20260607 release date.
-- Internal version uses v1.6.
+- Internal version uses v2.0.
 - Canonical domain is https://www.o2vframework.com.
 
 ## Publish to GitHub

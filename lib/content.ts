@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { localizedAlternates, siteUrl, type Locale } from "@/lib/i18n";
 
-export const releaseVersion = "20260607";
-export const internalVersion = "v1.6";
+export const releaseVersion = "2.0";
+export const publicReleaseDate = "20260614";
+export const internalVersion = "v2.0";
 
 export type NavKey =
   | "home"
@@ -114,9 +115,9 @@ export type RichTextPart = {
 export type RichParagraph = RichTextPart[];
 
 const releaseDeck: Record<Locale, string[]> = {
-  en: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
-  zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${releaseVersion}`, `内部版本：${internalVersion}`],
-  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`]
+  en: ["Opportunity-to-Value Framework", `Official Public Release ${publicReleaseDate}`, `Internal Version: ${internalVersion}`],
+  zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${publicReleaseDate}`, `内部版本：${internalVersion}`],
+  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${publicReleaseDate}`, `Interne Version: ${internalVersion}`]
 };
 
 export const navLabels: Record<Locale, Record<NavKey, string>> = {
@@ -157,7 +158,7 @@ export const navLabels: Record<Locale, Record<NavKey, string>> = {
 
 export const footerContent: Record<Locale, FooterLine[]> = {
   en: [
-    { text: `O2V Framework ${releaseVersion} | Opportunity-to-Value Framework` },
+    { text: "O2V Framework | Opportunity-to-Value Framework" },
     { text: "From Signal to Impact. From Idea to Asset." },
     { text: "Copyright © Li Zhi. All rights reserved." },
     {
@@ -166,10 +167,10 @@ export const footerContent: Record<Locale, FooterLine[]> = {
     },
     { label: "Official site:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: `Citation: Li Zhi, O2V Framework, Official Public Release ${releaseVersion}.` }
+    { text: `Citation: Li Zhi, O2V Framework, Official Public Release ${publicReleaseDate}, Internal Version ${internalVersion}.` }
   ],
   zh: [
-    { text: `O2V Framework ${releaseVersion} | Opportunity-to-Value Framework` },
+    { text: "O2V Framework | Opportunity-to-Value Framework" },
     { text: "从机会信号到实际影响。从创意构想到长期资产。" },
     { text: "版权所有人：李智 / Li Zhi。保留所有权利。" },
     {
@@ -178,10 +179,10 @@ export const footerContent: Record<Locale, FooterLine[]> = {
     },
     { label: "官方网站：", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: `引用格式：李智，O2V Framework，官方公开发布版 ${releaseVersion}。` }
+    { text: `引用格式：李智，O2V Framework，官方公开发布版 ${publicReleaseDate}，内部版本 ${internalVersion}。` }
   ],
   de: [
-    { text: `O2V Framework ${releaseVersion} | Opportunity-to-Value Framework` },
+    { text: "O2V Framework | Opportunity-to-Value Framework" },
     { text: "Vom Signal zur Wirkung. Von der Idee zum Asset." },
     { text: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten." },
     {
@@ -190,7 +191,7 @@ export const footerContent: Record<Locale, FooterLine[]> = {
     },
     { label: "Offizielle Website:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
-    { text: `Zitierformat: Li Zhi, O2V Framework, offizielle öffentliche Version ${releaseVersion}.` }
+    { text: `Zitierformat: Li Zhi, O2V Framework, offizielle öffentliche Version ${publicReleaseDate}, interne Version ${internalVersion}.` }
   ]
 };
 
@@ -206,14 +207,14 @@ const enterpriseDescriptions: Record<Locale, string> = {
 export const enterpriseContent: Record<Locale, HomeContent> = {
   en: {
     metadata: {
-      title: `O2V Framework ${releaseVersion} | Enterprise Configuration`,
+      title: "O2V Framework | Enterprise Configuration",
       description: enterpriseDescriptions.en,
       alternates: localizedAlternates("en")
     },
     title: "O2V Framework",
     subtitle: "Opportunity-to-Value Framework",
     tagline: ["From Signal to Impact.", "From Idea to Asset."],
-    deck: [`Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
+    deck: [`Official Public Release ${publicReleaseDate}`, `Internal Version: ${internalVersion}`],
     body: [
       "An enterprise-first framework for turning strategic, digital, and AI opportunities into measurable impact and long-term assets."
     ],
@@ -280,14 +281,14 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
   },
   zh: {
     metadata: {
-      title: `O2V Framework ${releaseVersion}｜企业配置`,
+      title: "O2V Framework｜企业配置",
       description: enterpriseDescriptions.zh,
       alternates: localizedAlternates("zh")
     },
     title: "O2V Framework",
     subtitle: "Opportunity-to-Value Framework",
     tagline: ["从机会信号到实际影响。", "从创意构想到长期资产。"],
-    deck: [`官方公开发布版 ${releaseVersion}`, `内部版本：${internalVersion}`],
+    deck: [`官方公开发布版 ${publicReleaseDate}`, `内部版本：${internalVersion}`],
     body: [
       "一套面向企业价值实现的框架，帮助组织把战略、数字化和 AI 机会转化为可衡量的实际影响和长期资产。"
     ],
@@ -354,14 +355,14 @@ export const enterpriseContent: Record<Locale, HomeContent> = {
   },
   de: {
     metadata: {
-      title: `O2V Framework ${releaseVersion} | Enterprise Configuration`,
+      title: "O2V Framework | Enterprise Configuration",
       description: enterpriseDescriptions.de,
       alternates: localizedAlternates("de")
     },
     title: "O2V Framework",
     subtitle: "Opportunity-to-Value Framework",
     tagline: ["Vom Signal zur Wirkung.", "Von der Idee zum Asset."],
-    deck: [`Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`],
+    deck: [`Offizielle öffentliche Version ${publicReleaseDate}`, `Interne Version: ${internalVersion}`],
     body: [
       "Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets überführt."
     ],
@@ -600,7 +601,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
     metadata: {
       title: "Core Principles | O2V Framework",
       description:
-        "Core principles of O2V Framework 20260607: minimum structure, maximum evidence, AI-assisted execution, and human judgment at decision points.",
+        "Core principles of O2V Framework: minimum structure, maximum evidence, AI-assisted execution, and human judgment at decision points.",
       alternates: localizedAlternates("en", "principles")
     },
     title: "Core Principles",
@@ -620,7 +621,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
     metadata: {
       title: "核心原则｜O2V Framework",
       description:
-        "O2V Framework 20260607 的核心原则：最小结构、最大证据、AI 辅助执行、人在关键决策点判断。",
+        "O2V Framework 的核心原则：最小结构、最大证据、AI 辅助执行、人在关键决策点判断。",
       alternates: localizedAlternates("zh", "principles")
     },
     title: "核心原则",
@@ -640,7 +641,7 @@ export const principleContent: Record<Locale, { metadata: Metadata; title: strin
     metadata: {
       title: "Kernprinzipien | O2V Framework",
       description:
-        "Kernprinzipien des O2V Framework 20260607: minimale Struktur, maximale Evidenz, KI-gestützte Ausführung und menschliches Urteil an Entscheidungspunkten.",
+        "Kernprinzipien des O2V Framework: minimale Struktur, maximale Evidenz, KI-gestützte Ausführung und menschliches Urteil an Entscheidungspunkten.",
       alternates: localizedAlternates("de", "principles")
     },
     title: "Kernprinzipien",
@@ -694,15 +695,15 @@ export const downloadCards: DownloadCard[] = [
 export const downloadContent: Record<Locale, DownloadContent> = {
   en: {
     metadata: {
-      title: `Download O2V Framework ${releaseVersion}`,
+      title: "Download O2V Framework",
       description:
-        "Downloadseite für das O2V Framework. Bestehende PDF-Dateien bleiben in Chinesisch, Englisch und Deutsch verfügbar, während die öffentliche Website auf die Version 20260607 aktualisiert ist.",
+        "Download page for the O2V Framework. Existing PDF files remain available in Chinese, English, and German while the public website identity uses Official Public Release 20260614 / Internal Version v2.0.",
       alternates: localizedAlternates("en", "download")
     },
-    title: `Download O2V Framework ${releaseVersion}`,
+    title: "Download O2V Framework",
     deck: releaseDeck.en,
     fullReleaseNote:
-      "PDF-Downloads können weiterhin auf frühere Veröffentlichungsdateien verweisen. Die aktuelle Website-Version ist O2V Framework 20260607 / Interne Version v1.6.",
+      "PDF downloads may still reference earlier release files. The current web release is O2V Framework, Official Public Release 20260614 / Internal Version v2.0.",
     note: "PDF-Dateinamen können unabhängig von der aktuellen Website-Version aktualisiert werden.",
     button: "Download PDF",
     permissionReminder:
@@ -714,21 +715,21 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       internalVersion: "Interne Version",
       copyright: "Urheberrecht"
     },
-    versionValue: `Offizielle öffentliche Version ${releaseVersion}`,
+    versionValue: `Offizielle öffentliche Version ${publicReleaseDate}`,
     internalVersionValue: internalVersion,
     copyrightValue: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten."
   },
   zh: {
     metadata: {
-      title: `下载 O2V Framework ${releaseVersion}`,
+      title: "下载 O2V Framework",
       description:
-        "下载 O2V Framework。现有中文、英文、德文 PDF 文件继续保留，同时官网公开身份升级为 20260607 版本。",
+        "下载 O2V Framework。现有中文、英文、德文 PDF 文件继续保留，同时官网公开身份为官方公开发布版 20260614 / Internal Version v2.0。",
       alternates: localizedAlternates("zh", "download")
     },
-    title: `下载 O2V Framework ${releaseVersion}`,
+    title: "下载 O2V Framework",
     deck: releaseDeck.zh,
     fullReleaseNote:
-      "PDF 下载文件可能仍指向早期发布文件。当前官网版本为 O2V Framework 20260607 / Internal Version v1.6。",
+      "PDF 下载文件可能仍指向早期发布文件。当前官网版本为 O2V Framework，官方公开发布版 20260614 / Internal Version v2.0。",
     note: "PDF 文件名可能与当前官网版本分开更新。",
     button: "下载 PDF",
     permissionReminder:
@@ -740,21 +741,21 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       internalVersion: "内部版本",
       copyright: "版权"
     },
-    versionValue: `官方公开发布版 ${releaseVersion}`,
+    versionValue: `官方公开发布版 ${publicReleaseDate}`,
     internalVersionValue: internalVersion,
     copyrightValue: "版权所有人：李智 / Li Zhi。保留所有权利。"
   },
   de: {
     metadata: {
-      title: `O2V Framework ${releaseVersion} herunterladen`,
+      title: "O2V Framework herunterladen",
       description:
-        "Downloadseite für das O2V Framework. Bestehende PDF-Dateien bleiben in Chinesisch, Englisch und Deutsch verfügbar, während die öffentliche Website auf die Version 20260607 aktualisiert ist.",
+        "Downloadseite für das O2V Framework. Bestehende PDF-Dateien bleiben in Chinesisch, Englisch und Deutsch verfügbar, während die öffentliche Website-Identität die offizielle öffentliche Version 20260614 / Interne Version v2.0 nutzt.",
       alternates: localizedAlternates("de", "download")
     },
-    title: `O2V Framework ${releaseVersion} herunterladen`,
+    title: "O2V Framework herunterladen",
     deck: releaseDeck.de,
     fullReleaseNote:
-      "PDF-Downloads können weiterhin auf frühere Veröffentlichungsdateien verweisen. Die aktuelle Website-Version ist O2V Framework 20260607 / Interne Version v1.6.",
+      "PDF-Downloads können weiterhin auf frühere Veröffentlichungsdateien verweisen. Die aktuelle Website-Version ist O2V Framework, offizielle öffentliche Version 20260614 / Interne Version v2.0.",
     note: "PDF-Dateinamen können unabhängig von der aktuellen Website-Version aktualisiert werden.",
     button: "PDF herunterladen",
     permissionReminder:
@@ -766,7 +767,7 @@ export const downloadContent: Record<Locale, DownloadContent> = {
       internalVersion: "Interne Version",
       copyright: "Urheberrecht"
     },
-    versionValue: `Offizielle öffentliche Version ${releaseVersion}`,
+    versionValue: `Offizielle öffentliche Version ${publicReleaseDate}`,
     internalVersionValue: internalVersion,
     copyrightValue: "Urheberrecht © Li Zhi. Alle Rechte vorbehalten."
   }
@@ -1632,7 +1633,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       { heading: "Copyright holder", body: ["Copyright © Li Zhi. All rights reserved."] },
       {
         heading: "Citation format",
-        body: [`Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release ${releaseVersion}.`]
+        body: [`Source: Li Zhi, O2V Framework: Opportunity-to-Value Framework, Official Public Release ${publicReleaseDate}, Internal Version ${internalVersion}.`]
       },
       {
         heading: "Source code license boundary",
@@ -1678,7 +1679,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       { heading: "版权所有人", body: ["版权所有人：李智 / Li Zhi。保留所有权利。"] },
       {
         heading: "引用格式",
-        body: [`来源：李智，O2V Framework：Opportunity-to-Value Framework，官方公开发布版 ${releaseVersion}。`]
+        body: [`来源：李智，O2V Framework：Opportunity-to-Value Framework，官方公开发布版 ${publicReleaseDate}，内部版本 ${internalVersion}。`]
       },
       {
         heading: "源代码许可边界",
@@ -1723,7 +1724,7 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
       { heading: "Rechteinhaber", body: ["Urheberrecht © Li Zhi. Alle Rechte vorbehalten."] },
       {
         heading: "Zitierformat",
-        body: [`Quelle: Li Zhi, O2V Framework: Opportunity-to-Value Framework, offizielle öffentliche Version ${releaseVersion}.`]
+        body: [`Quelle: Li Zhi, O2V Framework: Opportunity-to-Value Framework, offizielle öffentliche Version ${publicReleaseDate}, interne Version ${internalVersion}.`]
       },
       {
         heading: "Grenze der Quellcode-Lizenz",

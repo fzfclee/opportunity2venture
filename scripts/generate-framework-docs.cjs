@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 
 /**
  * Release download status helper.
@@ -8,8 +8,9 @@
  */
 
 const status = {
-  currentWebsiteRelease: "O2V Framework 20260607",
-  internalVersion: "v1.6",
+  currentWebsiteRelease: "O2V Framework",
+  officialPublicReleaseDate: "20260614",
+  internalVersion: "v2.0",
   primaryBrandMeaning: "Opportunity-to-Value Framework",
   coreSlogan: "From Signal to Impact. From Idea to Asset.",
   judgmentChain:

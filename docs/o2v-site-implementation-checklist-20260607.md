@@ -1,4 +1,4 @@
-# O2V Site Implementation Checklist 20260607
+﻿# O2V Site Implementation Checklist 20260607
 
 Status: implementation-ready after Zhi approves the public content draft
 
@@ -48,8 +48,8 @@ Public metadata and machine-readable files:
 All public identity surfaces must use:
 
 ```text
-O2V Framework 20260607
-Internal Version: v1.6
+O2V Framework
+Internal Version: v2.0
 ```
 
 Use Enterprise Configuration PDF filenames with the 20260607 release date.
@@ -116,7 +116,7 @@ Must not use:
 Use:
 
 - `O2V Venture Configuration`
-- `O2V 创业配置`
+- `O2V 鍒涗笟閰嶇疆`
 
 ## Verification Commands After Implementation
 
@@ -125,8 +125,8 @@ Run:
 ```powershell
 npm run build
 Select-String -Path README.md,public\llms.txt,public\sitemap.xml,lib\content.ts,app\**\*.tsx,components\*.tsx -Pattern 'Personal Configuration|Venture / Personal Configuration' -CaseSensitive:$false
-Select-String -Path README.md,public\llms.txt,lib\content.ts,app\**\*.tsx,components\*.tsx -Pattern 'O2V Framework 20260520|Internal Version: v1.5|内部版本：v1.5|Interne Version: v1.5' -CaseSensitive:$false
-Select-String -Path lib\content.ts,app\**\*.tsx,components\*.tsx,public\llms.txt,README.md -Pattern 'zhi-consulting-knowledge-base|02_o2v_framework|04_playbooks|05_templates|calculation formula|scorecard|scoring formula|客户细节|内部知识库' -CaseSensitive:$false
+Select-String -Path README.md,public\llms.txt,lib\content.ts,app\**\*.tsx,components\*.tsx -Pattern 'O2V Framework 20260520|Internal Version: v1.5|鍐呴儴鐗堟湰锛歷1.5|Interne Version: v1.5' -CaseSensitive:$false
+Select-String -Path lib\content.ts,app\**\*.tsx,components\*.tsx,public\llms.txt,README.md -Pattern 'zhi-consulting-knowledge-base|02_o2v_framework|04_playbooks|05_templates|calculation formula|scorecard|scoring formula|瀹㈡埛缁嗚妭|鍐呴儴鐭ヨ瘑搴? -CaseSensitive:$false
 ```
 
 Expected:

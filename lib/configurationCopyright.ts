@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/lib/i18n";
 import { localizedAlternates } from "@/lib/i18n";
-import { internalVersion, releaseVersion, type Section } from "@/lib/content";
+import { internalVersion, publicReleaseDate, type Section } from "@/lib/content";
 
 export type CopyrightScope = "enterprise" | "venture";
 
@@ -14,9 +14,9 @@ type ConfigurationCopyrightContent = {
 };
 
 const releaseDeck: Record<Locale, string[]> = {
-  en: ["Opportunity-to-Value Framework", `Official Public Release ${releaseVersion}`, `Internal Version: ${internalVersion}`],
-  zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${releaseVersion}`, `内部版本：${internalVersion}`],
-  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${releaseVersion}`, `Interne Version: ${internalVersion}`]
+  en: ["Opportunity-to-Value Framework", `Official Public Release ${publicReleaseDate}`, `Internal Version: ${internalVersion}`],
+  zh: ["Opportunity-to-Value Framework", `官方公开发布版 ${publicReleaseDate}`, `内部版本：${internalVersion}`],
+  de: ["Opportunity-to-Value Framework", `Offizielle öffentliche Version ${publicReleaseDate}`, `Interne Version: ${internalVersion}`]
 };
 
 export function getConfigurationCopyrightContent(

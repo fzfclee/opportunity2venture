@@ -1,4 +1,4 @@
-# O2V Site Public Content Draft 20260607
+﻿# O2V Site Public Content Draft 20260607
 
 Status: draft for Zhi review
 
@@ -14,8 +14,8 @@ Opportunity-to-Value Framework
 From Signal to Impact.
 From Idea to Asset.
 
-Official Public Release 20260607
-Internal Version: v1.6
+Official Public Release 20260614
+Internal Version: v2.0
 ```
 
 Chinese:
@@ -24,11 +24,11 @@ Chinese:
 O2V Framework
 Opportunity-to-Value Framework
 
-从机会信号到实际影响。
-从创意构想到长期资产。
+浠庢満浼氫俊鍙峰埌瀹為檯褰卞搷銆?
+浠庡垱鎰忔瀯鎯冲埌闀挎湡璧勪骇銆?
 
-官方公开发布版 20260607
-内部版本：v1.6
+瀹樻柟鍏紑鍙戝竷鐗?20260607
+鍐呴儴鐗堟湰锛歷1.6
 ```
 
 German:
@@ -40,8 +40,8 @@ Opportunity-to-Value Framework
 Vom Signal zur Wirkung.
 Von der Idee zum Asset.
 
-Official Public Release 20260607
-Internal Version: v1.6
+Official Public Release 20260614
+Internal Version: v2.0
 ```
 
 The core O2V chain remains:
@@ -62,11 +62,11 @@ The Venture Configuration helps founders, builders, consultants, independent pro
 
 Chinese:
 
-O2V Framework 是一套 Opportunity-to-Value Framework。
+O2V Framework 鏄竴濂?Opportunity-to-Value Framework銆?
 
-默认的企业配置帮助组织把战略、数字化和 AI 机会转化为可衡量的实际影响和长期资产。
+榛樿鐨勪紒涓氶厤缃府鍔╃粍缁囨妸鎴樼暐銆佹暟瀛楀寲鍜?AI 鏈轰細杞寲涓哄彲琛￠噺鐨勫疄闄呭奖鍝嶅拰闀挎湡璧勪骇銆?
 
-创业配置帮助创业者、构建者、顾问、专家型个体、内容创作者、AI builder 和小团队，把创意构想转化为可验证的新事业、Business Case 和长期资产。
+鍒涗笟閰嶇疆甯姪鍒涗笟鑰呫€佹瀯寤鸿€呫€侀【闂€佷笓瀹跺瀷涓綋銆佸唴瀹瑰垱浣滆€呫€丄I builder 鍜屽皬鍥㈤槦锛屾妸鍒涙剰鏋勬兂杞寲涓哄彲楠岃瘉鐨勬柊浜嬩笟銆丅usiness Case 鍜岄暱鏈熻祫浜с€?
 
 ## Method Relationship
 
@@ -116,10 +116,10 @@ Chinese:
 O2V Framework
 Opportunity-to-Value Framework
 
-从机会信号到实际影响。
-从创意构想到长期资产。
+浠庢満浼氫俊鍙峰埌瀹為檯褰卞搷銆?
+浠庡垱鎰忔瀯鎯冲埌闀挎湡璧勪骇銆?
 
-一套面向企业价值实现的框架，帮助组织把战略、数字化和 AI 机会转化为可衡量的实际影响和长期资产。
+涓€濂楅潰鍚戜紒涓氫环鍊煎疄鐜扮殑妗嗘灦锛屽府鍔╃粍缁囨妸鎴樼暐銆佹暟瀛楀寲鍜?AI 鏈轰細杞寲涓哄彲琛￠噺鐨勫疄闄呭奖鍝嶅拰闀挎湡璧勪骇銆?
 
 German:
 
@@ -129,7 +129,7 @@ Opportunity-to-Value Framework
 Vom Signal zur Wirkung.
 Von der Idee zum Asset.
 
-Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets überführt.
+Ein Enterprise-first Framework, das strategische, digitale und KI-bezogene Chancen in messbare Wirkung und langfristige Assets 眉berf眉hrt.
 
 Why Enterprise Needs O2V:
 
@@ -143,11 +143,11 @@ O2V Enterprise Configuration is designed for that gap.
 
 Chinese:
 
-很多组织并不缺战略、AI 想法、数字化项目或技术投入。
+寰堝缁勭粐骞朵笉缂烘垬鐣ャ€丄I 鎯虫硶銆佹暟瀛楀寲椤圭洰鎴栨妧鏈姇鍏ャ€?
 
-真正缺的是一套轻量运营模型，能够持续把战略信号转化为机会判断、验证证据、投入决策、产品治理和可衡量的业务影响。
+鐪熸缂虹殑鏄竴濂楄交閲忚繍钀ユā鍨嬶紝鑳藉鎸佺画鎶婃垬鐣ヤ俊鍙疯浆鍖栦负鏈轰細鍒ゆ柇銆侀獙璇佽瘉鎹€佹姇鍏ュ喅绛栥€佷骇鍝佹不鐞嗗拰鍙　閲忕殑涓氬姟褰卞搷銆?
 
-O2V Enterprise Configuration 解决的正是这个断点。
+O2V Enterprise Configuration 瑙ｅ喅鐨勬鏄繖涓柇鐐广€?
 
 What It Is:
 
@@ -161,11 +161,11 @@ Its scope is not defined by department. Its scope is defined by the value flow: 
 
 Chinese:
 
-O2V Enterprise Configuration 是 O2V Framework 面向企业场景的配置版本。
+O2V Enterprise Configuration 鏄?O2V Framework 闈㈠悜浼佷笟鍦烘櫙鐨勯厤缃増鏈€?
 
-它帮助企业在战略、业务、技术、财务、治理和管理层决策之间运行 opportunity-to-value 逻辑。
+瀹冨府鍔╀紒涓氬湪鎴樼暐銆佷笟鍔°€佹妧鏈€佽储鍔°€佹不鐞嗗拰绠＄悊灞傚喅绛栦箣闂磋繍琛?opportunity-to-value 閫昏緫銆?
 
-它的边界不是部门。它的边界是价值流：从机会信号到实际影响，从创意构想到长期资产。
+瀹冪殑杈圭晫涓嶆槸閮ㄩ棬銆傚畠鐨勮竟鐣屾槸浠峰€兼祦锛氫粠鏈轰細淇″彿鍒板疄闄呭奖鍝嶏紝浠庡垱鎰忔瀯鎯冲埌闀挎湡璧勪骇銆?
 
 Core Method Assets:
 
@@ -321,4 +321,4 @@ After approval, implement:
 - Valence routes for `/en/valence`, `/zh/valence`, `/de/valence`.
 - Shared pages remain framework, principles, download, about, copyright.
 - Header uses two-row layout with language switcher separated from configuration tabs.
-- sitemap, llms.txt, README, metadata, and JSON-LD use O2V Framework 20260607 / Internal Version v1.6.
+- sitemap, llms.txt, README, metadata, and JSON-LD use O2V Framework / Official Public Release 20260614 / Internal Version v2.0.

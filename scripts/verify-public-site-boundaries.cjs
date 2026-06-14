@@ -96,8 +96,9 @@ const boundaryStatementAllowed = [
 ];
 
 const requiredPublicPatterns = [
-  /O2V Framework 20260607/,
-  /Internal Version: v1\.6|内部版本：v1\.6|Interne Version: v1\.6/,
+  /O2V Framework/,
+  /Official Public Release 20260614|Offizielle .*20260614/i,
+  /Internal Version: v2\.0|内部版本：v2\.0|Interne Version: v2\.0/,
   /O2V Enterprise Configuration/,
   /O2V Venture Configuration|O2V 创业配置/,
   /AiNOVA/,
@@ -113,17 +114,22 @@ const requiredPublicPatterns = [
 ];
 
 const oldReleasePatterns = [
+  /O2V Framework 20260607/,
   /O2V Framework 20260520/,
+  /Official Public Release 20260607/,
   /Official Public Release 20260520/,
   /官方公开发布版 20260520/,
+  /Internal Version: v1\.6/,
   /Internal Version: v1\.5/,
   /内部版本：v1\.5/,
+  /Interne Version: v1\.6/,
   /Interne Version: v1\.5/
 ];
 
 const oldReleaseAllowed = [
   /No old public release identity should remain in public content/i,
-  /prior Opportunity-to-Value transition release/i
+  /prior Opportunity-to-Value transition release/i,
+  /prior configurable Opportunity-to-Value release/i
 ];
 
 function readIfExists(relativePath) {

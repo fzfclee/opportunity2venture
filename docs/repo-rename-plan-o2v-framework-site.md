@@ -1,4 +1,4 @@
-# Repo Rename Plan: o2v-framework-site
+﻿# Repo Rename Plan: o2v-framework-site
 
 ## Current State
 
@@ -7,7 +7,7 @@
 - Canonical website domain: `https://www.o2vframework.com`
 - Legacy / backup domain: `https://www.opportunity2venture.com`
 - Current public brand: O2V Framework / Opportunity-to-Value Framework
-- Current public release: O2V Framework 20260607 / Internal Version v1.6
+- Current public release: O2V Framework / Official Public Release 20260614 / Internal Version v2.0
 
 The current repo name reflects the original Opportunity-to-Venture release. It should be treated as historical naming while the website brand now centers on O2V Framework.
 
