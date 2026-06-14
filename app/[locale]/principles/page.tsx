@@ -9,8 +9,7 @@ type PageProps = {
 
 const principlesDeck: Record<Locale, string[]> = {
   en: ["O2V Framework", "Opportunity-to-Value Framework", `Internal Version: ${internalVersion}`],
-  zh: ["O2V Framework", "Opportunity-to-Value Framework", `内部版本：${internalVersion}`],
-  de: ["O2V Framework", "Opportunity-to-Value Framework", `Interne Version: ${internalVersion}`]
+  zh: ["O2V Framework", "Opportunity-to-Value Framework", `内部版本：${internalVersion}`]
 };
 
 export function generateStaticParams() {

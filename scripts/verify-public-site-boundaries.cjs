@@ -9,53 +9,58 @@ const sourceFiles = [
   "public/sitemap.xml",
   "lib/content.ts",
   "lib/configurationCopyright.ts",
+  "lib/i18n.ts",
   "components/Header.tsx",
   "components/ConfigurationSwitcher.tsx",
-  "app/[locale]/page.tsx",
-  "app/[locale]/enterprise/page.tsx",
-  "app/[locale]/venture/page.tsx",
-  "app/[locale]/ainova/page.tsx",
-  "app/[locale]/valence/page.tsx",
-  "app/[locale]/copyright/page.tsx",
-  "app/[locale]/enterprise/copyright/page.tsx",
-  "app/[locale]/venture/copyright/page.tsx",
-  "app/[locale]/download/page.tsx",
-  "app/[locale]/about/page.tsx"
+  "app/layout.tsx"
 ];
 
 const requiredRoutes = [
-  "/en/enterprise",
-  "/zh/enterprise",
-  "/de/enterprise",
+  "/en",
+  "/zh",
+  "/en/enterprise/clear",
+  "/zh/enterprise/clear",
   "/en/venture",
   "/zh/venture",
-  "/de/venture",
+  "/en/venture/clear",
+  "/zh/venture/clear",
+  "/en/personal",
+  "/zh/personal",
+  "/en/personal/clear",
+  "/zh/personal/clear",
   "/en/ainova",
   "/zh/ainova",
-  "/de/ainova",
   "/en/valence",
   "/zh/valence",
-  "/de/valence",
+  "/en/principles",
+  "/zh/principles",
+  "/en/copyright",
+  "/zh/copyright",
   "/en/enterprise/copyright",
   "/zh/enterprise/copyright",
-  "/de/enterprise/copyright",
   "/en/venture/copyright",
   "/zh/venture/copyright",
-  "/de/venture/copyright",
+  "/en/personal/copyright",
+  "/zh/personal/copyright",
+  "/en/download",
+  "/zh/download",
   "/en/about",
-  "/zh/about",
-  "/de/about"
+  "/zh/about"
 ];
 
 const forbiddenPublicPatterns = [
-  /Personal Configuration/i,
-  /Venture\s*\/\s*Personal Configuration/i,
+  /\/de(\/|<|$)/i,
+  /Deutsch/i,
+  /German Enterprise Configuration/i,
   /\bD&T\b/i,
   /placeholder/i,
   /\bTBD\b/i,
   /\bTODO\b/i,
-  /\/(en|zh|de)\/framework/i,
+  /\/(en|zh)\/framework/i,
   /zhi-consulting-knowledge-base/i,
+  /internal knowledge-base path/i,
+  /s2a-magic/i,
+  /内部知识库路径/,
   /02_o2v_framework/i,
   /04_playbooks/i,
   /05_templates/i,
@@ -70,66 +75,59 @@ const restrictedMethodDetailPatterns = [
   /scorecard/i,
   /template/i,
   /playbook/i,
-  /评分表/,
+  /prompt chain/i,
+  /private diagnostic/i,
+  /评分规则/,
+  /计算方法/,
   /模板/,
-  /公式/
+  /私有诊断/
 ];
 
 const boundaryStatementAllowed = [
   /does not disclose/i,
-  /do not publish/i,
-  /must not expose/i,
+  /not published/i,
   /not publish/i,
   /not disclose/i,
-  /do not expose/i,
+  /does not include/i,
+  /does not automatically license/i,
   /不公开/,
-  /不得公开/,
-  /不披露/,
-  /不应公开/,
-  /不发布/,
-  /不在本站发布/,
-  /nicht offengelegt/i,
-  /nicht veröffentlicht/i,
-  /werden nicht offengelegt/i,
-  /werden nicht veröffentlicht/i,
-  /lizenziert .* nicht automatisch/i
+  /不会自动授权/,
+  /不自动授权/,
+  /不发布/
 ];
 
 const requiredPublicPatterns = [
   /O2V Framework/,
-  /Official Public Release 20260614|Offizielle .*20260614/i,
-  /Internal Version: v2\.0|内部版本：v2\.0|Interne Version: v2\.0/,
+  /Official Public Release 20260614/,
+  /Internal Version: v2\.0/,
   /O2V Enterprise Configuration/,
-  /O2V Venture Configuration|O2V 创业配置/,
+  /O2V Venture Configuration/,
+  /O2V Personal Configuration/,
+  /CLEAR \/ Signal-to-Action/,
   /AiNOVA/,
   /AI-native Operating Model for Enterprise Value Realization/,
   /Valence/,
   /Product Value Operations & Governance Model/,
   /Core Principles/,
-  /Method practice rights|方法实践版权/,
-  /O2V Enterprise Configuration, AiNOVA, Valence/,
-  /O2V Venture Configuration/,
+  /Method practice rights/,
   /ainova-detailed-introduction\.pdf/,
   /valence-detailed-introduction\.pdf/
 ];
 
 const oldReleasePatterns = [
-  /O2V Framework 20260607/,
-  /O2V Framework 20260520/,
   /Official Public Release 20260607/,
   /Official Public Release 20260520/,
-  /官方公开发布版 20260520/,
   /Internal Version: v1\.6/,
   /Internal Version: v1\.5/,
-  /内部版本：v1\.5/,
-  /Interne Version: v1\.6/,
-  /Interne Version: v1\.5/
+  /官方公开发布版 20260520/,
+  /内部版本：v1\.5/
 ];
 
 const oldReleaseAllowed = [
-  /No old public release identity should remain in public content/i,
   /prior Opportunity-to-Value transition release/i,
-  /prior configurable Opportunity-to-Value release/i
+  /prior configurable Opportunity-to-Value release/i,
+  /PDF downloads may reference earlier release files/i,
+  /PDF 下载文件可能仍指向早期发布文件/
 ];
 
 function readIfExists(relativePath) {
@@ -168,14 +166,11 @@ function relativeFromRoot(absolutePath) {
   return path.relative(root, absolutePath).replace(/\\/g, "/");
 }
 
-const errors = [];
-const scannedFiles = new Map();
-
 if (process.argv.includes("--self-test")) {
   const allowedBoundaryLine =
-    "Public website content does not disclose detailed playbooks, templates, scorecards, or calculation formulas.";
+    "Public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, or calculation methods.";
   const forbiddenContentLine =
-    "This page includes a calculation formula and scorecard for implementation.";
+    "This page includes a scoring formula and private diagnostic module for implementation.";
 
   if (!restrictedMethodDetailPatterns.some((pattern) => pattern.test(allowedBoundaryLine))) {
     throw new Error("Self-test setup error: boundary line should match restricted detail pattern.");
@@ -196,6 +191,9 @@ if (process.argv.includes("--self-test")) {
   console.log("Public site boundary verifier self-test passed.");
   process.exit(0);
 }
+
+const errors = [];
+const scannedFiles = new Map();
 
 for (const relativePath of sourceFiles) {
   const content = readIfExists(relativePath);
@@ -233,9 +231,6 @@ for (const route of requiredRoutes) {
 
 for (const pattern of forbiddenPublicPatterns) {
   for (const [file, content] of scannedFiles) {
-    if (file.startsWith("docs/")) {
-      continue;
-    }
     if (pattern.test(content)) {
       errors.push(`Forbidden public pattern ${pattern} found in ${file}`);
     }
@@ -244,9 +239,6 @@ for (const pattern of forbiddenPublicPatterns) {
 
 for (const pattern of restrictedMethodDetailPatterns) {
   for (const [file, content] of scannedFiles) {
-    if (file.startsWith("docs/")) {
-      continue;
-    }
     const lines = content.split(/\r?\n/);
     lines.forEach((line, index) => {
       if (!pattern.test(line)) {

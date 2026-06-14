@@ -10,14 +10,12 @@ type PageProps = {
 
 const releaseLabel: Record<Locale, string> = {
   en: "Official Public Release",
-  zh: "官方公开发布版",
-  de: "Offizielle öffentliche Version"
+  zh: "官方公开发布版"
 };
 
 const internalLabel: Record<Locale, string> = {
   en: "Internal Version",
-  zh: "内部版本",
-  de: "Interne Version"
+  zh: "内部版本"
 };
 
 export function generateStaticParams() {
@@ -61,8 +59,12 @@ export default async function AboutPage({ params }: PageProps) {
         <div className="max-w-xl text-sm leading-7 text-neutral-700">
           <p>O2V Framework</p>
           <p>Opportunity-to-Value Framework</p>
-          <p>{releaseLabel[locale]} {publicReleaseDate}</p>
-          <p>{internalLabel[locale]}: {internalVersion}</p>
+          <p>
+            {releaseLabel[locale]} {publicReleaseDate}
+          </p>
+          <p>
+            {internalLabel[locale]}: {internalVersion}
+          </p>
         </div>
       </div>
 

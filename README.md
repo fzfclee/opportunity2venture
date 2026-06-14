@@ -44,12 +44,15 @@ npm run verify:public-site
 
 - O2V Framework is the only parent framework.
 - O2V Framework uses Opportunity-to-Value Framework as the primary brand meaning.
-- Default public entry is Enterprise-first.
-- O2V Enterprise Configuration currently includes AiNOVA and Valence.
+- Current public configurations are O2V Enterprise Configuration, O2V Venture Configuration, and O2V Personal Configuration.
+- Each configuration has its own Home / framework introduction page and its own configuration-specific CLEAR / Signal-to-Action page.
+- Default public entry remains Enterprise Home at `/en` and `/zh`; `/enterprise` is a compatibility redirect.
+- O2V Enterprise Configuration currently centers on AiNOVA and Valence and uses CLEAR in the Enterprise Configuration as the signal-to-action front layer.
+- O2V Personal Configuration centers on CLEAR / Signal-to-Action as the primary public method asset.
 - AiNOVA is the AI-native Operating Model for Enterprise Value Realization, not an IT or Digital & Tech department model.
 - Valence is the Product Value Operations & Governance Model. It can be used with AiNOVA but is not an AiNOVA submodule.
-- O2V Venture Configuration is retained for venture-context opportunity judgment.
-- Core Principles are shared by both Enterprise and Venture configurations. Configuration-specific method practices are concrete expressions of the same principles.
+- O2V Venture Configuration is retained for venture-context opportunity judgment and uses CLEAR in the Venture Configuration as its signal-to-action front layer.
+- Core Principles are shared by Enterprise, Venture, and Personal configurations. Configuration-specific method practices are concrete expressions of the same principles.
 - Opportunity-to-Venture is retained only as a venture-context configuration / historical release wording.
 - Core slogan is: From Signal to Impact. From Idea to Asset.
 - Evidence runs through every step of O2V. Signals, Business Cases, and Value Stories should be supported by evidence.
@@ -57,7 +60,7 @@ npm run verify:public-site
 - Primary 9-step chain ends with Value Story, not Financing Story.
 - Financing Story can appear only as a venture-context form of Value Story.
 - Toolkit, Agents, Evidence System, Advisory Services, and Partner Ecosystem are future ecosystem roadmap items.
-- The public website content does not disclose detailed playbooks, templates, scorecards, calculation formulas, internal knowledge-base paths, client details, specific systems, or partner names.
+- The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, calculation methods, client details, specific systems, partner names, or internal working materials.
 - Primary website logo is the blue-purple version with a transparent background.
 - Do not use O2V Methodology as the main brand.
 - Do not use Agile Manifesto-style "A over B" language.
@@ -94,16 +97,23 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 ## Routes
 
 - `/` redirects to `/en`
-- `/en`, `/zh`, `/de`
-- `/en/enterprise`, `/zh/enterprise`, `/de/enterprise`
-- `/en/venture`, `/zh/venture`, `/de/venture`
-- `/en/ainova`, `/zh/ainova`, `/de/ainova`
-- `/en/valence`, `/zh/valence`, `/de/valence`
-- `/en/principles`, `/zh/principles`, `/de/principles`
-- `/en/copyright`, `/zh/copyright`, `/de/copyright`
-- `/en/enterprise/copyright`, `/zh/enterprise/copyright`, `/de/enterprise/copyright`
-- `/en/venture/copyright`, `/zh/venture/copyright`, `/de/venture/copyright`
-- `/en/download`, `/zh/download`, `/de/download`
+- `/en`, `/zh`
+- `/en/enterprise`, `/zh/enterprise` redirect to the language home pages
+- `/en/enterprise/clear`, `/zh/enterprise/clear`
+- `/en/venture`, `/zh/venture`
+- `/en/venture/clear`, `/zh/venture/clear`
+- `/en/personal`, `/zh/personal`
+- `/en/personal/clear`, `/zh/personal/clear`
+- `/en/ainova`, `/zh/ainova`
+- `/en/valence`, `/zh/valence`
+- `/en/principles`, `/zh/principles`
+- `/en/copyright`, `/zh/copyright`
+- `/en/enterprise/copyright`, `/zh/enterprise/copyright`
+- `/en/venture/copyright`, `/zh/venture/copyright`
+- `/en/personal/copyright`, `/zh/personal/copyright`
+- `/en/download`, `/zh/download`
+- `/en/about`, `/zh/about`
+- `/de...` is intentionally hidden and should return 404.
 
 ## Public Files
 
@@ -115,12 +125,11 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `public/brand/o2v-logo-primary-blue-purple-header.png`
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-zh.pdf`
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-en.pdf`
-- `public/downloads/o2v-framework-enterprise-configuration-20260607-de.pdf`
 
-Keep the 20260607 Enterprise Configuration PDF filenames stable for public download links.
+Keep the existing 20260607 Enterprise Configuration English and Chinese PDF filenames stable for public download links until replacement PDFs are added.
 
 ## License
 
 The website source code is licensed under the Apache License 2.0.
 
-The O2V Framework publication text, brand names, citation language, logo assets, downloadable framework materials, AiNOVA, Valence, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.
+The O2V Framework publication text, brand names, citation language, logo assets, downloadable framework materials, O2V configurations, CLEAR / Signal-to-Action, AiNOVA, Valence, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.

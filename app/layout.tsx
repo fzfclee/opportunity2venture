@@ -10,13 +10,12 @@ export const metadata: Metadata = {
     template: "%s"
   },
   description:
-    "O2V Framework is the Opportunity-to-Value Framework with Enterprise and Venture configurations for turning signals into evidence-backed impact, assets, and value stories.",
+    "O2V Framework is the Opportunity-to-Value Framework with Enterprise, Venture, and Personal configurations, using CLEAR / Signal-to-Action, AiNOVA, and Valence to turn signals into evidence-backed action, impact, assets, and value stories.",
   alternates: {
     canonical: `${siteUrl}/`,
     languages: {
       en: `${siteUrl}/en`,
       "zh-CN": `${siteUrl}/zh`,
-      de: `${siteUrl}/de`,
       "x-default": `${siteUrl}/en`
     }
   }
