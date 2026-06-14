@@ -449,7 +449,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     },
     eyebrow: "O2V Framework",
     title: "O2V Venture Configuration",
-    subtitle: "Opportunity-to-Value Framework für Opportunity Judgment im Venture-Kontext",
+    subtitle: "Opportunity-to-Value Framework for venture-context opportunity judgment",
     deck: releaseDeck.en,
     intro: [
       "This configuration is for founders, builders, consultants, independent professionals, creators, AI builders, and small teams turning ideas into validated ventures, business cases, and long-term assets.",
@@ -475,9 +475,9 @@ export const ventureContent: Record<Locale, PageContent> = {
       {
         heading: "Framework Core",
         body: [
-          "Die gemeinsame O2V-Kette lautet: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
-          "Die Venture Configuration nutzt dieselben O2V-Prinzipien wie die Enterprise Configuration, wendet sie aber auf Kontexte von Gründern, Buildern, Beratern, Creators, AI Buildern und kleinen Teams an.",
-          "Financing Story kann in Venture-Kontexten erscheinen, bleibt aber eine spezifische Ausprägung der Value Story und ersetzt nicht die O2V-Kette."
+          "The shared O2V chain is: Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story.",
+          "The Venture Configuration uses the same O2V principles as the Enterprise Configuration, but applies them to founders, builders, consultants, creators, AI builders, and small teams.",
+          "Financing Story may appear in venture contexts, but it remains a specific expression of Value Story and does not replace the O2V chain."
         ],
         visual: "o2v"
       }
@@ -541,7 +541,7 @@ export const ventureContent: Record<Locale, PageContent> = {
     },
     eyebrow: "O2V Framework",
     title: "O2V Venture Configuration",
-    subtitle: "Opportunity-to-Value Framework for venture-context opportunity judgment",
+    subtitle: "Opportunity-to-Value Framework für Opportunity Judgment im Venture-Kontext",
     deck: releaseDeck.de,
     intro: [
       "Diese Konfiguration richtet sich an Gründer, Builder, Berater, unabhängige Professionals, Creator, AI Builder und kleine Teams, die Ideen in validierte Ventures, Business Cases und langfristige Assets überführen möchten.",
@@ -557,7 +557,7 @@ export const ventureContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Evidence-throughout-Prinzip",
+        heading: "Prinzip der durchgängigen Evidenz",
         body: [
           "Evidenz läuft durch jeden Schritt. Signale müssen zu Evidenz werden, bevor sie Commitment verdienen.",
           "Evidenz zeigt Wirkung, und Wirkung führt zu besseren Entscheidungen: Proceed, Pivot, Reframe oder Stop.",
@@ -1103,7 +1103,7 @@ export const ainovaContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Operating Logic",
+        heading: "Betriebslogik",
         ordered: [
           "Strategische, digitale und KI-bezogene Signale erfassen, ohne sie bereits als Opportunities zu behandeln.",
           "Ausgewählte Signale in Werthypothesen und Validierungsevidenz überführen.",
@@ -1502,7 +1502,7 @@ export const valenceContent: Record<Locale, PageContent> = {
         ]
       },
       {
-        heading: "Valence Governance Flow",
+        heading: "Valence Governance-Flow",
         body: [
           "Valence organisiert Product Value Operations nach dem Launch als Lifecycle-Governance-Fluss. Der Fluss verbindet Produktsignale, Wertevidenz, Governance-Entscheidungen, Action Records und die O2V Value Story."
         ],
