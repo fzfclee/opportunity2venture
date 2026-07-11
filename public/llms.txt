@@ -28,6 +28,71 @@ AiNOVA is the AI-native Operating Model for Enterprise Value Realization. It is 
 
 Valence is the Product Value Operations & Governance Model. It is used in the O2V Enterprise Configuration while remaining an independent O2V method asset.
 
+## Enterprise Framing Logic
+
+In enterprise use, the O2V journey is framed by two cross-cutting lenses.
+
+- Strategy provides direction, boundaries, investment priorities, and portfolio choices.
+- Capability determines what the enterprise should reuse, strengthen, or build across multiple opportunities and value streams.
+
+Strategy and Capability are not missing steps in the O2V core chain. They frame the journey around it.
+
+Canonical summary:
+
+Strategy and Capability frame the O2V journey. The nine-step core chain traces how each opportunity moves from signal to value. Evidence connects the journey back to enterprise decisions.
+
+## Core Chain
+
+Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story
+
+The core chain traces how a specific opportunity moves from an early signal to an evidence-backed Value Story.
+
+## Evidence Spine and Validation
+
+Evidence runs through every step of O2V. It is not a separate tenth step.
+
+Evidence is continuous. Validation is intentional.
+
+- Evidence supports judgment throughout the chain.
+- Validation deliberately tests assumptions that could change a decision.
+- The Business Case begins as a hypothesis and matures through validation.
+- The formal O2V Business Case is the evidence-backed decision logic for the next material commitment.
+
+## Key Distinctions
+
+Capability:
+A repeatable organizational ability that may support multiple opportunities, products, and value streams.
+
+Asset:
+A reusable value object created, preserved, or strengthened through an opportunity, such as data, models, standards, components, processes, knowledge, IP, or operating patterns.
+
+An opportunity may reuse or strengthen a capability. The work may create reusable assets. Those assets may further strengthen the capability.
+
+Impact:
+The realized change in a real operating environment.
+
+Value Story:
+The evidence-backed account of that change, the learning, and the next decision.
+
+Impact is not a tenth step. The loop closes when evidence and the Value Story influence the next product, capability, portfolio, or strategic decision.
+
+## Enterprise Method Relationships
+
+- CLEAR frames the first justified next move from ambiguous signals.
+- O2V traces the opportunity logic from Signal to Value Story.
+- AiNOVA operationalizes the enterprise value-realization flow.
+- Valence governs product and initiative value in operation and across lifecycle decisions.
+
+Canonical summary:
+
+CLEAR frames the next move. O2V traces the opportunity logic. AiNOVA operationalizes the enterprise flow. Valence governs value in operation.
+
+## Enterprise Interpretation of Core Terms
+
+- Persona may be a customer, employee, operator, decision-maker, partner, regulator, or other affected stakeholder.
+- Pain may be meaningful friction, unmet need, risk exposure, control weakness, capability gap, or value loss.
+- Product is a response hypothesis and may become a product, service, platform, process, policy, capability intervention, or AI-enabled solution.
+
 ## Key Pages
 
 - [English Enterprise Home](https://www.o2vframework.com/en): Enterprise configuration O2V Framework introduction.
@@ -35,11 +100,11 @@ Valence is the Product Value Operations & Governance Model. It is used in the O2
 - [CLEAR](https://www.o2vframework.com/en/enterprise/clear): English page for CLEAR in Enterprise Configuration.
 - [CLEAR](https://www.o2vframework.com/zh/enterprise/clear): Chinese page for CLEAR in Enterprise Configuration.
 - [English Venture Home](https://www.o2vframework.com/en/venture): Venture configuration O2V Framework introduction.
-- [Chinese Venture Home](https://www.o2vframework.com/zh/venture): Venture configuration O2V Framework introduction.
+- [Chinese Venture Home](https://www.o2vframework.com/zh/venture): Chinese Venture Configuration introduction.
 - [CLEAR](https://www.o2vframework.com/en/venture/clear): English page for CLEAR in Venture Configuration.
 - [CLEAR](https://www.o2vframework.com/zh/venture/clear): Chinese page for CLEAR in Venture Configuration.
 - [English Personal Home](https://www.o2vframework.com/en/personal): Personal configuration O2V Framework introduction.
-- [Chinese Personal Home](https://www.o2vframework.com/zh/personal): Personal configuration O2V Framework introduction.
+- [Chinese Personal Home](https://www.o2vframework.com/zh/personal): Chinese Personal Configuration introduction.
 - [CLEAR](https://www.o2vframework.com/en/personal/clear): English page for CLEAR in Personal Configuration.
 - [CLEAR](https://www.o2vframework.com/zh/personal/clear): Chinese page for CLEAR in Personal Configuration.
 - [AiNOVA](https://www.o2vframework.com/en/ainova): AI-native Operating Model for Enterprise Value Realization.
@@ -49,14 +114,7 @@ Valence is the Product Value Operations & Governance Model. It is used in the O2
 - [Personal Principles](https://www.o2vframework.com/en/personal/principles): Shared O2V principles in Personal Configuration context.
 - [Downloads](https://www.o2vframework.com/en/download): PDF download page. PDF files may reference earlier release assets; the current web release is O2V Framework / Official Public Release 20260614 / Internal Version v2.0.
 - [Copyright and Citation](https://www.o2vframework.com/en/copyright): Overall copyright, citation, reserved-rights, and license-boundary notice.
-- [Enterprise Copyright](https://www.o2vframework.com/en/enterprise/copyright): Rights notice for O2V Enterprise Configuration, CLEAR in the Enterprise Configuration, AiNOVA, and Valence.
-- [Venture Copyright](https://www.o2vframework.com/en/venture/copyright): Rights notice for O2V Venture Configuration and CLEAR in the Venture Configuration.
-- [Personal Copyright](https://www.o2vframework.com/en/personal/copyright): Rights notice for O2V Personal Configuration, CLEAR in the Personal Configuration, and public Signal-to-Action positioning.
 - [About](https://www.o2vframework.com/en/about): About Li Zhi.
-
-## Core Chain
-
-Signal -> Scenario -> Persona -> Pain -> Product -> Validation -> Business Case -> Asset -> Value Story
 
 ## Public Boundary
 
