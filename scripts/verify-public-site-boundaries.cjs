@@ -8,6 +8,7 @@ const sourceFiles = [
   "public/llms.txt",
   "public/sitemap.xml",
   "lib/content.ts",
+  "lib/valenceContentV06.ts",
   "lib/configurationCopyright.ts",
   "lib/i18n.ts",
   "components/Header.tsx",
