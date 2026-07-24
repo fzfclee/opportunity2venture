@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PublicContentPage from "@/components/PublicContentPage";
-import { valenceContent } from "@/lib/content";
+import { valenceContentV06 } from "@/lib/valenceContentV06";
 import { locales, type Locale } from "@/lib/i18n";
 
 type PageProps = {
@@ -13,11 +13,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  return valenceContent[locale].metadata;
+  return valenceContentV06[locale].metadata;
 }
 
 export default async function ValencePage({ params }: PageProps) {
   const { locale } = await params;
 
-  return <PublicContentPage content={valenceContent[locale]} eyebrow="Valence by O2V" locale={locale} />;
+  return <PublicContentPage content={valenceContentV06[locale]} eyebrow="Valence" locale={locale} />;
 }
