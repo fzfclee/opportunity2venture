@@ -97,7 +97,7 @@ export const valenceContentV06: Record<Locale, PageContent> = {
     buttons: [
       {
         label: "Download detailed introduction PDF",
-        href: "/downloads/valence-detailed-introduction-en.pdf"
+        href: "/downloads/valence-detailed-introduction.pdf"
       }
     ],
     jsonLdDescription:
@@ -190,8 +190,8 @@ export const valenceContentV06: Record<Locale, PageContent> = {
     ],
     buttons: [
       {
-        label: "下载详细介绍 PDF",
-        href: "/downloads/valence-detailed-introduction-zh.pdf"
+        label: "下载详细介绍 PDF（英文）",
+        href: "/downloads/valence-detailed-introduction.pdf"
       }
     ],
     jsonLdDescription:
