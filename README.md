@@ -128,8 +128,9 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-zh.pdf`
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-en.pdf`
 - `public/downloads/valence-detailed-introduction.pdf`
+- `public/downloads/valence-detailed-introduction-zh.pdf`
 
-Keep the existing 20260607 Enterprise Configuration English and Chinese PDF filenames stable for public download links until replacement PDFs are added. The Valence detailed introduction PDF is a derived public asset and may use its own content version without changing the O2V website release identity.
+Keep the existing 20260607 Enterprise Configuration English and Chinese PDF filenames stable for public download links until replacement PDFs are added. The Valence detailed introduction PDFs are derived public assets and may use their own content version without changing the O2V website release identity.
 
 ## License
 
