@@ -18,6 +18,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ValencePage({ params }: PageProps) {
   const { locale } = await params;
+  const content = valenceContentV06[locale];
+  const localizedContent =
+    locale === "zh"
+      ? {
+          ...content,
+          buttons: [
+            {
+              label: "下载详细介绍 PDF",
+              href: "/downloads/valence-detailed-introduction-zh.pdf"
+            }
+          ]
+        }
+      : content;
 
-  return <PublicContentPage content={valenceContentV06[locale]} eyebrow="Valence" locale={locale} />;
+  return <PublicContentPage content={localizedContent} eyebrow="Valence" locale={locale} />;
 }
