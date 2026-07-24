@@ -26,7 +26,7 @@ CLEAR / Signal-to-Action is the cross-configuration public signal-to-action laye
 
 AiNOVA is the AI-native Operating Model for Enterprise Value Realization. It is not an IT or Digital & Tech department model.
 
-Valence is the Product Value Operations & Governance Model. It is used in the O2V Enterprise Configuration while remaining an independent O2V method asset.
+Valence is the Product Value Operations & Governance Model. It helps organizations design product value before major investment, validate value after launch, and govern value throughout operation. It remains an independent O2V method asset and is used with AiNOVA in the O2V Enterprise Configuration.
 
 ## Enterprise Framing Logic
 
@@ -78,14 +78,28 @@ Impact is not a tenth step. The loop closes when evidence and the Value Story in
 
 ## Enterprise Method Relationships
 
-- CLEAR frames the first justified next move from ambiguous signals.
-- O2V traces the opportunity logic from Signal to Value Story.
-- AiNOVA operationalizes the enterprise value-realization flow.
-- Valence governs product and initiative value in operation and across lifecycle decisions.
+- O2V defines the end-to-end opportunity-to-value logic.
+- CLEAR turns ambiguous signals into justified action and validation input.
+- AiNOVA operates enterprise roles, decisions, funding, and governance rhythm.
+- Valence designs and governs how products and initiatives realize economic value.
 
-Canonical summary:
+Valence may be called during Value Hypothesis & Validation to define the Value Realization Chain and Planned Monetized Value, and during Product / Initiative Value Governance to review adoption, recognized value, investment efficiency, product form, and lifecycle decisions.
 
-CLEAR frames the next move. O2V traces the opportunity logic. AiNOVA operationalizes the enterprise flow. Valence governs value in operation.
+## Valence Public Logic
+
+Valence uses a high-level Value Realization Chain:
+
+Primary Audience -> Main Problem -> Expected Change -> Evidence KPI -> Monetization Logic -> Planned Monetized Value -> Actual Recognized Value -> Governance Decision
+
+Its three final economic outcomes are:
+
+- Grow: increase revenue, contribution profit, or cash inflow.
+- Save: reduce or avoid cost and resource consumption.
+- Protect: reduce revenue loss, risk loss, or business interruption loss.
+
+Productivity, experience, decision quality, branding, time criticality, risk reduction, platform reuse, learning, and strategic capability are value mechanisms. They require a credible connection to Grow, Save, or Protect before they become recognized economic value.
+
+Valence distinguishes a required capability or official presence from the current product form. A business need does not automatically justify a standalone app, mini-program, platform, or dashboard.
 
 ## Enterprise Interpretation of Core Terms
 
@@ -118,7 +132,7 @@ CLEAR frames the next move. O2V traces the opportunity logic. AiNOVA operational
 
 ## Public Boundary
 
-The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, calculation methods, client details, specific systems, partner names, or internal working materials.
+The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, client thresholds, calculation methods, client details, specific systems, partner names, or internal working materials.
 
 Website source code is licensed under Apache License 2.0. O2V methodology, publication text, brand names, logos, PDF materials, CLEAR / Signal-to-Action, AiNOVA, Valence, O2V configurations, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.
 
