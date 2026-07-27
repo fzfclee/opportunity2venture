@@ -123,6 +123,7 @@ Valence distinguishes a required capability or official presence from the curren
 - [CLEAR](https://www.o2vframework.com/zh/personal/clear): Chinese page for CLEAR in Personal Configuration.
 - [AiNOVA](https://www.o2vframework.com/en/ainova): AI-native Operating Model for Enterprise Value Realization.
 - [Valence](https://www.o2vframework.com/en/valence): Product Value Operations & Governance Model.
+- [Consulting Skills](https://www.o2vframework.com/en/skills): Public open-source library of 58 standalone consulting method skills. Repository: https://github.com/fzfclee/consulting-skills.
 - [Enterprise Principles](https://www.o2vframework.com/en/enterprise/principles): Shared O2V principles in Enterprise Configuration context.
 - [Venture Principles](https://www.o2vframework.com/en/venture/principles): Shared O2V principles in Venture Configuration context.
 - [Personal Principles](https://www.o2vframework.com/en/personal/principles): Shared O2V principles in Personal Configuration context.
@@ -135,6 +136,10 @@ Valence distinguishes a required capability or official presence from the curren
 The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, client thresholds, calculation methods, client details, specific systems, partner names, or internal working materials.
 
 Website source code is licensed under Apache License 2.0. O2V methodology, publication text, brand names, logos, PDF materials, CLEAR / Signal-to-Action, AiNOVA, Valence, O2V configurations, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.
+
+The separate Consulting Skills repository licenses its original skill text, executable structure, examples, catalog, and validation code under Apache License 2.0. O2V Framework and CLEAR / Signal-to-Action are maintained separately as complete methodology assets under their own rights notice. No ownership is claimed over the underlying established consulting methods.
+
+Official contact: contact@o2vframework.com
 
 ## Historical Release Note
 

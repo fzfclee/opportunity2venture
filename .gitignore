@@ -3,6 +3,8 @@ node_modules
 .npm-cache
 .vercel
 .tmp-*
+.playwright-cli
+output/playwright
 
 *.log
 public/downloads/~$*.doc

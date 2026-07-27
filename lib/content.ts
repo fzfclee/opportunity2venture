@@ -13,6 +13,7 @@ export type NavKey =
   | "venture"
   | "ainova"
   | "valence"
+  | "skills"
   | "principles"
   | "copyright"
   | "download"
@@ -126,6 +127,7 @@ export const navLabels: Record<Locale, Record<NavKey, string>> = {
     venture: "Venture",
     ainova: "AiNOVA",
     valence: "Valence",
+    skills: "Skills",
     principles: "Principles",
     copyright: "Copyright",
     download: "Download",
@@ -139,6 +141,7 @@ export const navLabels: Record<Locale, Record<NavKey, string>> = {
     venture: "创业配置",
     ainova: "AiNOVA",
     valence: "Valence",
+    skills: "方法库",
     principles: "原则",
     copyright: "版权",
     download: "下载",
@@ -156,6 +159,7 @@ export const footerContent: Record<Locale, FooterLine[]> = {
         "O2V Enterprise Configuration, O2V Venture Configuration, O2V Personal Configuration, CLEAR / Signal-to-Action, AiNOVA, Valence, related method practices, text, diagrams, artifact taxonomy, and publication materials are O2V-related method assets created by Li Zhi. All rights reserved unless separately licensed in writing."
     },
     { label: "Official site:", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
+    { label: "Open method library:", text: "fzfclee/consulting-skills", href: "https://github.com/fzfclee/consulting-skills" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
     { text: `Citation: Li Zhi, O2V Framework, Official Public Release ${publicReleaseDate}, Internal Version ${internalVersion}.` }
   ],
@@ -168,6 +172,7 @@ export const footerContent: Record<Locale, FooterLine[]> = {
         "O2V Enterprise Configuration、O2V Venture Configuration、O2V Personal Configuration、CLEAR / Signal-to-Action、AiNOVA、Valence 及相关方法实践、文本、图示、工件分类和发布材料，均为李智 / Li Zhi 基于 O2V Framework 创建的相关方法资产。除非另有书面授权，保留所有权利。"
     },
     { label: "官方网站：", text: "www.o2vframework.com", href: "https://www.o2vframework.com" },
+    { label: "开放方法库：", text: "fzfclee/consulting-skills", href: "https://github.com/fzfclee/consulting-skills" },
     { label: "Email:", text: "contact@o2vframework.com", href: "mailto:contact@o2vframework.com" },
     { text: `引用格式：李智，O2V Framework，官方公开发布版 ${publicReleaseDate}，内部版本 ${internalVersion}。` }
   ]
@@ -1006,6 +1011,123 @@ export const valenceContent: Record<Locale, PageContent> = {
   }
 };
 
+export const skillsContent: Record<Locale, PageContent> = {
+  en: {
+    metadata: {
+      title: "Consulting Skills | O2V Framework",
+      description: "The open-source library of 58 standalone consulting method skills maintained in the O2V Framework knowledge ecosystem.",
+      alternates: localizedAlternates("en", "skills")
+    },
+    eyebrow: "Open Method Library",
+    title: "Consulting Skills",
+    subtitle: "58 standalone consulting methods written for reliable AI-assisted execution.",
+    intro: [
+      "Consulting Skills is an open-source method library initiated by Li Zhi in the broader O2V Framework knowledge ecosystem. Each skill defines the inputs, use boundary, execution steps, outputs, evidence discipline, and quality gate needed to apply one method.",
+      "The library can be used independently. O2V Framework and CLEAR / Signal-to-Action are maintained separately as complete methodology assets."
+    ],
+    cards: [
+      {
+        title: "58 standalone skills",
+        subtitle: "Portable",
+        body: "Install and use one method without adopting the full O2V Framework."
+      },
+      {
+        title: "Execution-ready",
+        subtitle: "Structured",
+        body: "Every skill specifies required inputs, stop conditions, steps, outputs, and quality checks."
+      },
+      {
+        title: "Evidence-aware",
+        subtitle: "Decision focused",
+        body: "Missing evidence and assumptions must be visible, with a validation action where they could change the decision."
+      }
+    ],
+    sections: [
+      {
+        heading: "Relationship to O2V Framework",
+        body: [
+          "O2V Framework may use this public library as a method resource when a method can materially improve a decision, action, risk judgment, validation plan, or deliverable.",
+          "The public repository focuses on standalone method skills. O2V Framework and CLEAR / Signal-to-Action remain separately maintained methodology assets."
+        ]
+      },
+      {
+        heading: "Rights and attribution",
+        body: [
+          "The repository does not claim ownership of established consulting tools, analytical methods, academic theories, or management frameworks. Those methods and names remain associated with their respective creators, researchers, institutions, and rights holders.",
+          "Apache License 2.0 applies to the repository's original skill text, executable structure, examples, catalog, and validation code. It does not license the O2V Framework itself."
+        ]
+      },
+      {
+        heading: "Contact",
+        body: [
+          "For method attribution, licensing, collaboration, or O2V Framework enquiries, contact contact@o2vframework.com."
+        ]
+      }
+    ],
+    buttons: [
+      { label: "Open Consulting Skills on GitHub", href: "https://github.com/fzfclee/consulting-skills" },
+      { label: "Read copyright and legal notice", href: "/en/copyright" }
+    ]
+  },
+  zh: {
+    metadata: {
+      title: "咨询方法 Skills | O2V Framework",
+      description: "O2V Framework 知识生态中维护的 58 个可独立使用的开源咨询方法 Skill。",
+      alternates: localizedAlternates("zh", "skills")
+    },
+    eyebrow: "开放方法库",
+    title: "咨询方法 Skills",
+    subtitle: "58 个可独立使用、面向可靠 AI 执行的咨询方法。",
+    intro: [
+      "Consulting Skills 由李智发起，是 O2V Framework 知识生态中的开放方法库。每个 Skill 都明确一个方法需要的输入、适用边界、执行步骤、输出、证据要求和质量检查。",
+      "这个方法库可以独立使用。O2V Framework 与 CLEAR / Signal-to-Action 作为完整方法论资产分别维护。"
+    ],
+    cards: [
+      {
+        title: "58 个独立 Skill",
+        subtitle: "可移植",
+        body: "可以只安装和使用一个方法，不需要采用完整 O2V Framework。"
+      },
+      {
+        title: "拿来就能执行",
+        subtitle: "有结构",
+        body: "每个 Skill 都明确所需输入、停止条件、执行步骤、产出和质量检查。"
+      },
+      {
+        title: "重视证据",
+        subtitle: "服务决策",
+        body: "可能改变决策的证据缺口和假设必须被标出，并安排验证动作。"
+      }
+    ],
+    sections: [
+      {
+        heading: "与 O2V Framework 的关系",
+        body: [
+          "当某个方法能够明显改善决策、行动、风险判断、验证计划或交付物时，O2V Framework 可以把这个公共方法库作为方法资源。",
+          "公共仓库专注于可独立使用的方法 Skill。O2V Framework 与 CLEAR / Signal-to-Action 作为完整方法论资产分别维护。"
+        ]
+      },
+      {
+        heading: "权利与来源说明",
+        body: [
+          "本仓库不主张对通用咨询工具、分析方法、学术理论或管理框架本身拥有权利。相关方法及其名称仍属于或关联其各自的创作者、研究者、机构和权利人。",
+          "Apache License 2.0 适用于公共仓库原创的 Skill 文字表达、可执行结构、案例、目录和校验代码，不适用于 O2V Framework 本身。"
+        ]
+      },
+      {
+        heading: "联系方式",
+        body: [
+          "有关方法来源、许可、合作或 O2V Framework 的问题，请联系 contact@o2vframework.com。"
+        ]
+      }
+    ],
+    buttons: [
+      { label: "在 GitHub 查看 Consulting Skills", href: "https://github.com/fzfclee/consulting-skills" },
+      { label: "查看版权与法律声明", href: "/zh/copyright" }
+    ]
+  }
+};
+
 export const copyrightContent: Record<Locale, { metadata: Metadata; title: string; sections: Section[] }> = {
   en: {
     metadata: {
@@ -1030,7 +1152,23 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
           "The source code license does not automatically license O2V method assets, publication text, diagrams, brand names, logo assets, PDF materials, or related method practices for unrestricted reuse."
         ]
       },
+      {
+        heading: "Open Consulting Skills library",
+        body: [
+          "The public Consulting Skills repository contains 58 standalone method skills initiated by Li Zhi in the broader O2V Framework knowledge ecosystem.",
+          "Apache License 2.0 applies to that repository's original skill text, executable structure, examples, catalog, and validation code. O2V Framework and CLEAR / Signal-to-Action are separate methodology assets governed by their own rights notice.",
+          "No ownership is claimed over established consulting tools, analytical methods, academic theories, or management frameworks. Their rights and academic contributions remain with their respective creators, researchers, institutions, and rights holders."
+        ]
+      },
       { heading: "Public method boundary", body: [publicBoundary.en] },
+      {
+        heading: "Official links and contact",
+        body: [
+          "Official website: https://www.o2vframework.com",
+          "Open method library: https://github.com/fzfclee/consulting-skills",
+          "Contact: contact@o2vframework.com"
+        ]
+      },
       { heading: "Legal disclaimer", body: ["This site and framework publication are provided for informational and educational purposes only. They do not constitute legal, investment, financial, tax, medical, psychological, safety, or professional advice."] }
     ]
   },
@@ -1057,7 +1195,23 @@ export const copyrightContent: Record<Locale, { metadata: Metadata; title: strin
           "源代码许可不会自动授权 O2V 方法资产、发布文本、图示、品牌名称、logo 资产、PDF 材料或相关方法实践的不受限制复用。"
         ]
       },
+      {
+        heading: "开放 Consulting Skills 方法库",
+        body: [
+          "公开的 Consulting Skills 仓库包含 58 个可独立使用的方法 Skill，由李智发起，是 O2V Framework 知识生态中的开放方法库。",
+          "Apache License 2.0 适用于该仓库原创的 Skill 文字表达、可执行结构、案例、目录和校验代码。O2V Framework 与 CLEAR / Signal-to-Action 是分别维护、遵循各自权利声明的完整方法论资产。",
+          "本项目不主张对通用咨询工具、分析方法、学术理论或管理框架本身拥有权利。相关权利和学术贡献仍属于各自的创作者、研究者、机构和权利人。"
+        ]
+      },
       { heading: "公开方法边界", body: [publicBoundary.zh] },
+      {
+        heading: "官方链接与联系方式",
+        body: [
+          "官方网站：https://www.o2vframework.com",
+          "开放方法库：https://github.com/fzfclee/consulting-skills",
+          "联系邮箱：contact@o2vframework.com"
+        ]
+      },
       { heading: "法律免责声明", body: ["本站与框架发布内容仅用于信息和教育目的，不构成法律、投资、金融、税务、医疗、心理、安全或其他专业建议。"] }
     ]
   }

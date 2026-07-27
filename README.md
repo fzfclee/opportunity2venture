@@ -51,6 +51,9 @@ npm run verify:public-site
 - O2V Personal Configuration centers on CLEAR / Signal-to-Action as the primary public method asset.
 - AiNOVA is the AI-native Operating Model for Enterprise Value Realization, not an IT or Digital & Tech department model.
 - Valence is the Product Value Operations & Governance Model. It designs value before major investment, validates value after launch, and governs value throughout operation. It remains an independent O2V method asset and can be used with AiNOVA.
+- Consulting Skills is the public open-source library of 58 standalone method skills. It may be used by O2V as a method resource, while O2V Framework and CLEAR / Signal-to-Action are maintained separately as complete methodology assets.
+- O2V Framework, CLEAR / Signal-to-Action, their original expressions, architecture, diagrams, and branded delivery assets remain separate from the Consulting Skills Apache-2.0 repository.
+- O2V does not claim ownership of established consulting tools, analytical methods, academic theories, or management frameworks. Public method summaries must retain attribution and licensing boundaries.
 - O2V Venture Configuration is retained for venture-context opportunity judgment and uses CLEAR in the Venture Configuration as its signal-to-action front layer.
 - Core Principles are shared by Enterprise, Venture, and Personal configurations. Configuration-specific method practices are concrete expressions of the same principles.
 - Opportunity-to-Venture is retained only as a venture-context configuration / historical release wording.
@@ -106,6 +109,7 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `/en/personal/clear`, `/zh/personal/clear`
 - `/en/ainova`, `/zh/ainova`
 - `/en/valence`, `/zh/valence`
+- `/en/skills`, `/zh/skills`
 - `/en/enterprise/principles`, `/zh/enterprise/principles`
 - `/en/venture/principles`, `/zh/venture/principles`
 - `/en/personal/principles`, `/zh/personal/principles`
@@ -137,3 +141,7 @@ Keep the existing 20260607 Enterprise Configuration English and Chinese PDF file
 The website source code is licensed under the Apache License 2.0.
 
 The O2V Framework publication text, brand names, citation language, logo assets, downloadable framework materials, O2V configurations, CLEAR / Signal-to-Action, AiNOVA, Valence, and derivative methodology assets remain subject to the copyright and rights statements published on the site unless separately licensed in writing.
+
+The public Consulting Skills repository is available at https://github.com/fzfclee/consulting-skills. Its Apache-2.0 license applies to the repository's original implementation and does not license the O2V Framework itself or any underlying established method.
+
+Official contact: contact@o2vframework.com

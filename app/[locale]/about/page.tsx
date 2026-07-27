@@ -91,6 +91,12 @@ export default async function AboutPage({ params }: PageProps) {
           <li>
             Email: <a href="mailto:contact@o2vframework.com">contact@o2vframework.com</a>
           </li>
+          <li>
+            Consulting Skills:{" "}
+            <a href="https://github.com/fzfclee/consulting-skills" rel="noreferrer" target="_blank">
+              https://github.com/fzfclee/consulting-skills
+            </a>
+          </li>
           <li>WeChat: lizhi_ch</li>
         </ul>
       </section>

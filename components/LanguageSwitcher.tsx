@@ -24,6 +24,7 @@ const supportedPageSuffixes = new Set([
   "personal/copyright",
   "ainova",
   "valence",
+  "skills",
   "principles",
   "copyright",
   "download",
