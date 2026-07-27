@@ -50,7 +50,7 @@ npm run verify:public-site
 - O2V Enterprise Configuration currently centers on AiNOVA and Valence and uses CLEAR in the Enterprise Configuration as the signal-to-action front layer.
 - O2V Personal Configuration centers on CLEAR / Signal-to-Action as the primary public method asset.
 - AiNOVA is the AI-native Operating Model for Enterprise Value Realization, not an IT or Digital & Tech department model.
-- Valence is the Product Value Operations & Governance Model. It can be used with AiNOVA but is not an AiNOVA submodule.
+- Valence is the Product Value Operations & Governance Model. It designs value before major investment, validates value after launch, and governs value throughout operation. It remains an independent O2V method asset and can be used with AiNOVA.
 - O2V Venture Configuration is retained for venture-context opportunity judgment and uses CLEAR in the Venture Configuration as its signal-to-action front layer.
 - Core Principles are shared by Enterprise, Venture, and Personal configurations. Configuration-specific method practices are concrete expressions of the same principles.
 - Opportunity-to-Venture is retained only as a venture-context configuration / historical release wording.
@@ -60,7 +60,7 @@ npm run verify:public-site
 - Primary 9-step chain ends with Value Story, not Financing Story.
 - Financing Story can appear only as a venture-context form of Value Story.
 - Toolkit, Agents, Evidence System, Advisory Services, and Partner Ecosystem are future ecosystem roadmap items.
-- The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, calculation methods, client details, specific systems, partner names, or internal working materials.
+- The public website content does not disclose detailed playbooks, templates, scoring rules, prompt chains, client thresholds, calculation methods, client details, specific systems, partner names, or internal working materials.
 - Primary website logo is the blue-purple version with a transparent background.
 - Do not use O2V Methodology as the main brand.
 - Do not use Agile Manifesto-style "A over B" language.
@@ -127,8 +127,10 @@ Current repo pending rename: https://github.com/fzfclee/opportunity2venture.git
 - `public/brand/o2v-logo-primary-blue-purple-header.png`
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-zh.pdf`
 - `public/downloads/o2v-framework-enterprise-configuration-20260607-en.pdf`
+- `public/downloads/valence-detailed-introduction.pdf`
+- `public/downloads/valence-detailed-introduction-zh.pdf`
 
-Keep the existing 20260607 Enterprise Configuration English and Chinese PDF filenames stable for public download links until replacement PDFs are added.
+Keep the existing 20260607 Enterprise Configuration English and Chinese PDF filenames stable for public download links until replacement PDFs are added. The Valence detailed introduction PDFs are derived public assets and may use their own content version without changing the O2V website release identity.
 
 ## License
 
